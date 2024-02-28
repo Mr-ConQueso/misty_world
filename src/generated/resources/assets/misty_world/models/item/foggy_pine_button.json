@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "misty_world:block/foggy_pine_planks"
+  }
+}

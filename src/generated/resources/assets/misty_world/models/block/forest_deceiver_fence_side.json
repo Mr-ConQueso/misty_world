@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "misty_world:block/forest_deceiver_planks"
+  }
+}

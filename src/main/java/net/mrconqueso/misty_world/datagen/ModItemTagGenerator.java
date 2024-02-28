@@ -26,9 +26,19 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.ASPEN_LOG.get().asItem())
                 .add(ModBlocks.ASPEN_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_ASPEN_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get().asItem())
+                .add(ModBlocks.UMBRELLA_TREE_LOG.get().asItem())
+                .add(ModBlocks.UMBRELLA_TREE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_UMBRELLA_TREE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_UMBRELLA_TREE_WOOD.get().asItem())
+                .add(ModBlocks.FOREST_DECEIVER_LOG.get().asItem())
+                .add(ModBlocks.FOREST_DECEIVER_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-            .add(ModBlocks.ASPEN_PLANKS.get().asItem());
+            .add(ModBlocks.ASPEN_PLANKS.get().asItem())
+            .add(ModBlocks.UMBRELLA_TREE_PLANKS.get().asItem())
+            .add(ModBlocks.FOREST_DECEIVER_PLANKS.get().asItem());
     }
 }

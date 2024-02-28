@@ -1,6 +1,8 @@
-// 1.20.1	2024-02-28T14:27:07.037682055	Tags for minecraft:block mod id misty_world
-8e29b095737346009894bb1f73e2d0d8bb4c550d data/minecraft/tags/blocks/logs_that_burn.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/minecraft/tags/blocks/planks.json
+// 1.20.1	2024-02-29T00:40:57.017291342	Tags for minecraft:block mod id misty_world
+e303953a59fc33d9ffea648e7e38bef87b121a2f data/minecraft/tags/blocks/fence_gates.json
+d39b405582904992fb3949eb9a0e320541aa75de data/minecraft/tags/blocks/fences.json
+8b9ca24f08ad0510eb673c0e76ebe8899ea9bc81 data/minecraft/tags/blocks/logs_that_burn.json
+d11496b9f17840bc79a90b17c77aa386f9afd133 data/minecraft/tags/blocks/planks.json
 c6cb9f7a107f932290f4333d70b1b48cf8207a4e data/misty_world/tags/blocks/mineable_with_axe.json
 a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/mineable_with_hoe.json
 a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/mineable_with_pickaxe.json

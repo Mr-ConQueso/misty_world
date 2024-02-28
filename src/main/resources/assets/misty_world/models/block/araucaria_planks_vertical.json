@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "misty_world:block/araucaria_planks",
+        "side": "misty_world:block/araucaria_planks_rotated"
+    }
+}

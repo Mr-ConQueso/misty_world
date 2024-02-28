@@ -1,7 +1,8 @@
 {
   "": "----------------- GENERAL -----------------",
 
-  "creativetab.misty_world.misty_world_tab": "Misty World",
+  "creativetab.misty_world.misty_world_blocks_tab": "Misty Blocks",
+  "creativetab.misty_world.misty_world_items_tab": "Misty Items",
 
   "": "----------------- BLOCKS -----------------",
 
@@ -13,6 +14,16 @@
   "block.misty_world.stripped_aspen_wood": "Stripped Trembling Tree Wood",
   "block.misty_world.aspen_planks": "Trembling Tree Planks",
   "block.misty_world.aspen_leaves": "Trembling Tree Leaves",
+
+  "block.misty_world.aspen_stairs": "Trembling Tree Stairs",
+  "block.misty_world.aspen_slab": "Trembling Tree Slab",
+  "block.misty_world.aspen_button": "Trembling Tree Button",
+  "block.misty_world.aspen_pressure_plate": "Trembling Tree Pressure Plate",
+  "block.misty_world.aspen_fence": "Trembling Tree Fence",
+  "block.misty_world.aspen_fence_gate": "Trembling Tree Fence Gate",
+  "block.misty_world.aspen_door": "Trembling Tree Door",
+  "block.misty_world.aspen_trapdoor": "Trembling Tree Trapdoor",
+
 
   "": "------------ ORES ------------",
 

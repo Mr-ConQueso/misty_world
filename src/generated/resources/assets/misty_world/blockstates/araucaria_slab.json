@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "misty_world:block/araucaria_slab"
+    },
+    "type=double": {
+      "model": "misty_world:block/araucaria_planks"
+    },
+    "type=top": {
+      "model": "misty_world:block/araucaria_slab_top"
+    }
+  }
+}

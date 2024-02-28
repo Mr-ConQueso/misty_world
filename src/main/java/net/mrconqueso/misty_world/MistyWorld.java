@@ -12,7 +12,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrconqueso.misty_world.block.ModBlocks;
-import net.mrconqueso.misty_world.item.ModCreativeModeTabs;
+import net.mrconqueso.misty_world.item.ModCreativeModeBlocksTab;
+import net.mrconqueso.misty_world.item.ModCreativeModeItemsTab;
 import net.mrconqueso.misty_world.item.ModItems;
 import org.slf4j.Logger;
 
@@ -25,7 +26,8 @@ public class MistyWorld {
     public MistyWorld() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModeTabs.register(modEventBus);
+        ModCreativeModeBlocksTab.register(modEventBus);
+        ModCreativeModeItemsTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

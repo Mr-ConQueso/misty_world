@@ -35,15 +35,17 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     // --- / SEEDS / --- //
+    public static final RegistryObject<Item> ARAUCARIA_SEED = ITEMS.register("araucaria_seed",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ACACIA_SEED = ITEMS.register("acacia_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ASPEN_SEED = ITEMS.register("aspen_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BIRCH_SEED = ITEMS.register("birch_seed",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> OAK_SEED = ITEMS.register("oak_seed",
+    public static final RegistryObject<Item> FOGGY_OAK_SEED = ITEMS.register("foggy_oak_seed",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PINE_SEED = ITEMS.register("pine_seed",
+    public static final RegistryObject<Item> FOGGY_PINE_SEED = ITEMS.register("foggy_pine_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POPLAR_SEED = ITEMS.register("poplar_seed",
             () -> new Item(new Item.Properties()));

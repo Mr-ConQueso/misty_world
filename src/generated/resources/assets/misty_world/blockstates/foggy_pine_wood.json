@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "misty_world:block/foggy_pine_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "misty_world:block/foggy_pine_wood"
+    },
+    "axis=z": {
+      "model": "misty_world:block/foggy_pine_wood_horizontal",
+      "x": 90
+    }
+  }
+}

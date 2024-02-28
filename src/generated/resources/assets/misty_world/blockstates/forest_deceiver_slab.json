@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "misty_world:block/forest_deceiver_slab"
+    },
+    "type=double": {
+      "model": "misty_world:block/forest_deceiver_planks"
+    },
+    "type=top": {
+      "model": "misty_world:block/forest_deceiver_slab_top"
+    }
+  }
+}

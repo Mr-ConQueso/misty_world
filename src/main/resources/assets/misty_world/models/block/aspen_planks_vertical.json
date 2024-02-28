@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "misty_world:block/aspen_planks",
+        "side": "misty_world:block/aspen_planks_rotated"
+    }
+}

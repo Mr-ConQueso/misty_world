@@ -53,9 +53,52 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ASPEN_LOG.get())
                 .add(ModBlocks.ASPEN_WOOD.get())
                 .add(ModBlocks.STRIPPED_ASPEN_LOG.get())
-                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get());
+                .add(ModBlocks.STRIPPED_ASPEN_WOOD.get())
+                .add(ModBlocks.UMBRELLA_TREE_LOG.get())
+                .add(ModBlocks.UMBRELLA_TREE_WOOD.get())
+                .add(ModBlocks.STRIPPED_UMBRELLA_TREE_LOG.get())
+                .add(ModBlocks.STRIPPED_UMBRELLA_TREE_WOOD.get())
+                .add(ModBlocks.FOREST_DECEIVER_LOG.get())
+                .add(ModBlocks.FOREST_DECEIVER_WOOD.get())
+                .add(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get())
+                .add(ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD.get())
+                .add(ModBlocks.ARAUCARIA_LOG.get())
+                .add(ModBlocks.ARAUCARIA_WOOD.get())
+                .add(ModBlocks.STRIPPED_ARAUCARIA_LOG.get())
+                .add(ModBlocks.STRIPPED_ARAUCARIA_WOOD.get())
+                .add(ModBlocks.FOGGY_OAK_LOG.get())
+                .add(ModBlocks.FOGGY_OAK_WOOD.get())
+                .add(ModBlocks.STRIPPED_FOGGY_OAK_LOG.get())
+                .add(ModBlocks.STRIPPED_FOGGY_OAK_WOOD.get())
+                .add(ModBlocks.FOGGY_PINE_LOG.get())
+                .add(ModBlocks.FOGGY_PINE_WOOD.get())
+                .add(ModBlocks.STRIPPED_FOGGY_PINE_LOG.get())
+                .add(ModBlocks.STRIPPED_FOGGY_PINE_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.ASPEN_PLANKS.get());
+                .add(ModBlocks.ASPEN_PLANKS.get())
+                .add(ModBlocks.UMBRELLA_TREE_PLANKS.get())
+                .add(ModBlocks.FOREST_DECEIVER_PLANKS.get())
+                .add(ModBlocks.ARAUCARIA_PLANKS.get())
+                .add(ModBlocks.FOGGY_OAK_PLANKS.get())
+                .add(ModBlocks.FOGGY_PINE_PLANKS.get());
+
+        // --------- / FENCES / --------- //
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.ASPEN_FENCE.get())
+                .add(ModBlocks.UMBRELLA_TREE_FENCE.get())
+                .add(ModBlocks.FOREST_DECEIVER_FENCE.get())
+                .add(ModBlocks.ARAUCARIA_FENCE.get())
+                .add(ModBlocks.FOGGY_OAK_FENCE.get())
+                .add(ModBlocks.FOGGY_PINE_FENCE.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ASPEN_FENCE_GATE.get())
+                .add(ModBlocks.UMBRELLA_TREE_FENCE_GATE.get())
+                .add(ModBlocks.FOREST_DECEIVER_FENCE_GATE.get())
+                .add(ModBlocks.ARAUCARIA_FENCE_GATE.get())
+                .add(ModBlocks.FOGGY_OAK_FENCE_GATE.get())
+                .add(ModBlocks.FOGGY_PINE_FENCE_GATE.get());
     }
 }

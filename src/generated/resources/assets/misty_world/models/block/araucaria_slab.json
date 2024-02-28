@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "misty_world:block/araucaria_planks",
+    "side": "misty_world:block/araucaria_planks",
+    "top": "misty_world:block/araucaria_planks"
+  }
+}
