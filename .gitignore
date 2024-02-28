@@ -18,6 +18,8 @@ build
 .gradle
 
 # other
+templates
+.vscode
 eclipse
 run
 run-data
