@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=x,type=plank":  { "model": "misty_world:block/aspen_planks_horizontal" },
+    "axis=y,type=plank":  { "model": "misty_world:block/aspen_planks_vertical" },
+    "axis=z,type=plank":  { "model": "misty_world:block/aspen_planks_horizontal_rot" },
+    "axis=none,type=plank":  { "model": "misty_world:block/aspen_planks_vertical_rot" }
+  }
+}
