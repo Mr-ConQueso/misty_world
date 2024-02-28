@@ -1,6 +1,0 @@
-{
-    "parent": "mist:block/wall_gate_closed",
-    "textures": {
-        "texture": "mist:blocks/acacia_planks"
-    }
-}

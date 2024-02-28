@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "mist:blocks/oak_sapling"
-    }
-}

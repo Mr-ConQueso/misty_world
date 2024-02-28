@@ -1,7 +1,0 @@
-{
-    "parent": "mist:block/log_8_pos",
-    "textures": {
-        "end": "mist:blocks/pine_top_2",
-        "side": "mist:blocks/pine_trunk_m"
-    }
-}

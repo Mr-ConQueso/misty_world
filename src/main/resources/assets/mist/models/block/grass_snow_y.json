@@ -1,8 +1,0 @@
-{  
-    "parent": "mist:block/grass_snowy",
-    "textures": {
-        "particle": "blocks/snow",
-        "top": "blocks/snow",
-        "snow": "mist:blocks/grass_snow_y"
-    }
-}

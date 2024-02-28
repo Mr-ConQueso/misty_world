@@ -1,0 +1,5 @@
+// 1.20.1	2024-02-28T13:37:42.005919166	Recipes
+440bd0302663dcb002e1dffa46afb80349c26b4c data/misty_world/advancements/recipes/misc/salt_food_from_blasting_salt_ore.json
+a1e02f2c655072b267f5b07fe2de605a9427fa04 data/misty_world/advancements/recipes/misc/salt_food_from_smelting_salt_ore.json
+3d6266096176c8e50a0b7447b617818bcc11a1b5 data/misty_world/recipes/salt_food_from_blasting_salt_ore.json
+a2433362c1b3749fd994b4771ab5e30333c476ee data/misty_world/recipes/salt_food_from_smelting_salt_ore.json

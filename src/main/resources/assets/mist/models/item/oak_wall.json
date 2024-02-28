@@ -1,8 +1,0 @@
-{
-    "parent": "mist:block/wall",
-    "textures": {
-        "bottom": "mist:blocks/oak_planks",
-        "top": "mist:blocks/oak_planks",
-        "side": "mist:blocks/oak_planks"
-    }
-}

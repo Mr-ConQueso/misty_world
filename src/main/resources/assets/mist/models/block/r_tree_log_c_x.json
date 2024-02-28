@@ -1,7 +1,0 @@
-{
-    "parent": "mist:block/cube_column_x",
-    "textures": {
-        "end": "mist:blocks/r_tree_top",
-        "side": "mist:blocks/r_tree_trunk_c"
-    }
-}

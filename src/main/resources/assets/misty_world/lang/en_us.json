@@ -7,7 +7,16 @@
 
   "": "------------ WOOD ------------",
   "": "------- ASPEN -------",
+  "block.misty_world.aspen_log": "Trembling Tree Log",
+  "block.misty_world.aspen_wood": "Trembling Tree Wood",
+  "block.misty_world.stripped_aspen_log": "Stripped Trembling Tree Log",
+  "block.misty_world.stripped_aspen_wood": "Stripped Trembling Tree Wood",
   "block.misty_world.aspen_planks": "Trembling Tree Planks",
+  "block.misty_world.aspen_leaves": "Trembling Tree Leaves",
+
+  "": "------------ ORES ------------",
+
+  "block.misty_world.salt_ore": "Salt Ore",
 
 
   "": "----------------- ITEMS -----------------",

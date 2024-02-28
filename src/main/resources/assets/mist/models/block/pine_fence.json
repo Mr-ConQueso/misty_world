@@ -1,6 +1,0 @@
-{
-    "parent": "mist:block/fence_side",
-    "textures": {
-        "texture": "mist:blocks/pine_planks"
-    }
-}

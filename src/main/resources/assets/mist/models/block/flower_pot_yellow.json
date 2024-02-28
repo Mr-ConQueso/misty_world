@@ -1,6 +1,0 @@
-{
-    "parent": "mist:block/flower_pot_cross",
-    "textures": {
-        "plant": "mist:blocks/mushroom_yellow"
-    }
-}

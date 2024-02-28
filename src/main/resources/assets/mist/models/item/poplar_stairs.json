@@ -1,8 +1,0 @@
-{
-    "parent": "mist:block/stairs",
-    "textures": {
-        "bottom": "mist:blocks/poplar_planks",
-        "top": "mist:blocks/poplar_planks",
-        "side": "mist:blocks/poplar_planks"
-    }
-}

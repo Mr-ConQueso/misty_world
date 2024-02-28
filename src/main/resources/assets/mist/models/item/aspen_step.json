@@ -1,8 +1,0 @@
-{
-    "parent": "mist:block/step",
-    "textures": {
-        "bottom": "mist:blocks/aspen_planks",
-        "top": "mist:blocks/aspen_planks",
-        "side": "mist:blocks/aspen_planks"
-    }
-}

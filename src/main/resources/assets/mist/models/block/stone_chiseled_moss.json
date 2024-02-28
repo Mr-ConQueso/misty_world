@@ -1,7 +1,0 @@
-{
-    "parent": "mist:block/cube_all_moss",
-    "textures": {
-        "all": "mist:blocks/stone_chiseled",
-        "moss": "mist:blocks/stone_chiseled_moss"
-    }
-}

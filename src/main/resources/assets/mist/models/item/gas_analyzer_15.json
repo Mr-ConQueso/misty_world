@@ -1,6 +1,0 @@
-{
-    "parent": "mist:item/gas_analyzer",
-    "textures": {
-        "layer0": "mist:items/gas_analyzer_15"
-    }
-}

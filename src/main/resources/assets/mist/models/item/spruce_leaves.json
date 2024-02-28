@@ -1,7 +1,0 @@
-{
-    "parent": "mist:block/leaves_column",
-    "textures": {
-        "side": "mist:blocks/spruce_leaves",
-        "end": "mist:blocks/spruce_leaves_top"
-    }
-}

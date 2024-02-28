@@ -1,8 +1,0 @@
-{
-    "parent": "mist:block/wall",
-    "textures": {
-        "bottom": "mist:blocks/stone_brick_1",
-        "top": "mist:blocks/stone_brick_1",
-        "side": "mist:blocks/stone_brick_1"
-    }
-}

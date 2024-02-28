@@ -1,6 +1,0 @@
-{
-    "parent": "mist:block/trapdoor_top",
-    "textures": {
-        "texture": "mist:blocks/niobium_trapdoor"
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "mist:blocks/mushroom_orange"
-    }
-}

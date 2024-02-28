@@ -1,9 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "mist:items/meat_prickler_c"
-    },
-    "overrides": [
-        { "predicate": { "mist:salt": 1 }, "model": "mist:item/meat_prickler_s" }
-    ]
-}

@@ -1,0 +1,8 @@
+// 1.20.1	2024-02-28T14:27:07.037892828	Loot Tables
+af8997187fc77c1d222eb323e3e200771112a818 data/misty_world/loot_tables/blocks/aspen_leaves.json
+a627831674915764299e3ddbf0a465fed6b00566 data/misty_world/loot_tables/blocks/aspen_log.json
+606b9e1c9270059b795ebdaf6ac194fad9ac158a data/misty_world/loot_tables/blocks/aspen_planks.json
+6804cf759c2c96c479988b91c84bfc98ef9244d8 data/misty_world/loot_tables/blocks/aspen_wood.json
+073f182878689082e6f80fb289ccea3ff0a4380f data/misty_world/loot_tables/blocks/salt_ore.json
+7c87127b8fada6013da4b8858d44ea37327594bc data/misty_world/loot_tables/blocks/stripped_aspen_log.json
+e97b7cad676c02ac6626b419116009defc71cf4d data/misty_world/loot_tables/blocks/stripped_aspen_wood.json

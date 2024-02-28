@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "bottom": "mist:blocks/sponge",
-        "top": "mist:blocks/sponge_core",
-        "side": "mist:blocks/sponge_side_f"
-    }
-}

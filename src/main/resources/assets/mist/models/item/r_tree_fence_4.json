@@ -1,8 +1,0 @@
-{
-    "parent": "mist:block/fence_4_inv",
-    "textures": {
-        "end": "mist:blocks/r_tree_top_0",
-        "side": "mist:blocks/r_tree_trunk",
-        "plank": "mist:blocks/r_tree_planks"
-    }
-}

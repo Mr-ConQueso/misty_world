@@ -1,8 +1,0 @@
-{
-    "parent": "mist:block/cube_mirrored_bottom_top",
-    "textures": {
-        "bottom": "mist:blocks/stone_3",
-        "top": "mist:blocks/stone",
-        "side": "mist:blocks/stone_1"
-    }
-}

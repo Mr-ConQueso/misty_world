@@ -1,6 +1,0 @@
-{
-    "parent": "mist:block/trapdoor_bottom",
-    "textures": {
-        "texture": "mist:blocks/pine_trapdoor"
-    }
-}

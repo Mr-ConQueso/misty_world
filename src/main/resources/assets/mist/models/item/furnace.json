@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "mist:blocks/furnace_top",
-        "front": "mist:blocks/furnace",
-        "side": "mist:blocks/furnace_side"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "bottom": "mist:blocks/portal_base_top",
-        "top": "mist:blocks/portal_base_old_top",
-        "side": "mist:blocks/portal_base_old_up"
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "variant=normal": { "model": "mist:cobblestone" },
-        "variant=moss":   { "model": "mist:cobblestone_moss" }
-    }
-}
