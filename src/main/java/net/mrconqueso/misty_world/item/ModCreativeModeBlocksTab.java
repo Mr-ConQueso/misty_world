@@ -129,9 +129,143 @@ public class ModCreativeModeBlocksTab {
 
                 output.accept(ModBlocks.FOGGY_PINE_LEAVES.get());
 
+                // --- / SWAMPY POPLAR / --- //
+                output.accept(ModBlocks.SWAMPY_POPLAR_LOG.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get());
+                output.accept(ModBlocks.STRIPPED_SWAMPY_POPLAR_WOOD.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_PLANKS.get());
+
+                output.accept(ModBlocks.SWAMPY_POPLAR_STAIRS.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_SLAB.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_BUTTON.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_FENCE.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_FENCE_GATE.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_DOOR.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_TRAPDOOR.get());
+
+                output.accept(ModBlocks.SWAMPY_POPLAR_LEAVES.get());
+
+                // --- / SNOWY TREE / --- //
+                output.accept(ModBlocks.SNOWY_TREE_LOG.get());
+                output.accept(ModBlocks.SNOWY_TREE_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get());
+                output.accept(ModBlocks.STRIPPED_SNOWY_TREE_WOOD.get());
+                output.accept(ModBlocks.SNOWY_TREE_PLANKS.get());
+
+                output.accept(ModBlocks.SNOWY_TREE_STAIRS.get());
+                output.accept(ModBlocks.SNOWY_TREE_SLAB.get());
+                output.accept(ModBlocks.SNOWY_TREE_BUTTON.get());
+                output.accept(ModBlocks.SNOWY_TREE_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.SNOWY_TREE_FENCE.get());
+                output.accept(ModBlocks.SNOWY_TREE_FENCE_GATE.get());
+                output.accept(ModBlocks.SNOWY_TREE_DOOR.get());
+                output.accept(ModBlocks.SNOWY_TREE_TRAPDOOR.get());
+
+                output.accept(ModBlocks.SNOWY_TREE_LEAVES.get());
+
+                // --- / PRICKLY TREE / --- //
+                output.accept(ModBlocks.PRICKLY_TREE_LOG.get());
+                output.accept(ModBlocks.PRICKLY_TREE_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get());
+                output.accept(ModBlocks.STRIPPED_PRICKLY_TREE_WOOD.get());
+                output.accept(ModBlocks.PRICKLY_TREE_PLANKS.get());
+
+                output.accept(ModBlocks.PRICKLY_TREE_STAIRS.get());
+                output.accept(ModBlocks.PRICKLY_TREE_SLAB.get());
+                output.accept(ModBlocks.PRICKLY_TREE_BUTTON.get());
+                output.accept(ModBlocks.PRICKLY_TREE_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.PRICKLY_TREE_FENCE.get());
+                output.accept(ModBlocks.PRICKLY_TREE_FENCE_GATE.get());
+                output.accept(ModBlocks.PRICKLY_TREE_DOOR.get());
+                output.accept(ModBlocks.PRICKLY_TREE_TRAPDOOR.get());
+
+                output.accept(ModBlocks.PRICKLY_TREE_LEAVES.get());
+
+                // --- / STONE TREE / --- //
+                output.accept(ModBlocks.STONE_TREE_LOG.get());
+                output.accept(ModBlocks.STONE_TREE_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_STONE_TREE_LOG.get());
+                output.accept(ModBlocks.STRIPPED_STONE_TREE_WOOD.get());
+                output.accept(ModBlocks.STONE_TREE_PLANKS.get());
+
+                output.accept(ModBlocks.STONE_TREE_STAIRS.get());
+                output.accept(ModBlocks.STONE_TREE_SLAB.get());
+                output.accept(ModBlocks.STONE_TREE_BUTTON.get());
+                output.accept(ModBlocks.STONE_TREE_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.STONE_TREE_FENCE.get());
+                output.accept(ModBlocks.STONE_TREE_FENCE_GATE.get());
+                output.accept(ModBlocks.STONE_TREE_DOOR.get());
+                output.accept(ModBlocks.STONE_TREE_TRAPDOOR.get());
+
+                output.accept(ModBlocks.STONE_TREE_LEAVES.get());
+
+                // --- / TROPIC TREE / --- //
+                output.accept(ModBlocks.TROPIC_TREE_LOG.get());
+                output.accept(ModBlocks.TROPIC_TREE_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get());
+                output.accept(ModBlocks.STRIPPED_TROPIC_TREE_WOOD.get());
+                output.accept(ModBlocks.TROPIC_TREE_PLANKS.get());
+
+                output.accept(ModBlocks.TROPIC_TREE_STAIRS.get());
+                output.accept(ModBlocks.TROPIC_TREE_SLAB.get());
+                output.accept(ModBlocks.TROPIC_TREE_BUTTON.get());
+                output.accept(ModBlocks.TROPIC_TREE_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.TROPIC_TREE_FENCE.get());
+                output.accept(ModBlocks.TROPIC_TREE_FENCE_GATE.get());
+                output.accept(ModBlocks.TROPIC_TREE_DOOR.get());
+                output.accept(ModBlocks.TROPIC_TREE_TRAPDOOR.get());
+
+                output.accept(ModBlocks.TROPIC_TREE_LEAVES.get());
+
+                // --- / WILLOW / --- //
+                output.accept(ModBlocks.WILLOW_LOG.get());
+                output.accept(ModBlocks.WILLOW_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_WILLOW_LOG.get());
+                output.accept(ModBlocks.STRIPPED_WILLOW_WOOD.get());
+                output.accept(ModBlocks.WILLOW_PLANKS.get());
+
+                output.accept(ModBlocks.WILLOW_STAIRS.get());
+                output.accept(ModBlocks.WILLOW_SLAB.get());
+                output.accept(ModBlocks.WILLOW_BUTTON.get());
+                output.accept(ModBlocks.WILLOW_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.WILLOW_FENCE.get());
+                output.accept(ModBlocks.WILLOW_FENCE_GATE.get());
+                output.accept(ModBlocks.WILLOW_DOOR.get());
+                output.accept(ModBlocks.WILLOW_TRAPDOOR.get());
+
+                output.accept(ModBlocks.WILLOW_LEAVES.get());
+
+                // --- / RUBBER_TREE / --- //
+                output.accept(ModBlocks.RUBBER_TREE_LOG.get());
+                output.accept(ModBlocks.RUBBER_TREE_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
+                output.accept(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get());
+                output.accept(ModBlocks.RUBBER_TREE_PLANKS.get());
+
+                output.accept(ModBlocks.RUBBER_TREE_STAIRS.get());
+                output.accept(ModBlocks.RUBBER_TREE_SLAB.get());
+                output.accept(ModBlocks.RUBBER_TREE_BUTTON.get());
+                output.accept(ModBlocks.RUBBER_TREE_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.RUBBER_TREE_FENCE.get());
+                output.accept(ModBlocks.RUBBER_TREE_FENCE_GATE.get());
+                output.accept(ModBlocks.RUBBER_TREE_DOOR.get());
+                output.accept(ModBlocks.RUBBER_TREE_TRAPDOOR.get());
+
+                output.accept(ModBlocks.RUBBER_TREE_LEAVES.get());
+
                 // --------- / ORES / --------- //
                 
+                output.accept(ModBlocks.GOLD_ORE.get());
+                output.accept(ModBlocks.IRON_ORE.get());
                 output.accept(ModBlocks.SALT_ORE.get());
+                output.accept(ModBlocks.LAPIS_ORE.get());
+                output.accept(ModBlocks.SULFUR_ORE.get());
+                output.accept(ModBlocks.NIOBIUM_ORE.get());
+                output.accept(ModBlocks.BIO_SHALE_ORE.get());
+                output.accept(ModBlocks.SALTPETER_ORE.get());
+                output.accept(ModBlocks.FILTER_COAL_ORE.get());
             })
             .build()
     );

@@ -1,22 +1,21 @@
 package net.mrconqueso.misty_world.block;
 
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
+import net.mrconqueso.misty_world.block.custom.ModFlammableRotatedBranchBlock;
 import net.mrconqueso.misty_world.block.custom.ModFlammableRotatedPillarBlock;
-import net.mrconqueso.misty_world.block.custom.ModFlammableRotatedPlankBlock;
 import net.mrconqueso.misty_world.block.custom.ModLeavesBlock;
-import net.mrconqueso.misty_world.block.custom.ModPlankBlock;
 import net.mrconqueso.misty_world.item.ModItems;
 
 import java.util.function.Supplier;
@@ -36,6 +35,8 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
     public static final RegistryObject<Block> STRIPPED_ASPEN_WOOD = registerBlock("stripped_aspen_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    //public static final RegistryObject<Block> ASPEN_TRUNK = registerBlock("aspen_trunk",
+    //        () -> new ModFlammableRotatedBranchBlock(ASPEN_LOG.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> ASPEN_PLANKS = registerBlock("aspen_planks",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
     public static final RegistryObject<Block> ASPEN_LEAVES = registerBlock("aspen_leaves",
@@ -267,8 +268,304 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
                     BlockSetType.OAK));
 
+    // --- / SWAMPY POPLAR / --- //
+    public static final RegistryObject<Block> SWAMPY_POPLAR_LOG = registerBlock("swampy_poplar_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_WOOD = registerBlock("swampy_poplar_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_SWAMPY_POPLAR_LOG = registerBlock("stripped_swampy_poplar_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_SWAMPY_POPLAR_WOOD = registerBlock("stripped_swampy_poplar_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_PLANKS = registerBlock("swampy_poplar_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_LEAVES = registerBlock("swampy_poplar_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> SWAMPY_POPLAR_STAIRS = registerBlock("swampy_poplar_stairs",
+            () -> new StairBlock(() -> ModBlocks.SWAMPY_POPLAR_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_SLAB = registerBlock("swampy_poplar_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> SWAMPY_POPLAR_BUTTON = registerBlock("swampy_poplar_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_PRESSURE_PLATE = registerBlock("swampy_poplar_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> SWAMPY_POPLAR_FENCE = registerBlock("swampy_poplar_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_FENCE_GATE = registerBlock("swampy_poplar_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> SWAMPY_POPLAR_DOOR = registerBlock("swampy_poplar_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_TRAPDOOR = registerBlock("swampy_poplar_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    // --- / SNOWY TREE / --- //
+    public static final RegistryObject<Block> SNOWY_TREE_LOG = registerBlock("snowy_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> SNOWY_TREE_WOOD = registerBlock("snowy_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_SNOWY_TREE_LOG = registerBlock("stripped_snowy_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_SNOWY_TREE_WOOD = registerBlock("stripped_snowy_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> SNOWY_TREE_PLANKS = registerBlock("snowy_tree_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> SNOWY_TREE_LEAVES = registerBlock("snowy_tree_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> SNOWY_TREE_STAIRS = registerBlock("snowy_tree_stairs",
+            () -> new StairBlock(() -> ModBlocks.SNOWY_TREE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> SNOWY_TREE_SLAB = registerBlock("snowy_tree_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> SNOWY_TREE_BUTTON = registerBlock("snowy_tree_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> SNOWY_TREE_PRESSURE_PLATE = registerBlock("snowy_tree_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> SNOWY_TREE_FENCE = registerBlock("snowy_tree_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> SNOWY_TREE_FENCE_GATE = registerBlock("snowy_tree_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> SNOWY_TREE_DOOR = registerBlock("snowy_tree_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> SNOWY_TREE_TRAPDOOR = registerBlock("snowy_tree_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    // --- / PRICKLY TREE / --- //
+    public static final RegistryObject<Block> PRICKLY_TREE_LOG = registerBlock("prickly_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> PRICKLY_TREE_WOOD = registerBlock("prickly_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_PRICKLY_TREE_LOG = registerBlock("stripped_prickly_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_PRICKLY_TREE_WOOD = registerBlock("stripped_prickly_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> PRICKLY_TREE_PLANKS = registerBlock("prickly_tree_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> PRICKLY_TREE_LEAVES = registerBlock("prickly_tree_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> PRICKLY_TREE_STAIRS = registerBlock("prickly_tree_stairs",
+            () -> new StairBlock(() -> ModBlocks.PRICKLY_TREE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> PRICKLY_TREE_SLAB = registerBlock("prickly_tree_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> PRICKLY_TREE_BUTTON = registerBlock("prickly_tree_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> PRICKLY_TREE_PRESSURE_PLATE = registerBlock("prickly_tree_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> PRICKLY_TREE_FENCE = registerBlock("prickly_tree_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> PRICKLY_TREE_FENCE_GATE = registerBlock("prickly_tree_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> PRICKLY_TREE_DOOR = registerBlock("prickly_tree_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> PRICKLY_TREE_TRAPDOOR = registerBlock("prickly_tree_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    // --- / STONE TREE / --- //
+    public static final RegistryObject<Block> STONE_TREE_LOG = registerBlock("stone_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STONE_TREE_WOOD = registerBlock("stone_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_STONE_TREE_LOG = registerBlock("stripped_stone_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_STONE_TREE_WOOD = registerBlock("stripped_stone_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STONE_TREE_PLANKS = registerBlock("stone_tree_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> STONE_TREE_LEAVES = registerBlock("stone_tree_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> STONE_TREE_STAIRS = registerBlock("stone_tree_stairs",
+            () -> new StairBlock(() -> ModBlocks.STONE_TREE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> STONE_TREE_SLAB = registerBlock("stone_tree_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> STONE_TREE_BUTTON = registerBlock("stone_tree_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> STONE_TREE_PRESSURE_PLATE = registerBlock("stone_tree_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> STONE_TREE_FENCE = registerBlock("stone_tree_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> STONE_TREE_FENCE_GATE = registerBlock("stone_tree_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> STONE_TREE_DOOR = registerBlock("stone_tree_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> STONE_TREE_TRAPDOOR = registerBlock("stone_tree_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    // --- / TROPIC TREE / --- //
+    public static final RegistryObject<Block> TROPIC_TREE_LOG = registerBlock("tropic_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> TROPIC_TREE_WOOD = registerBlock("tropic_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_TROPIC_TREE_LOG = registerBlock("stripped_tropic_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_TROPIC_TREE_WOOD = registerBlock("stripped_tropic_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> TROPIC_TREE_PLANKS = registerBlock("tropic_tree_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> TROPIC_TREE_LEAVES = registerBlock("tropic_tree_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> TROPIC_TREE_STAIRS = registerBlock("tropic_tree_stairs",
+            () -> new StairBlock(() -> ModBlocks.TROPIC_TREE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> TROPIC_TREE_SLAB = registerBlock("tropic_tree_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> TROPIC_TREE_BUTTON = registerBlock("tropic_tree_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> TROPIC_TREE_PRESSURE_PLATE = registerBlock("tropic_tree_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> TROPIC_TREE_FENCE = registerBlock("tropic_tree_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> TROPIC_TREE_FENCE_GATE = registerBlock("tropic_tree_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> TROPIC_TREE_DOOR = registerBlock("tropic_tree_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> TROPIC_TREE_TRAPDOOR = registerBlock("tropic_tree_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    // --- / WILLOW / --- //
+    public static final RegistryObject<Block> WILLOW_LOG = registerBlock("willow_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> WILLOW_PLANKS = registerBlock("willow_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> WILLOW_LEAVES = registerBlock("willow_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> WILLOW_STAIRS = registerBlock("willow_stairs",
+            () -> new StairBlock(() -> ModBlocks.WILLOW_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> WILLOW_SLAB = registerBlock("willow_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> WILLOW_BUTTON = registerBlock("willow_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> WILLOW_PRESSURE_PLATE = registerBlock("willow_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> WILLOW_FENCE = registerBlock("willow_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> WILLOW_FENCE_GATE = registerBlock("willow_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> WILLOW_DOOR = registerBlock("willow_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> WILLOW_TRAPDOOR = registerBlock("willow_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    // --- / RUBBER_TREE / --- //
+    public static final RegistryObject<Block> RUBBER_TREE_LOG = registerBlock("rubber_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> RUBBER_TREE_WOOD = registerBlock("rubber_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_RUBBER_TREE_LOG = registerBlock("stripped_rubber_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_RUBBER_TREE_WOOD = registerBlock("stripped_rubber_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME).strength(3f)));
+    public static final RegistryObject<Block> RUBBER_TREE_PLANKS = registerBlock("rubber_tree_planks",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> RUBBER_TREE_LEAVES = registerBlock("rubber_tree_leaves",
+            () -> new ModLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> RUBBER_TREE_STAIRS = registerBlock("rubber_tree_stairs",
+            () -> new StairBlock(() -> ModBlocks.RUBBER_TREE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> RUBBER_TREE_SLAB = registerBlock("rubber_tree_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).mapColor(DyeColor.LIME)));
+
+    public static final RegistryObject<Block> RUBBER_TREE_BUTTON = registerBlock("rubber_tree_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK, 10, true));
+    public static final RegistryObject<Block> RUBBER_TREE_PRESSURE_PLATE = registerBlock("rubber_tree_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
+    public static final RegistryObject<Block> RUBBER_TREE_FENCE = registerBlock("rubber_tree_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).mapColor(DyeColor.LIME)));
+    public static final RegistryObject<Block> RUBBER_TREE_FENCE_GATE = registerBlock("rubber_tree_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE).mapColor(DyeColor.LIME),
+                    SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> RUBBER_TREE_DOOR = registerBlock("rubber_tree_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+    public static final RegistryObject<Block> RUBBER_TREE_TRAPDOOR = registerBlock("rubber_tree_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
+                    BlockSetType.OAK));
+
     // --------- / ORES / --------- //
+    public static final RegistryObject<Block> GOLD_ORE = registerBlock("gold_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> IRON_ORE = registerBlock("iron_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> SALT_ORE = registerBlock("salt_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> LAPIS_ORE = registerBlock("lapis_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> NIOBIUM_ORE = registerBlock("niobium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> BIO_SHALE_ORE = registerBlock("bio_shale_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> SALTPETER_ORE = registerBlock("saltpeter_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> FILTER_COAL_ORE = registerBlock("filter_coal_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
 
     // --------- / Registrar / --------- //

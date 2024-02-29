@@ -84,6 +84,76 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.FOGGY_PINE_FENCE_GATE);
         simpleBlockItem(ModBlocks.FOGGY_PINE_DOOR);
         trapdoorItem(ModBlocks.FOGGY_PINE_TRAPDOOR);
+        // --- / SWAMPY POPLAR / --- //
+        evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_PLANKS);
+        evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_SLAB);
+        buttonItem(ModBlocks.SWAMPY_POPLAR_BUTTON, ModBlocks.SWAMPY_POPLAR_PLANKS);
+        evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_PRESSURE_PLATE);
+        fenceItem(ModBlocks.SWAMPY_POPLAR_FENCE, ModBlocks.SWAMPY_POPLAR_PLANKS);
+        evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_FENCE_GATE);
+        simpleBlockItem(ModBlocks.SWAMPY_POPLAR_DOOR);
+        trapdoorItem(ModBlocks.SWAMPY_POPLAR_TRAPDOOR);
+        // --- / SNOWY TREE / --- //
+        evenSimplerBlockItem(ModBlocks.SNOWY_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.SNOWY_TREE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.SNOWY_TREE_SLAB);
+        buttonItem(ModBlocks.SNOWY_TREE_BUTTON, ModBlocks.SNOWY_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.SNOWY_TREE_PRESSURE_PLATE);
+        fenceItem(ModBlocks.SNOWY_TREE_FENCE, ModBlocks.SNOWY_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.SNOWY_TREE_FENCE_GATE);
+        simpleBlockItem(ModBlocks.SNOWY_TREE_DOOR);
+        trapdoorItem(ModBlocks.SNOWY_TREE_TRAPDOOR);
+        // --- / PRICKLY TREE / --- //
+        evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_SLAB);
+        buttonItem(ModBlocks.PRICKLY_TREE_BUTTON, ModBlocks.PRICKLY_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_PRESSURE_PLATE);
+        fenceItem(ModBlocks.PRICKLY_TREE_FENCE, ModBlocks.PRICKLY_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_FENCE_GATE);
+        simpleBlockItem(ModBlocks.PRICKLY_TREE_DOOR);
+        trapdoorItem(ModBlocks.PRICKLY_TREE_TRAPDOOR);
+        // --- / STONE TREE / --- //
+        evenSimplerBlockItem(ModBlocks.STONE_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.STONE_TREE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.STONE_TREE_SLAB);
+        buttonItem(ModBlocks.STONE_TREE_BUTTON, ModBlocks.STONE_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.STONE_TREE_PRESSURE_PLATE);
+        fenceItem(ModBlocks.STONE_TREE_FENCE, ModBlocks.STONE_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.STONE_TREE_FENCE_GATE);
+        simpleBlockItem(ModBlocks.STONE_TREE_DOOR);
+        trapdoorItem(ModBlocks.STONE_TREE_TRAPDOOR);
+        // --- / TROPIC TREE / --- //
+        evenSimplerBlockItem(ModBlocks.TROPIC_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.TROPIC_TREE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.TROPIC_TREE_SLAB);
+        buttonItem(ModBlocks.TROPIC_TREE_BUTTON, ModBlocks.TROPIC_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.TROPIC_TREE_PRESSURE_PLATE);
+        fenceItem(ModBlocks.TROPIC_TREE_FENCE, ModBlocks.TROPIC_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.TROPIC_TREE_FENCE_GATE);
+        simpleBlockItem(ModBlocks.TROPIC_TREE_DOOR);
+        trapdoorItem(ModBlocks.TROPIC_TREE_TRAPDOOR);
+        // --- / WILLOW / --- //
+        evenSimplerBlockItem(ModBlocks.WILLOW_PLANKS);
+        evenSimplerBlockItem(ModBlocks.WILLOW_STAIRS);
+        evenSimplerBlockItem(ModBlocks.WILLOW_SLAB);
+        buttonItem(ModBlocks.WILLOW_BUTTON, ModBlocks.WILLOW_PLANKS);
+        evenSimplerBlockItem(ModBlocks.WILLOW_PRESSURE_PLATE);
+        fenceItem(ModBlocks.WILLOW_FENCE, ModBlocks.WILLOW_PLANKS);
+        evenSimplerBlockItem(ModBlocks.WILLOW_FENCE_GATE);
+        simpleBlockItem(ModBlocks.WILLOW_DOOR);
+        trapdoorItem(ModBlocks.WILLOW_TRAPDOOR);
+        // --- / RUBBER_TREE / --- //
+        evenSimplerBlockItem(ModBlocks.RUBBER_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.RUBBER_TREE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.RUBBER_TREE_SLAB);
+        buttonItem(ModBlocks.RUBBER_TREE_BUTTON, ModBlocks.RUBBER_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.RUBBER_TREE_PRESSURE_PLATE);
+        fenceItem(ModBlocks.RUBBER_TREE_FENCE, ModBlocks.RUBBER_TREE_PLANKS);
+        evenSimplerBlockItem(ModBlocks.RUBBER_TREE_FENCE_GATE);
+        simpleBlockItem(ModBlocks.RUBBER_TREE_DOOR);
+        trapdoorItem(ModBlocks.RUBBER_TREE_TRAPDOOR);
 
         // --------- / NATURAL / --------- //
         simpleItem(ModItems.BIO_SHALE);
@@ -97,13 +167,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.TINDER_FUNGUS);
         // --- / SEEDS / --- //
         simpleItem(ModItems.ARAUCARIA_SEED);
-        simpleItem(ModItems.ACACIA_SEED);
+        simpleItem(ModItems.UMBRELLA_TREE_SEED);
         simpleItem(ModItems.ASPEN_SEED);
-        simpleItem(ModItems.BIRCH_SEED);
+        simpleItem(ModItems.FOREST_DECEIVER_SEED);
+        simpleItem(ModItems.SNOWY_TREE_SEED);
         simpleItem(ModItems.FOGGY_OAK_SEED);
         simpleItem(ModItems.FOGGY_PINE_SEED);
-        simpleItem(ModItems.POPLAR_SEED);
-        simpleItem(ModItems.SPRUCE_SEED);
+        simpleItem(ModItems.SWAMPY_POPLAR_SEED);
+        simpleItem(ModItems.PRICKLY_TREE_SEED);
+        simpleItem(ModItems.RUBBER_TREE_SEED);
+        simpleItem(ModItems.STONE_TREE_SEED);
+        simpleItem(ModItems.TROPIC_TREE_SEED);
         simpleItem(ModItems.WILLOW_SEED);
         // --------- / MOB DROPS / --------- //
         simpleItem(ModItems.WING);
@@ -116,6 +190,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRAY_BRICK);
         simpleItem(ModItems.FILTER_COAL);
         simpleItem(ModItems.LATEX);
+        simpleItem(ModItems.RAW_NIOBIUM);
         simpleItem(ModItems.NIOBIUM_NUGGET);
         simpleItem(ModItems.NIOBIUM_INGOT);
         simpleItem(ModItems.RUBBER);

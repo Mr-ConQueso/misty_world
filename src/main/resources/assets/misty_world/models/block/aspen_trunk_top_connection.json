@@ -1,0 +1,7 @@
+{
+    "parent": "misty_world:block/aspen_trunk_top_connection",
+    "textures": {
+        "end": "misty_world:blocks/aspen_trunk_top",
+        "side": "misty_world:blocks/aspen_trunk"
+    }
+}

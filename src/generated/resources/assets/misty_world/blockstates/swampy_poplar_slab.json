@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "misty_world:block/swampy_poplar_slab"
+    },
+    "type=double": {
+      "model": "misty_world:block/swampy_poplar_planks"
+    },
+    "type=top": {
+      "model": "misty_world:block/swampy_poplar_slab_top"
+    }
+  }
+}

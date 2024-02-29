@@ -8,7 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.ModBlocks;
 
 public class ModCreativeModeItemsTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -32,13 +31,17 @@ public class ModCreativeModeItemsTab {
                 output.accept(ModItems.TINDER_FUNGUS.get());
                 // --- / SEEDS / --- //
                 output.accept(ModItems.ARAUCARIA_SEED.get());
-                output.accept(ModItems.ACACIA_SEED.get());
+                output.accept(ModItems.UMBRELLA_TREE_SEED.get());
                 output.accept(ModItems.ASPEN_SEED.get());
-                output.accept(ModItems.BIRCH_SEED.get());
+                output.accept(ModItems.SNOWY_TREE_SEED.get());
+                output.accept(ModItems.FOREST_DECEIVER_SEED.get());
                 output.accept(ModItems.FOGGY_OAK_SEED.get());
                 output.accept(ModItems.FOGGY_PINE_SEED.get());
-                output.accept(ModItems.POPLAR_SEED.get());
-                output.accept(ModItems.SPRUCE_SEED.get());
+                output.accept(ModItems.SWAMPY_POPLAR_SEED.get());
+                output.accept(ModItems.STONE_TREE_SEED.get());
+                output.accept(ModItems.TROPIC_TREE_SEED.get());
+                output.accept(ModItems.RUBBER_TREE_SEED.get());
+                output.accept(ModItems.PRICKLY_TREE_SEED.get());
                 output.accept(ModItems.WILLOW_SEED.get());
                 // --------- / MOB DROPS / --------- //
                 output.accept(ModItems.WING.get());
@@ -51,6 +54,7 @@ public class ModCreativeModeItemsTab {
                 output.accept(ModItems.GRAY_BRICK.get());
                 output.accept(ModItems.FILTER_COAL.get());
                 output.accept(ModItems.LATEX.get());
+                output.accept(ModItems.RAW_NIOBIUM.get());
                 output.accept(ModItems.NIOBIUM_NUGGET.get());
                 output.accept(ModItems.NIOBIUM_INGOT.get());
                 output.accept(ModItems.RUBBER.get());

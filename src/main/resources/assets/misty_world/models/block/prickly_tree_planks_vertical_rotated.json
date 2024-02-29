@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "misty_world:block/prickly_tree_planks_rotated"
+    }
+}

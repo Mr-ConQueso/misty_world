@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "misty_world:block/prickly_tree_planks",
+        "side": "misty_world:block/prickly_tree_planks_rotated"
+    }
+}

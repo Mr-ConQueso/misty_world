@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "misty_world:block/prickly_tree_planks",
+    "side": "misty_world:block/prickly_tree_planks",
+    "top": "misty_world:block/prickly_tree_planks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "misty_world:block/swampy_poplar_door_bottom",
+    "top": "misty_world:block/swampy_poplar_door_top"
+  }
+}

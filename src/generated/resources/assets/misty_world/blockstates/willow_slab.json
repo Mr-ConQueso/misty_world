@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "misty_world:block/willow_slab"
+    },
+    "type=double": {
+      "model": "misty_world:block/willow_planks"
+    },
+    "type=top": {
+      "model": "misty_world:block/willow_slab_top"
+    }
+  }
+}

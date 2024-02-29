@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "misty_world:block/rubber_tree_planks",
+    "side": "misty_world:block/rubber_tree_planks",
+    "top": "misty_world:block/rubber_tree_planks"
+  }
+}

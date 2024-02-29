@@ -1,0 +1,31 @@
+{
+    "multipart": [
+        {   "when":  { "axis": "x" },
+            "apply": [ { "model": "misty_world:aspen_trunk", "x": 90, "y": 90 } ]
+        },
+        {   "when":  { "axis": "y" },
+            "apply": [ { "model": "misty_world:aspen_trunk" } ]
+        },
+        {   "when":  { "axis": "z" },
+            "apply": [ { "model": "misty_world:aspen_trunk", "x": 90 } ]
+        },
+        {   "when":  { "axis": "x", "top_connection": "true" },
+            "apply": [ { "model": "misty_world:aspen_trunk_top_connection", "x": 90, "y": 90 } ]
+        },
+        {   "when":  { "axis": "y", "top_connection": "true" },
+            "apply": [ { "model": "misty_world:aspen_trunk_top_connection" } ]
+        },
+        {   "when":  { "axis": "z", "top_connection": "true" },
+            "apply": [ { "model": "misty_world:aspen_trunk_bottom_connection", "x": 90 } ]
+        },
+        {   "when":  { "axis": "x", "bottom_connection": "true" },
+            "apply":  [ { "model": "misty_world:aspen_trunk_bottom_connection", "x": 90, "y": 90 } ]
+        },
+        {   "when":  { "axis": "y", "bottom_connection": "true" },
+            "apply": [ { "model": "misty_world:aspen_trunk_bottom_connection" } ]
+        },
+        {   "when":  { "axis": "z", "bottom_connection": "true" },
+            "apply": [ { "model": "misty_world:aspen_trunk_top_connection", "x": 90 } ]
+        }
+    ]
+}

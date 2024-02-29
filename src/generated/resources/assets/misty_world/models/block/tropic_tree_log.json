@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "misty_world:block/tropic_tree_log_top",
+    "side": "misty_world:block/tropic_tree_log"
+  }
+}

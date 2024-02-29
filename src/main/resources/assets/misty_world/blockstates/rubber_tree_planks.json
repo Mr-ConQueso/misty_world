@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "misty_world:block/rubber_tree_planks"
+    },
+    "axis=y": {
+      "model": "misty_world:block/rubber_tree_planks_vertical"
+    },
+    "axis=z": {
+      "model": "misty_world:block/rubber_tree_planks_rotated"
+    },
+    "axis=none": {
+      "model": "misty_world:block/rubber_tree_planks_vertical_rotated"
+    }
+  }
+}

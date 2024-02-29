@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "misty_world:block/tropic_tree_planks"
+  }
+}

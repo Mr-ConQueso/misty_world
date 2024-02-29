@@ -23,6 +23,14 @@
     "misty_world:foggy_pine_log",
     "misty_world:foggy_pine_wood",
     "misty_world:stripped_foggy_pine_log",
-    "misty_world:stripped_foggy_pine_wood"
+    "misty_world:stripped_foggy_pine_wood",
+    "misty_world:swampy_poplar_log",
+    "misty_world:swampy_poplar_wood",
+    "misty_world:stripped_swampy_poplar_log",
+    "misty_world:stripped_swampy_poplar_wood",
+    "misty_world:snowy_tree_log",
+    "misty_world:snowy_tree_wood",
+    "misty_world:stripped_snowy_tree_log",
+    "misty_world:stripped_snowy_tree_wood"
   ]
 }

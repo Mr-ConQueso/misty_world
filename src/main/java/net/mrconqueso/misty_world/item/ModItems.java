@@ -37,19 +37,27 @@ public class ModItems {
     // --- / SEEDS / --- //
     public static final RegistryObject<Item> ARAUCARIA_SEED = ITEMS.register("araucaria_seed",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ACACIA_SEED = ITEMS.register("acacia_seed",
+    public static final RegistryObject<Item> UMBRELLA_TREE_SEED = ITEMS.register("umbrella_tree_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ASPEN_SEED = ITEMS.register("aspen_seed",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BIRCH_SEED = ITEMS.register("birch_seed",
+    public static final RegistryObject<Item> FOREST_DECEIVER_SEED = ITEMS.register("forest_deceiver_seed",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SNOWY_TREE_SEED = ITEMS.register("snowy_tree_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FOGGY_OAK_SEED = ITEMS.register("foggy_oak_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FOGGY_PINE_SEED = ITEMS.register("foggy_pine_seed",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POPLAR_SEED = ITEMS.register("poplar_seed",
+    public static final RegistryObject<Item> SWAMPY_POPLAR_SEED = ITEMS.register("swampy_poplar_seed",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SPRUCE_SEED = ITEMS.register("spruce_seed",
+    public static final RegistryObject<Item> PRICKLY_TREE_SEED = ITEMS.register("prickly_tree_seed",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUBBER_TREE_SEED = ITEMS.register("rubber_tree_seed",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STONE_TREE_SEED = ITEMS.register("stone_tree_seed",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TROPIC_TREE_SEED = ITEMS.register("tropic_tree_seed",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> WILLOW_SEED = ITEMS.register("willow_seed",
             () -> new Item(new Item.Properties()));
@@ -76,6 +84,8 @@ public class ModItems {
     public static final RegistryObject<Item> FILTER_COAL = ITEMS.register("filter_coal",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LATEX = ITEMS.register("latex",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_NIOBIUM = ITEMS.register("raw_niobium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NIOBIUM_NUGGET = ITEMS.register("niobium_nugget",
             () -> new Item(new Item.Properties()));

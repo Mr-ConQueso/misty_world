@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "misty_world:block/stone_tree_planks"
+  }
+}

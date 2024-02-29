@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "misty_world:block/stone_tree_slab"
+    },
+    "type=double": {
+      "model": "misty_world:block/stone_tree_planks"
+    },
+    "type=top": {
+      "model": "misty_world:block/stone_tree_slab_top"
+    }
+  }
+}

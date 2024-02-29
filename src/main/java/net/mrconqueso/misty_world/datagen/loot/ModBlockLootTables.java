@@ -155,17 +155,181 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.FOGGY_PINE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.FOGGY_PINE_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
 
+        // --- / SWAMPY POPLAR / --- //
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_LOG.get());
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_SWAMPY_POPLAR_WOOD.get());
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_PLANKS.get());
+
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_STAIRS.get());
+        this.add(ModBlocks.SWAMPY_POPLAR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SWAMPY_POPLAR_SLAB.get()));
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_BUTTON.get());
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_FENCE.get());
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_FENCE_GATE.get());
+        this.add(ModBlocks.SWAMPY_POPLAR_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SWAMPY_POPLAR_DOOR.get()));
+        this.dropSelf(ModBlocks.SWAMPY_POPLAR_TRAPDOOR.get());
+
+        this.add(ModBlocks.SWAMPY_POPLAR_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.SWAMPY_POPLAR_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
+
+        // --- / SNOWY TREE / --- //
+        this.dropSelf(ModBlocks.SNOWY_TREE_LOG.get());
+        this.dropSelf(ModBlocks.SNOWY_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_SNOWY_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.SNOWY_TREE_PLANKS.get());
+
+        this.dropSelf(ModBlocks.SNOWY_TREE_STAIRS.get());
+        this.add(ModBlocks.SNOWY_TREE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SNOWY_TREE_SLAB.get()));
+        this.dropSelf(ModBlocks.SNOWY_TREE_BUTTON.get());
+        this.dropSelf(ModBlocks.SNOWY_TREE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.SNOWY_TREE_FENCE.get());
+        this.dropSelf(ModBlocks.SNOWY_TREE_FENCE_GATE.get());
+        this.add(ModBlocks.SNOWY_TREE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SNOWY_TREE_DOOR.get()));
+        this.dropSelf(ModBlocks.SNOWY_TREE_TRAPDOOR.get());
+
+        this.add(ModBlocks.SNOWY_TREE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.SNOWY_TREE_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
+
+        // --- / PRICKLY TREE / --- //
+        this.dropSelf(ModBlocks.PRICKLY_TREE_LOG.get());
+        this.dropSelf(ModBlocks.PRICKLY_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PRICKLY_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.PRICKLY_TREE_PLANKS.get());
+
+        this.dropSelf(ModBlocks.PRICKLY_TREE_STAIRS.get());
+        this.add(ModBlocks.PRICKLY_TREE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PRICKLY_TREE_SLAB.get()));
+        this.dropSelf(ModBlocks.PRICKLY_TREE_BUTTON.get());
+        this.dropSelf(ModBlocks.PRICKLY_TREE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PRICKLY_TREE_FENCE.get());
+        this.dropSelf(ModBlocks.PRICKLY_TREE_FENCE_GATE.get());
+        this.add(ModBlocks.PRICKLY_TREE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.PRICKLY_TREE_DOOR.get()));
+        this.dropSelf(ModBlocks.PRICKLY_TREE_TRAPDOOR.get());
+
+        this.add(ModBlocks.PRICKLY_TREE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PRICKLY_TREE_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
+
+        // --- / STONE TREE / --- //
+        this.dropSelf(ModBlocks.STONE_TREE_LOG.get());
+        this.dropSelf(ModBlocks.STONE_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_STONE_TREE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_STONE_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.STONE_TREE_PLANKS.get());
+
+        this.dropSelf(ModBlocks.STONE_TREE_STAIRS.get());
+        this.add(ModBlocks.STONE_TREE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STONE_TREE_SLAB.get()));
+        this.dropSelf(ModBlocks.STONE_TREE_BUTTON.get());
+        this.dropSelf(ModBlocks.STONE_TREE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.STONE_TREE_FENCE.get());
+        this.dropSelf(ModBlocks.STONE_TREE_FENCE_GATE.get());
+        this.add(ModBlocks.STONE_TREE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.STONE_TREE_DOOR.get()));
+        this.dropSelf(ModBlocks.STONE_TREE_TRAPDOOR.get());
+
+        this.add(ModBlocks.STONE_TREE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.STONE_TREE_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
+
+        // --- / TROPIC TREE / --- //
+        this.dropSelf(ModBlocks.TROPIC_TREE_LOG.get());
+        this.dropSelf(ModBlocks.TROPIC_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_TROPIC_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.TROPIC_TREE_PLANKS.get());
+
+        this.dropSelf(ModBlocks.TROPIC_TREE_STAIRS.get());
+        this.add(ModBlocks.TROPIC_TREE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.TROPIC_TREE_SLAB.get()));
+        this.dropSelf(ModBlocks.TROPIC_TREE_BUTTON.get());
+        this.dropSelf(ModBlocks.TROPIC_TREE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.TROPIC_TREE_FENCE.get());
+        this.dropSelf(ModBlocks.TROPIC_TREE_FENCE_GATE.get());
+        this.add(ModBlocks.TROPIC_TREE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.TROPIC_TREE_DOOR.get()));
+        this.dropSelf(ModBlocks.TROPIC_TREE_TRAPDOOR.get());
+
+        this.add(ModBlocks.TROPIC_TREE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.TROPIC_TREE_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
+
+        // --- / WILLOW / --- //
+        this.dropSelf(ModBlocks.WILLOW_LOG.get());
+        this.dropSelf(ModBlocks.WILLOW_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_WILLOW_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_WILLOW_WOOD.get());
+        this.dropSelf(ModBlocks.WILLOW_PLANKS.get());
+
+        this.dropSelf(ModBlocks.WILLOW_STAIRS.get());
+        this.add(ModBlocks.WILLOW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WILLOW_SLAB.get()));
+        this.dropSelf(ModBlocks.WILLOW_BUTTON.get());
+        this.dropSelf(ModBlocks.WILLOW_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.WILLOW_FENCE.get());
+        this.dropSelf(ModBlocks.WILLOW_FENCE_GATE.get());
+        this.add(ModBlocks.WILLOW_DOOR.get(),
+                block -> createDoorTable(ModBlocks.WILLOW_DOOR.get()));
+        this.dropSelf(ModBlocks.WILLOW_TRAPDOOR.get());
+
+        this.add(ModBlocks.WILLOW_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.WILLOW_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
+
+        // --- / RUBBER_TREE / --- //
+        this.dropSelf(ModBlocks.RUBBER_TREE_LOG.get());
+        this.dropSelf(ModBlocks.RUBBER_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.RUBBER_TREE_PLANKS.get());
+
+        this.dropSelf(ModBlocks.RUBBER_TREE_STAIRS.get());
+        this.add(ModBlocks.RUBBER_TREE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.RUBBER_TREE_SLAB.get()));
+        this.dropSelf(ModBlocks.RUBBER_TREE_BUTTON.get());
+        this.dropSelf(ModBlocks.RUBBER_TREE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.RUBBER_TREE_FENCE.get());
+        this.dropSelf(ModBlocks.RUBBER_TREE_FENCE_GATE.get());
+        this.add(ModBlocks.RUBBER_TREE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.RUBBER_TREE_DOOR.get()));
+        this.dropSelf(ModBlocks.RUBBER_TREE_TRAPDOOR.get());
+
+        this.add(ModBlocks.RUBBER_TREE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.RUBBER_TREE_LEAVES.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to Sampling
 
 
+        // --------- / ORES / --------- //
+
+        this.add(ModBlocks.GOLD_ORE.get(),
+                block -> createOreDrops(ModBlocks.GOLD_ORE.get(), Items.RAW_GOLD, 1.0f, 1.0f));
+        this.add(ModBlocks.IRON_ORE.get(),
+                block -> createOreDrops(ModBlocks.IRON_ORE.get(), Items.RAW_IRON, 1.0f, 1.0f));
         this.add(ModBlocks.SALT_ORE.get(),
-                block -> createOreDrops(ModBlocks.SALT_ORE.get(), ModItems.SALT_FOOD.get()));
+                block -> createOreDrops(ModBlocks.SALT_ORE.get(), ModItems.SALT_FOOD.get(), 1.0f, 3.0f));
+        this.add(ModBlocks.LAPIS_ORE.get(),
+                block -> createOreDrops(ModBlocks.LAPIS_ORE.get(), Items.LAPIS_ORE, 2.0f, 5.0f));
+        this.add(ModBlocks.SULFUR_ORE.get(),
+                block -> createOreDrops(ModBlocks.SULFUR_ORE.get(), ModItems.SULFUR.get(), 1.0f, 4.0f));
+        this.add(ModBlocks.NIOBIUM_ORE.get(),
+                block -> createOreDrops(ModBlocks.NIOBIUM_ORE.get(), ModItems.RAW_NIOBIUM.get(), 1.0f, 1.0f));
+        this.add(ModBlocks.BIO_SHALE_ORE.get(),
+                block -> createOreDrops(ModBlocks.BIO_SHALE_ORE.get(), ModItems.BIO_SHALE.get(), 1.0f, 1.0f));
+        this.add(ModBlocks.SALTPETER_ORE.get(),
+                block -> createOreDrops(ModBlocks.SALTPETER_ORE.get(), ModItems.SALTPETER.get(), 3.0f, 5.0f));
+        this.add(ModBlocks.FILTER_COAL_ORE.get(),
+                block -> createOreDrops(ModBlocks.FILTER_COAL_ORE.get(), ModItems.FILTER_COAL.get(), 1.0f, 2.0f));
     }
 
-    protected LootTable.Builder createOreDrops(Block pblock, Item item) {
+    protected LootTable.Builder createOreDrops(Block pblock, Item item, float minDrop, float maxDrop) {
         return createSilkTouchDispatchTable(pblock,
                 this.applyExplosionDecay(pblock,
                         LootItem.lootTableItem(item)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrop, maxDrop)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

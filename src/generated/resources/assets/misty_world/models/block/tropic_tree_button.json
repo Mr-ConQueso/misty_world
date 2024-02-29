@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "misty_world:block/tropic_tree_planks"
+  }
+}
