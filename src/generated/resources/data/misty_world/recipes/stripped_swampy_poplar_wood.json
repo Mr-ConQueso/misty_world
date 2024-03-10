@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "misty_world:stripped_swampy_poplar_log"
+    }
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "item": "misty_world:stripped_swampy_poplar_wood"
+  },
+  "show_notification": true
+}

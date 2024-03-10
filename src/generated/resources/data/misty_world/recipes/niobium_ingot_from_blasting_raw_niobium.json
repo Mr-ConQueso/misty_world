@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.8,
+  "group": "niobium_ingot",
+  "ingredient": {
+    "item": "misty_world:raw_niobium"
+  },
+  "result": "misty_world:niobium_ingot"
+}

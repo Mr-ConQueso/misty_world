@@ -1,6 +1,16 @@
 {
   "values": [
     "misty_world:aspen_planks",
+    "misty_world:willow_planks",
+    "misty_world:araucaria_planks",
+    "misty_world:foggy_oak_planks",
+    "misty_world:foggy_pine_planks",
+    "misty_world:snowy_tree_planks",
+    "misty_world:stone_tree_planks",
+    "misty_world:rubber_tree_planks",
+    "misty_world:tropic_tree_planks",
+    "misty_world:prickly_tree_planks",
+    "misty_world:swampy_poplar_planks",
     "misty_world:umbrella_tree_planks",
     "misty_world:forest_deceiver_planks"
   ]

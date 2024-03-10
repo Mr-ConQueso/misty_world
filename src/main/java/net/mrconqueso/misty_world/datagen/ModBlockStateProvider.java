@@ -6,7 +6,6 @@ import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
@@ -385,6 +384,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BIO_SHALE_ORE);
         blockWithItem(ModBlocks.SALTPETER_ORE);
         blockWithItem(ModBlocks.FILTER_COAL_ORE);
+
+        // --------- / RAW / ORE BLOCKS / --------- //
+
+        blockWithItem(ModBlocks.SALT_BLOCK);
+        blockWithItem(ModBlocks.SULFUR_BLOCK);
+        blockWithItem(ModBlocks.RAW_NIOBIUM_BLOCK);
+        blockWithItem(ModBlocks.NIOBIUM_BLOCK);
+        blockWithItem(ModBlocks.BIO_SHALE_BLOCK);
+        blockWithItem(ModBlocks.SALTPETER_BLOCK);
+        // --- / FILTER COAL BLOCKS / --- //
+        blockWithItem(ModBlocks.CLEAN_FILTER_COAL_BLOCK);
+        blockWithItem(ModBlocks.SLIGHTLY_POLLUTED_FILTER_COAL_BLOCK);
+        blockWithItem(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK);
+        blockWithItem(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK);
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

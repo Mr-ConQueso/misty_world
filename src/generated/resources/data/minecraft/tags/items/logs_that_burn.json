@@ -11,6 +11,26 @@
     "misty_world:forest_deceiver_log",
     "misty_world:forest_deceiver_wood",
     "misty_world:stripped_forest_deceiver_log",
-    "misty_world:stripped_forest_deceiver_wood"
+    "misty_world:stripped_forest_deceiver_wood",
+    "misty_world:araucaria_log",
+    "misty_world:araucaria_wood",
+    "misty_world:stripped_araucaria_log",
+    "misty_world:stripped_araucaria_wood",
+    "misty_world:foggy_oak_log",
+    "misty_world:foggy_oak_wood",
+    "misty_world:stripped_foggy_oak_log",
+    "misty_world:stripped_foggy_oak_wood",
+    "misty_world:foggy_pine_log",
+    "misty_world:foggy_pine_wood",
+    "misty_world:stripped_foggy_pine_log",
+    "misty_world:stripped_foggy_pine_wood",
+    "misty_world:swampy_poplar_log",
+    "misty_world:swampy_poplar_wood",
+    "misty_world:stripped_swampy_poplar_log",
+    "misty_world:stripped_swampy_poplar_wood",
+    "misty_world:snowy_tree_log",
+    "misty_world:snowy_tree_wood",
+    "misty_world:stripped_snowy_tree_log",
+    "misty_world:stripped_snowy_tree_wood"
   ]
 }

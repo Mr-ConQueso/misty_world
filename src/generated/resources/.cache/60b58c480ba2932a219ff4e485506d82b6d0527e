@@ -1,12 +1,10 @@
-// 1.20.1	2024-02-29T11:27:11.093168087	Tags for minecraft:block mod id misty_world
-4c70a1707e50da3741fb86c9693af120e28f3bd0 data/minecraft/tags/blocks/fence_gates.json
-e8dea09aabdca1934b03402bd5ea68e55bd951d5 data/minecraft/tags/blocks/fences.json
+// 1.20.1	2024-03-07T19:05:38.868256809	Tags for minecraft:block mod id misty_world
+3a925f765ebbe1de82157561fdd411bf49c17bca data/minecraft/tags/blocks/fence_gates.json
+02d628f9f57c46885a899b199a6ed780075c52d4 data/minecraft/tags/blocks/fences.json
 08c6a6a72557749b8fde5814a7af6f864ce3de14 data/minecraft/tags/blocks/logs_that_burn.json
-0cc4c82ddd59a4451373fb146cb2808c52cdcb2e data/minecraft/tags/blocks/planks.json
-c6cb9f7a107f932290f4333d70b1b48cf8207a4e data/misty_world/tags/blocks/mineable_with_axe.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/mineable_with_hoe.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/mineable_with_pickaxe.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/mineable_with_shovel.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/needs_diamond_tool.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/needs_iron_tool.json
-a00f2330b695be413c4b342142df1fc71bd5a967 data/misty_world/tags/blocks/needs_stone_tool.json
+1b5944632278f7e47bb26a97a43b39eef39f0638 data/minecraft/tags/blocks/mineable/axe.json
+93c627343c3f62dd941fb7c5a14ce69b56d744bc data/minecraft/tags/blocks/mineable/pickaxe.json
+2b9642e4a203e0ca1fd5760bccdc2ab0a32c3b04 data/minecraft/tags/blocks/needs_iron_tool.json
+2ec455c4f8037436ffeed29dc4a41e98f8c4976a data/minecraft/tags/blocks/needs_stone_tool.json
+6a6b2a0bd667e90c87d37c5d06aea80b17f68ea3 data/minecraft/tags/blocks/planks.json
+97f368f0fe28e9ad8e349ff123dc41c4989e2254 data/misty_world/tags/blocks/needs_niobium_tool.json

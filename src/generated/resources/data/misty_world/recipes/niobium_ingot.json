@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "misty_world:niobium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "misty_world:niobium_ingot"
+  }
+}

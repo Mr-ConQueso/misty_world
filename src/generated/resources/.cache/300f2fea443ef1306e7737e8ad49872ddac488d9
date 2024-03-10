@@ -1,3 +1,4 @@
-// 1.20.1	2024-02-29T00:11:32.477856794	Tags for minecraft:item mod id misty_world
-49747869b13861bb7c972d8da68576e0676a977e data/minecraft/tags/items/logs_that_burn.json
-712a6e56d29cfc5c3117482c49251d83827997f4 data/minecraft/tags/items/planks.json
+// 1.20.1	2024-03-07T23:17:11.30893446	Tags for minecraft:item mod id misty_world
+08c6a6a72557749b8fde5814a7af6f864ce3de14 data/minecraft/tags/items/logs_that_burn.json
+6a6b2a0bd667e90c87d37c5d06aea80b17f68ea3 data/minecraft/tags/items/planks.json
+47003b72b676354080488cb6f9b1aafb5e551163 data/minecraft/tags/items/trimmable_armor.json

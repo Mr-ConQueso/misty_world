@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "misty_world:niobium_ingot"
+        }
+    ],
+    "result": {
+        "item": "misty_world:niobium_nugget",
+        "count": 9
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "misty_world:rubber"
+        }
+    },
+    "result": {
+        "item": "misty_world:rubber_block",
+        "data": 0
+    }
+}

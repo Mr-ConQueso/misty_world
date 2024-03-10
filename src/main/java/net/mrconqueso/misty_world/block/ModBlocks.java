@@ -6,16 +6,14 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.custom.ModFlammableRotatedBranchBlock;
-import net.mrconqueso.misty_world.block.custom.ModFlammableRotatedPillarBlock;
-import net.mrconqueso.misty_world.block.custom.ModLeavesBlock;
+import net.mrconqueso.misty_world.block.custom.*;
+import net.mrconqueso.misty_world.block.util.PollutableBlock;
 import net.mrconqueso.misty_world.item.ModItems;
 
 import java.util.function.Supplier;
@@ -567,6 +565,33 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> FILTER_COAL_ORE = registerBlock("filter_coal_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+
+    // --------- / RAW ORES / --------- //
+    public static final RegistryObject<Block> RAW_NIOBIUM_BLOCK = registerBlock("raw_niobium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
+    // --------- / RAW / ORE BLOCKS / --------- //
+    public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+    public static final RegistryObject<Block> SULFUR_BLOCK = registerBlock("sulfur_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+    public static final RegistryObject<Block> NIOBIUM_BLOCK = registerBlock("niobium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> BIO_SHALE_BLOCK = registerBlock("bio_shale_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+    public static final RegistryObject<Block> SALTPETER_BLOCK = registerBlock("saltpeter_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK)));
+
+    // --- / FILTER COAL BLOCKS / --- //
+    public static final RegistryObject<Block> CLEAN_FILTER_COAL_BLOCK = registerBlock("clean_filter_coal_block",
+            () -> new CleanFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
+    public static final RegistryObject<Block> SLIGHTLY_POLLUTED_FILTER_COAL_BLOCK = registerBlock("slightly_polluted_filter_coal_block",
+            () -> new SlightlyPollutedFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
+    public static final RegistryObject<Block> MODERATELY_POLLUTED_FILTER_COAL_BLOCK = registerBlock("moderately_polluted_filter_coal_block",
+            () -> new ModeratelyPollutedFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
+    public static final RegistryObject<Block> VERY_POLLUTED_FILTER_COAL_BLOCK = registerBlock("very_polluted_filter_coal_block",
+            () -> new CompletelyPollutedFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
+    
 
     // --------- / Registrar / --------- //
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

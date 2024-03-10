@@ -1,0 +1,23 @@
+{
+  "values": [
+    "misty_world:iron_ore",
+    "misty_world:salt_ore",
+    "misty_world:sulfur_ore",
+    "misty_world:lapis_ore",
+    "misty_world:niobium_ore",
+    "misty_world:bio_shale_ore",
+    "misty_world:salt_ore",
+    "misty_world:saltpeter_ore",
+    "misty_world:salt_block",
+    "misty_world:sulfur_block",
+    "misty_world:salt_block",
+    "misty_world:saltpeter_block",
+    "misty_world:niobium_block",
+    "misty_world:raw_niobium_block",
+    "misty_world:bio_shale_block",
+    "misty_world:clean_filter_coal_block",
+    "misty_world:slightly_polluted_filter_coal_block",
+    "misty_world:moderately_polluted_filter_coal_block",
+    "misty_world:very_polluted_filter_coal_block"
+  ]
+}

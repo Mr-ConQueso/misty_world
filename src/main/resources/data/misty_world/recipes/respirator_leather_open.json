@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "respirator_leather_open",
+    "pattern": [
+        "S S",
+        "L L",
+        " N "
+    ],
+    "key": {
+        "N": {
+            "type": "misty_world:niobium_ingot"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "L": {
+            "tag": "forge:leather"
+        }
+    },
+    "result": {
+        "item": "misty_world:respirator_single_open"
+    }
+}

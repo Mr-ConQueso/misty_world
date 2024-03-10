@@ -3,14 +3,16 @@ package net.mrconqueso.misty_world.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.mrconqueso.misty_world.MistyWorld;
 import net.mrconqueso.misty_world.block.ModBlocks;
 import net.mrconqueso.misty_world.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagGenerator extends BlockTagsProvider {
@@ -23,31 +25,80 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         // --------- / TOOLS / --------- //
 
-        // --- / USABLE TOOL / --- //
-        this.tag(ModTags.Blocks.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ASPEN_PLANKS.get());
-
-        this.tag(ModTags.Blocks.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.ASPEN_PLANKS.get());
-
-        this.tag(ModTags.Blocks.NEEDS_STONE_TOOL)
-                .add(ModBlocks.ASPEN_PLANKS.get());
-
         // --- / MINE LEVEL / --- //
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.GOLD_ORE.get());
 
-        this.tag(ModTags.Blocks.MINEABLE_WITH_AXE)
+        this.tag(ModTags.Blocks.NEEDS_NIOBIUM_TOOL)
+                .add(ModBlocks.FILTER_COAL_ORE.get());
+        /*
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.ASPEN_PLANKS.get());
+         */
+
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.IRON_ORE.get())
+                .add(ModBlocks.SALT_ORE.get())
+                .add(ModBlocks.SULFUR_ORE.get())
+                .add(ModBlocks.LAPIS_ORE.get())
+                .add(ModBlocks.NIOBIUM_ORE.get())
+                .add(ModBlocks.BIO_SHALE_ORE.get())
+                .add(ModBlocks.SALT_ORE.get())
+                .add(ModBlocks.SALTPETER_ORE.get())
+                // --- / RAW / ORE BLOCKS / --- //
+                .add(ModBlocks.SALT_BLOCK.get())
+                .add(ModBlocks.SULFUR_BLOCK.get())
+                .add(ModBlocks.SALT_BLOCK.get())
+                .add(ModBlocks.SALTPETER_BLOCK.get())
+                .add(ModBlocks.NIOBIUM_BLOCK.get())
+                .add(ModBlocks.RAW_NIOBIUM_BLOCK.get())
+                .add(ModBlocks.BIO_SHALE_BLOCK.get())
+                // --- / FILTER COAL BLOCKS / --- //
+                .add(ModBlocks.CLEAN_FILTER_COAL_BLOCK.get())
+                .add(ModBlocks.SLIGHTLY_POLLUTED_FILTER_COAL_BLOCK.get())
+                .add(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK.get())
+                .add(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK.get());
+
+        // --- / USABLE TOOL / --- //
+
+        addBlocksToAxeMineableTag();
+
+        /*
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.ASPEN_PLANKS.get(),
                         ModBlocks.ASPEN_LOG.get()
                 );
 
-        this.tag(ModTags.Blocks.MINEABLE_WITH_HOE)
+         */
+        /*
+        this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ModBlocks.ASPEN_PLANKS.get());
+         */
+        /*
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.ASPEN_PLANKS.get());
+         */
 
-        this.tag(ModTags.Blocks.MINEABLE_WITH_SHOVEL)
-                .add(ModBlocks.ASPEN_PLANKS.get());
-
-        this.tag(ModTags.Blocks.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.ASPEN_PLANKS.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.IRON_ORE.get())
+                .add(ModBlocks.SALT_ORE.get())
+                .add(ModBlocks.SULFUR_ORE.get())
+                .add(ModBlocks.SALT_ORE.get())
+                .add(ModBlocks.SALTPETER_ORE.get())
+                .add(ModBlocks.FILTER_COAL_ORE.get())
+                .add(ModBlocks.GOLD_ORE.get())
+                .add(ModBlocks.LAPIS_ORE.get())
+                .add(ModBlocks.NIOBIUM_ORE.get())
+                .add(ModBlocks.BIO_SHALE_ORE.get())
+                // --------- / RAW / ORE BLOCKS / --------- //
+                .add(ModBlocks.SALT_BLOCK.get())
+                .add(ModBlocks.SULFUR_BLOCK.get())
+                .add(ModBlocks.SALT_BLOCK.get())
+                .add(ModBlocks.SALTPETER_BLOCK.get())
+                .add(ModBlocks.CLEAN_FILTER_COAL_BLOCK.get())
+                .add(ModBlocks.RAW_NIOBIUM_BLOCK.get())
+                .add(ModBlocks.NIOBIUM_BLOCK.get())
+                .add(ModBlocks.BIO_SHALE_BLOCK.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.ASPEN_LOG.get())
@@ -128,5 +179,30 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SWAMPY_POPLAR_FENCE_GATE.get())
                 .add(ModBlocks.UMBRELLA_TREE_FENCE_GATE.get())
                 .add(ModBlocks.FOREST_DECEIVER_FENCE_GATE.get());
+    }
+
+    protected void addBlocksToAxeMineableTag() {
+        List<String> woodVariations = Arrays.asList(
+                "aspen", "willow", "araucaria", "foggy_oak", "foggy_pine", "snowy_tree",
+                "stone_tree", "rubber_tree", "tropic_tree", "prickly_tree", "swampy_poplar", "umbrella_tree",
+                "forest_deceiver"
+        );
+
+        ForgeRegistries.BLOCKS.forEach((block) -> {
+            String registryName = block.getName().toString();
+            if (registryName != null && containsWoodVariation(registryName, woodVariations)) {
+                this.tag(BlockTags.MINEABLE_WITH_AXE).add(block);
+            }
+        });
+    }
+
+    protected static boolean containsWoodVariation(String blockName, List<String> woodVariations) {
+        String lowerCaseBlockName = blockName.toLowerCase();
+        for (String variation : woodVariations) {
+            if (lowerCaseBlockName.contains(variation)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

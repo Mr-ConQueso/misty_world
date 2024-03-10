@@ -12,8 +12,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrconqueso.misty_world.block.ModBlocks;
-import net.mrconqueso.misty_world.item.ModCreativeModeBlocksTab;
-import net.mrconqueso.misty_world.item.ModCreativeModeItemsTab;
+import net.mrconqueso.misty_world.item.tabs.ModCreativeModeBlocksTab;
+import net.mrconqueso.misty_world.item.tabs.ModCreativeModeItemsTab;
 import net.mrconqueso.misty_world.item.ModItems;
 import org.slf4j.Logger;
 

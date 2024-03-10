@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "misty_world:block/moderately_polluted_filter_coal_block"
+    }
+  }
+}

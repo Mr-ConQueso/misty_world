@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "respirator_leather",
+    "ingredients": [
+        {
+            "item": "misty_world:respirator_single_open"
+        },
+        {
+            "tag": "forge:leather"
+        }
+    ],
+    "result": {
+        "item": "misty_world:respirator_single"
+    }
+}

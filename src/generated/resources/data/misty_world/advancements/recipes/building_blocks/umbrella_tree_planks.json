@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:umbrella_tree_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_umbrella_tree_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:umbrella_tree_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_umbrella_tree_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:umbrella_tree_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

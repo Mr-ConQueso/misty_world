@@ -1,12 +1,17 @@
 {
   "values": [
     "misty_world:aspen_fence_gate",
-    "misty_world:umbrella_tree_fence_gate",
-    "misty_world:forest_deceiver_fence_gate",
+    "misty_world:willow_fence",
     "misty_world:araucaria_fence_gate",
     "misty_world:foggy_oak_fence_gate",
     "misty_world:foggy_pine_fence_gate",
+    "misty_world:snowy_tree_fence_gate",
+    "misty_world:stone_tree_fence_gate",
+    "misty_world:rubber_tree_fence_gate",
+    "misty_world:tropic_tree_fence_gate",
+    "misty_world:prickly_tree_fence_gate",
     "misty_world:swampy_poplar_fence_gate",
-    "misty_world:snowy_tree_fence_gate"
+    "misty_world:umbrella_tree_fence_gate",
+    "misty_world:forest_deceiver_fence_gate"
   ]
 }

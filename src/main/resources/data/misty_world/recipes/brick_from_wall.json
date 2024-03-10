@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "brick",
+    "ingredients": [
+        {
+            "item": "misty_world:stone_brick_wall",
+            "data": 0
+        }
+    ],
+    "result": {
+        "item": "misty_world:brick",
+        "count": 2
+    }
+}

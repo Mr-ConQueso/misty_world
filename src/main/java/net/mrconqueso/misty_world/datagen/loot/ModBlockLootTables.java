@@ -1,7 +1,6 @@
 package net.mrconqueso.misty_world.datagen.loot;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -15,7 +14,6 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.block.ModBlocks;
 import net.mrconqueso.misty_world.item.ModItems;
-import net.mrconqueso.misty_world.util.ModTags;
 
 import java.util.Set;
 
@@ -323,6 +321,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrops(ModBlocks.SALTPETER_ORE.get(), ModItems.SALTPETER.get(), 3.0f, 5.0f));
         this.add(ModBlocks.FILTER_COAL_ORE.get(),
                 block -> createOreDrops(ModBlocks.FILTER_COAL_ORE.get(), ModItems.FILTER_COAL.get(), 1.0f, 2.0f));
+
+        // --------- / RAW / ORE BLOCKS / --------- //
+
+        this.dropSelf(ModBlocks.SALT_BLOCK.get());
+        this.dropSelf(ModBlocks.SULFUR_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_NIOBIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.NIOBIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.BIO_SHALE_BLOCK.get());
+        this.dropSelf(ModBlocks.SALTPETER_BLOCK.get());
+        // --- / FILTER COAL BLOCKS / --- //
+        this.dropSelf(ModBlocks.CLEAN_FILTER_COAL_BLOCK.get());
+        this.dropSelf(ModBlocks.SLIGHTLY_POLLUTED_FILTER_COAL_BLOCK.get());
+        this.dropSelf(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK.get());
+        this.dropSelf(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK.get());
     }
 
     protected LootTable.Builder createOreDrops(Block pblock, Item item, float minDrop, float maxDrop) {

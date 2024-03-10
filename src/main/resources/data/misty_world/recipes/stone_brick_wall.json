@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X",
+        "X"
+    ],
+    "key": {
+        "X": {
+            "item": "misty_world:brick"
+        }
+    },
+    "result": {
+        "item": "misty_world:stone_brick_wall",
+        "data": 0
+    }
+}

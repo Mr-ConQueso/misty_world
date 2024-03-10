@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "rubber",
+    "ingredients": [
+        {
+            "item": "misty_world:latex"
+        },
+        {
+            "tag": "forge:dusts/sulfur"
+        }
+    ],
+    "result": {
+        "item": "misty_world:rubber"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "respirator_rubber",
+    "ingredients": [
+        {
+            "item": "misty_world:respirator_rubber_open"
+        },
+        {
+            "tag": "forge:rubber"
+        }
+    ],
+    "result": {
+        "item": "misty_world:respirator_rubber"
+    }
+}

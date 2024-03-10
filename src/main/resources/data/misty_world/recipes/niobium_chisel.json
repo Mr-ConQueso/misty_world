@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "X",
+        "#"
+    ],
+    "key": {
+        "X": {
+            "item": "misty_world:niobium_ingot"
+        },
+        "#": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "misty_world:niobium_chisel"
+    }
+}

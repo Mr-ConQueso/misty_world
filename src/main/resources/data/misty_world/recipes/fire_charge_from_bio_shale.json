@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "fire_charge",
+    "ingredients": [
+        {
+            "item": "misty_world:bio_shale"
+        },
+        {
+            "item": "minecraft:blaze_powder"
+        },
+        {
+            "tag": "forge:gunpowder"
+        }
+    ],
+    "result": {
+        "item": "minecraft:fire_charge",
+        "count": 3
+    }
+}

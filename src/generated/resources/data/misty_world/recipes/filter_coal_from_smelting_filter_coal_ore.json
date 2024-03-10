@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.2,
+  "group": "filter_coal",
+  "ingredient": {
+    "item": "misty_world:filter_coal_ore"
+  },
+  "result": "misty_world:filter_coal"
+}

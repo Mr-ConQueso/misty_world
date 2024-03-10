@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_filter_coal_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:filter_coal_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:filter_coal_from_blasting_filter_coal_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_filter_coal_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:filter_coal_from_blasting_filter_coal_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

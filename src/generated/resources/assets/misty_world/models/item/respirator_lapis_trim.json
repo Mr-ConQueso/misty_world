@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "misty_world:item/respirator",
+    "layer1": "minecraft:trims/items/helmet_trim_lapis"
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "misty_world:item/cup_on_a_stick"
-  }
-}

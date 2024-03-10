@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "soap",
+    "ingredients": [
+        {
+            "item": "misty_world:ash"
+        },
+        {
+            "tag": "forge:tallow"
+        },
+        {
+            "tag": "forge:dusts/salt"
+        }
+    ],
+    "result": {
+        "item": "misty_world:soap"
+    }
+}

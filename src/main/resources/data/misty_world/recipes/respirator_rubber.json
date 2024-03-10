@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "respirator_rubber",
+    "pattern": [
+        "S S",
+        "R R",
+        "NR "
+    ],
+    "key": {
+        "N": {
+            "type": "misty_world:niobium_ingot"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "R": {
+            "tag": "forge:rubber"
+        }
+    },
+    "result": {
+        "item": "misty_world:respirator_rubber"
+    }
+}
