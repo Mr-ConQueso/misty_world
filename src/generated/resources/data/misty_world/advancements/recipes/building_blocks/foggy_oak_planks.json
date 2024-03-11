@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_foggy_oak_log": {
+    "has_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "misty_world:foggy_oak_log"
-            ]
+            "tag": "misty_world:foggy_oak_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_foggy_oak_log",
+      "has_logs",
       "has_the_recipe"
     ]
   ],

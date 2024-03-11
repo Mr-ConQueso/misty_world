@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "sniff_meat",
+  "ingredient": {
+    "item": "misty_world:sniff_meat"
+  },
+  "result": "misty_world:sniff_meat_cooked"
+}

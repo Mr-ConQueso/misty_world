@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "forest_runner_meat",
+  "ingredient": {
+    "item": "misty_world:forest_runner_meat"
+  },
+  "result": "misty_world:forest_runner_meat_cooked"
+}

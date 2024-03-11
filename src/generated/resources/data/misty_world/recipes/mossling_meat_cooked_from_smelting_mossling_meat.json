@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "mossling_meat",
+  "ingredient": {
+    "item": "misty_world:mossling_meat"
+  },
+  "result": "misty_world:mossling_meat_cooked"
+}

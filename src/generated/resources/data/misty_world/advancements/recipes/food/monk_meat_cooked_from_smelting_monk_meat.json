@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_monk_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:monk_meat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:monk_meat_cooked_from_smelting_monk_meat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_monk_meat",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:monk_meat_cooked_from_smelting_monk_meat"
+    ]
+  },
+  "sends_telemetry_event": false
+}

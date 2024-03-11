@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "sloth_meat",
+  "ingredient": {
+    "item": "misty_world:sloth_meat"
+  },
+  "result": "misty_world:sloth_meat_cooked"
+}

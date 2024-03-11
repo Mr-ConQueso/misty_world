@@ -23,27 +23,13 @@ public class ModCreativeModeItemsTab {
                 // --------- / NATURAL / --------- //
                 output.accept(ModItems.BIO_SHALE.get());
                 output.accept(ModItems.COMPOST.get());
-                output.accept(ModItems.DESERT_COTTON_FLOWER.get());
                 output.accept(ModItems.HUMUS.get());
                 output.accept(ModItems.MULCH.get());
                 output.accept(ModItems.REMAINS.get());
-                output.accept(ModItems.ROCKS.get());
                 output.accept(ModItems.TINDER_FUNGUS.get());
                 // --- / SEEDS / --- //
                 output.accept(ModItems.DESERT_COTTON_SEED.get());
-                output.accept(ModItems.ARAUCARIA_SEED.get());
-                output.accept(ModItems.UMBRELLA_TREE_SEED.get());
-                output.accept(ModItems.ASPEN_SEED.get());
-                output.accept(ModItems.SNOWY_TREE_SEED.get());
-                output.accept(ModItems.FOREST_DECEIVER_SEED.get());
-                output.accept(ModItems.FOGGY_OAK_SEED.get());
-                output.accept(ModItems.FOGGY_PINE_SEED.get());
-                output.accept(ModItems.SWAMPY_POPLAR_SEED.get());
-                output.accept(ModItems.STONE_TREE_SEED.get());
-                output.accept(ModItems.TROPIC_TREE_SEED.get());
-                output.accept(ModItems.RUBBER_TREE_SEED.get());
-                output.accept(ModItems.PRICKLY_TREE_SEED.get());
-                output.accept(ModItems.WILLOW_SEED.get());
+                output.accept(ModItems.DESERT_COTTON_FLOWER.get());
                 // --------- / MOB DROPS / --------- //
                 output.accept(ModItems.WING.get());
                 output.accept(ModItems.TALLOW.get());
@@ -101,9 +87,11 @@ public class ModCreativeModeItemsTab {
                 // --------- / FOOD / --------- //
                 output.accept(ModItems.NIGHTBERRY.get());
                 output.accept(ModItems.BITTER_PILLS.get());
+                output.accept(ModItems.SALT.get());
                 output.accept(ModItems.SPONGE_MEAT.get());
                 output.accept(ModItems.SWIM_BLADDER.get());
                 // --- / MEAT / --- //
+                
                 output.accept(ModItems.BARVOG_MEAT.get());
                 output.accept(ModItems.BARVOG_MEAT_COOKED.get());
                 output.accept(ModItems.BRACHIODON_MEAT.get());

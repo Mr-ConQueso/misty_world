@@ -181,6 +181,19 @@
     "misty_world:rubber_tree_fence",
     "misty_world:rubber_tree_fence_gate",
     "misty_world:rubber_tree_door",
-    "misty_world:rubber_tree_trapdoor"
+    "misty_world:rubber_tree_trapdoor",
+    "misty_world:araucaria_sapling",
+    "misty_world:umbrella_tree_sapling",
+    "misty_world:aspen_sapling",
+    "misty_world:forest_deceiver_sapling",
+    "misty_world:snowy_tree_sapling",
+    "misty_world:foggy_oak_sapling",
+    "misty_world:foggy_pine_sapling",
+    "misty_world:swampy_poplar_sapling",
+    "misty_world:prickly_tree_sapling",
+    "misty_world:rubber_tree_sapling",
+    "misty_world:stone_tree_sapling",
+    "misty_world:tropic_tree_sapling",
+    "misty_world:willow_sapling"
   ]
 }

@@ -6,8 +6,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
+import net.mrconqueso.misty_world.block.ModBlocks;
 import net.mrconqueso.misty_world.item.custom.CentrometerItem;
 import net.mrconqueso.misty_world.item.custom.FilterItem;
+import net.mrconqueso.misty_world.item.custom.GasAnalyzerItem;
 import net.mrconqueso.misty_world.item.custom.ToxicFoodItem;
 
 public class ModItems {
@@ -21,9 +23,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COMPOST = ITEMS.register("compost",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DESERT_COTTON_FLOWER = ITEMS.register("desert_cotton_flower",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DESERT_COTTON_SEED = ITEMS.register("desert_cotton_seed",
+            () -> new ItemNameBlockItem(ModBlocks.DESERT_COTTON_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DESERT_COTTON_FLOWER = ITEMS.register("desert_cotton_flower",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HUMUS = ITEMS.register("humus",
             () -> new Item(new Item.Properties()));
@@ -31,37 +33,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REMAINS = ITEMS.register("remains",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ROCKS = ITEMS.register("rocks",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TINDER_FUNGUS = ITEMS.register("tinder_fungus",
-            () -> new Item(new Item.Properties()));
-
-    // --- / SEEDS / --- //
-    public static final RegistryObject<Item> ARAUCARIA_SEED = ITEMS.register("araucaria_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> UMBRELLA_TREE_SEED = ITEMS.register("umbrella_tree_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ASPEN_SEED = ITEMS.register("aspen_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FOREST_DECEIVER_SEED = ITEMS.register("forest_deceiver_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SNOWY_TREE_SEED = ITEMS.register("snowy_tree_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FOGGY_OAK_SEED = ITEMS.register("foggy_oak_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FOGGY_PINE_SEED = ITEMS.register("foggy_pine_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SWAMPY_POPLAR_SEED = ITEMS.register("swampy_poplar_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PRICKLY_TREE_SEED = ITEMS.register("prickly_tree_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RUBBER_TREE_SEED = ITEMS.register("rubber_tree_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> STONE_TREE_SEED = ITEMS.register("stone_tree_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> TROPIC_TREE_SEED = ITEMS.register("tropic_tree_seed",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> WILLOW_SEED = ITEMS.register("willow_seed",
             () -> new Item(new Item.Properties()));
 
 
@@ -113,7 +85,7 @@ public class ModItems {
     public static final RegistryObject<Item> CENTROMETER = ITEMS.register("centrometer",
             () -> new CentrometerItem(new Item.Properties()));
     public static final RegistryObject<Item> GAS_ANALYZER = ITEMS.register("gas_analyzer",
-            () -> new Item(new Item.Properties()));
+            () -> new GasAnalyzerItem(new Item.Properties()));
     public static final RegistryObject<Item> FLINT_AND_STONE = ITEMS.register("flint_and_stone",
             () -> new FlintAndSteelItem(new Item.Properties().durability(48)));
     public static final RegistryObject<Item> HYGROMETER = ITEMS.register("hygrometer",
@@ -177,10 +149,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.NIGHTBERRY)));
     public static final RegistryObject<Item> BITTER_PILLS = ITEMS.register("bitter_pills",
             () -> new ToxicFoodItem(new Item.Properties().food(ModFoods.BITTER_PILLS), -1000));
-    public static final RegistryObject<Item> SALT_FOOD = ITEMS.register("salt_food",
+    public static final RegistryObject<Item> SALT = ITEMS.register("salt",
             () -> new Item(new Item.Properties().food(ModFoods.SALT_FOOD)));
-    public static final RegistryObject<Item> SALT_FOOD_SMALL = ITEMS.register("salt_food_small",
-            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SOUP = ITEMS.register("soup",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SPONGE_MEAT = ITEMS.register("sponge_meat",

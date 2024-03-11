@@ -3,13 +3,18 @@ package net.mrconqueso.misty_world.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
 import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.block.custom.DesertCottonCropBlock;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -18,6 +23,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+        // --------- / STONES / --------- //
+
+        blockWithItem(ModBlocks.FOGGY_STONE);
+        blockWithItem(ModBlocks.POROUS_FOGGY_STONE);
+        blockWithItem(ModBlocks.HARD_FOGGY_STONE);
+        blockWithItem(ModBlocks.MINED_FOGGY_STONE);
+        blockWithItem(ModBlocks.MOSSY_MINED_FOGGY_STONE);
+        blockWithItem(ModBlocks.FOGGY_COBBLESTONE);
+        blockWithItem(ModBlocks.MOSSY_FOGGY_COBBLESTONE);
+
+        // --------- / GRAVEL & SAND / --------- //
+
+        blockWithItem(ModBlocks.FOGGY_GRAVEL);
 
         // --------- / WOOD / --------- //
 
@@ -372,6 +391,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.RUBBER_TREE_DOOR.get()), modLoc("block/rubber_tree_door_bottom"), modLoc("block/rubber_tree_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.RUBBER_TREE_TRAPDOOR.get()), modLoc("block/rubber_tree_trapdoor"), true, "cutout");
 
+        // --------- / SEEDS / --------- //
+        
+        saplingBlock(ModBlocks.ASPEN_SAPLING);
+        saplingBlock(ModBlocks.WILLOW_SAPLING);
+        saplingBlock(ModBlocks.ARAUCARIA_SAPLING);
+        saplingBlock(ModBlocks.FOGGY_OAK_SAPLING);
+        saplingBlock(ModBlocks.FOGGY_PINE_SAPLING);
+        saplingBlock(ModBlocks.SNOWY_TREE_SAPLING);
+        saplingBlock(ModBlocks.STONE_TREE_SAPLING);
+        saplingBlock(ModBlocks.RUBBER_TREE_SAPLING);
+        saplingBlock(ModBlocks.TROPIC_TREE_SAPLING);
+        saplingBlock(ModBlocks.PRICKLY_TREE_SAPLING);
+        saplingBlock(ModBlocks.SWAMPY_POPLAR_SAPLING);
+        saplingBlock(ModBlocks.UMBRELLA_TREE_SAPLING);
+        saplingBlock(ModBlocks.FOREST_DECEIVER_SAPLING);
 
         // --------- / ORES / --------- //
 
@@ -398,10 +432,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SLIGHTLY_POLLUTED_FILTER_COAL_BLOCK);
         blockWithItem(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK);
         blockWithItem(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK);
+
+        // --------- / NATURAL / --------- //
+        makeTwoTallCrop(((CropBlock) ModBlocks.DESERT_COTTON_CROP.get()), "desert_cotton_stage_", "desert_cotton_stage_");
+
+        // --- / FLOWERS / --- //
+        simpleBlockWithItem(ModBlocks.VIOLET_VEIL.get(), models().cross(blockTexture(ModBlocks.VIOLET_VEIL.get()).getPath(),
+                blockTexture(ModBlocks.VIOLET_VEIL.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.POTTED_VIOLET_VEIL.get(), models().singleTexture("potted_violet_veil",
+                new ResourceLocation("flower_pot_cross"), "plant", blockTexture(ModBlocks.VIOLET_VEIL.get())).renderType("cutout"));
+    }
+
+    public void makeTwoTallCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> desertCottonStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] desertCottonStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(((DesertCottonCropBlock) block).getAgeProperty()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + textureName + state.getValue(((DesertCottonCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockItem(blockRegistryObject.get(),
+        simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
 

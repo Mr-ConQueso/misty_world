@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "caravan_meat",
+  "ingredient": {
+    "item": "misty_world:caravan_meat"
+  },
+  "result": "misty_world:caravan_meat_cooked"
+}

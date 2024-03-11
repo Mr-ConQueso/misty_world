@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stone_tree_log": {
+    "has_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "misty_world:stone_tree_log"
-            ]
+            "tag": "misty_world:stone_tree_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stone_tree_log",
+      "has_logs",
       "has_the_recipe"
     ]
   ],

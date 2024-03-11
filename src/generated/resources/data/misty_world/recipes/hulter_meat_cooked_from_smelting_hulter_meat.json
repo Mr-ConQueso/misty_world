@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "hulter_meat",
+  "ingredient": {
+    "item": "misty_world:hulter_meat"
+  },
+  "result": "misty_world:hulter_meat_cooked"
+}

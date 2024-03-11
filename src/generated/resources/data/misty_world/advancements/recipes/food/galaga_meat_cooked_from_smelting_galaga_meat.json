@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_galaga_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:galaga_meat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:galaga_meat_cooked_from_smelting_galaga_meat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_galaga_meat",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:galaga_meat_cooked_from_smelting_galaga_meat"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "galaga_meat",
+  "ingredient": {
+    "item": "misty_world:galaga_meat"
+  },
+  "result": "misty_world:galaga_meat_cooked"
+}

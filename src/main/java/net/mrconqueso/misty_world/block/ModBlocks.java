@@ -1,6 +1,7 @@
 package net.mrconqueso.misty_world.block;
 
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -15,12 +16,33 @@ import net.mrconqueso.misty_world.MistyWorld;
 import net.mrconqueso.misty_world.block.custom.*;
 import net.mrconqueso.misty_world.block.util.PollutableBlock;
 import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.worldgen.tree.*;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MistyWorld.MOD_ID);
+
+    // --------- / STONES / --------- //
+    public static final RegistryObject<Block> FOGGY_STONE = registerBlock("foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> POROUS_FOGGY_STONE = registerBlock("porous_foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> HARD_FOGGY_STONE = registerBlock("hard_foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> MINED_FOGGY_STONE = registerBlock("mined_foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> MOSSY_MINED_FOGGY_STONE = registerBlock("mossy_mined_foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> FOGGY_COBBLESTONE = registerBlock("foggy_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+    public static final RegistryObject<Block> MOSSY_FOGGY_COBBLESTONE = registerBlock("mossy_foggy_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+
+    // --------- / GRAVEL & SAND / --------- //
+    public static final RegistryObject<Block> FOGGY_GRAVEL = registerBlock("foggy_gravel",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
 
     // --------- / WOOD / --------- //
 
@@ -546,6 +568,35 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ).mapColor(DyeColor.LIME),
                     BlockSetType.OAK));
 
+    // --- / SEEDS / --- //
+    
+    public static final RegistryObject<Block> ARAUCARIA_SAPLING = registerBlock("araucaria_sapling",
+            () -> new SaplingBlock(new AraucariaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> UMBRELLA_TREE_SAPLING = registerBlock("umbrella_tree_sapling",
+            () -> new SaplingBlock(new UmbrellaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> ASPEN_SAPLING = registerBlock("aspen_sapling",
+            () -> new SaplingBlock(new AspenTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> FOREST_DECEIVER_SAPLING = registerBlock("forest_deceiver_sapling",
+            () -> new SaplingBlock(new ForestDeceiverTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> SNOWY_TREE_SAPLING = registerBlock("snowy_tree_sapling",
+            () -> new SaplingBlock(new SnowyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> FOGGY_OAK_SAPLING = registerBlock("foggy_oak_sapling",
+            () -> new SaplingBlock(new FoggyOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> FOGGY_PINE_SAPLING = registerBlock("foggy_pine_sapling",
+            () -> new SaplingBlock(new FoggyPineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> SWAMPY_POPLAR_SAPLING = registerBlock("swampy_poplar_sapling",
+            () -> new SaplingBlock(new SwampyPoplarTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> PRICKLY_TREE_SAPLING = registerBlock("prickly_tree_sapling",
+            () -> new SaplingBlock(new PricklyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> RUBBER_TREE_SAPLING = registerBlock("rubber_tree_sapling",
+            () -> new SaplingBlock(new RubberTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> STONE_TREE_SAPLING = registerBlock("stone_tree_sapling",
+            () -> new SaplingBlock(new StoneTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> TROPIC_TREE_SAPLING = registerBlock("tropic_tree_sapling",
+            () -> new SaplingBlock(new TropicTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> WILLOW_SAPLING = registerBlock("willow_sapling",
+            () -> new SaplingBlock(new WillowTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    
     // --------- / ORES / --------- //
     public static final RegistryObject<Block> GOLD_ORE = registerBlock("gold_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
@@ -591,7 +642,20 @@ public class ModBlocks {
             () -> new ModeratelyPollutedFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
     public static final RegistryObject<Block> VERY_POLLUTED_FILTER_COAL_BLOCK = registerBlock("very_polluted_filter_coal_block",
             () -> new CompletelyPollutedFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
-    
+
+
+    // --------- / NATURAL / --------- //
+    public static final RegistryObject<Block> ROCKS = registerBlock("rocks",
+            () -> new RocksBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noCollission()));
+    public static final RegistryObject<Block> DESERT_COTTON_CROP = BLOCKS.register("desert_cotton_crop",
+            () -> new DesertCottonCropBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noCollission()));
+
+    // --- / FLOWERS / --- //
+    public static final RegistryObject<Block> VIOLET_VEIL = registerBlock("violet_veil",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5, BlockBehaviour.Properties.copy(Blocks.DANDELION).noCollission().noOcclusion()));
+    public static final RegistryObject<Block> POTTED_VIOLET_VEIL = BLOCKS.register("potted_violet_veil",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.VIOLET_VEIL,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 
     // --------- / Registrar / --------- //
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

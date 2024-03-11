@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "momo_meat",
+  "ingredient": {
+    "item": "misty_world:momo_meat"
+  },
+  "result": "misty_world:momo_meat_cooked"
+}

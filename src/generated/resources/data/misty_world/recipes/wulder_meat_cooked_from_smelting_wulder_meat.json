@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "wulder_meat",
+  "ingredient": {
+    "item": "misty_world:wulder_meat"
+  },
+  "result": "misty_world:wulder_meat_cooked"
+}

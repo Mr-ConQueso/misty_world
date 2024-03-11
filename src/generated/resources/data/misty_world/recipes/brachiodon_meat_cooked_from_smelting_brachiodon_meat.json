@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "brachiodon_meat",
+  "ingredient": {
+    "item": "misty_world:brachiodon_meat"
+  },
+  "result": "misty_world:brachiodon_meat_cooked"
+}

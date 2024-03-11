@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_swampy_poplar_log": {
+    "has_logs": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "misty_world:swampy_poplar_log"
-            ]
+            "tag": "misty_world:swampy_poplar_logs"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_swampy_poplar_log",
+      "has_logs",
       "has_the_recipe"
     ]
   ],

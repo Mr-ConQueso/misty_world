@@ -13,10 +13,12 @@
     "misty_world:salt_block",
     "misty_world:sulfur_block",
     "misty_world:salt_block",
-    "misty_world:saltpeter_block",
+    "misty_world:rocks",
     "misty_world:clean_filter_coal_block",
     "misty_world:raw_niobium_block",
     "misty_world:niobium_block",
-    "misty_world:bio_shale_block"
+    "misty_world:bio_shale_block",
+    "misty_world:porous_foggy_stone",
+    "misty_world:mossy_foggy_cobblestone"
   ]
 }

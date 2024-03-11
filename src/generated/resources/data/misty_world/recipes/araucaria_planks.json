@@ -1,17 +1,14 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "key": {
-    "S": {
-      "item": "misty_world:araucaria_log"
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "misty_world:araucaria_logs"
     }
-  },
-  "pattern": [
-    "SS",
-    "SS"
   ],
   "result": {
+    "count": 4,
     "item": "misty_world:araucaria_planks"
-  },
-  "show_notification": true
+  }
 }

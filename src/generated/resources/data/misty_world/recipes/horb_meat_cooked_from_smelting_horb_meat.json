@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "horb_meat",
+  "ingredient": {
+    "item": "misty_world:horb_meat"
+  },
+  "result": "misty_world:horb_meat_cooked"
+}

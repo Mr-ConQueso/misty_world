@@ -40,7 +40,7 @@ public class ForgeTags
 
     // --------- / TOOLS / --------- //
     public static final TagKey<Item> SOAPS = forgeItemTag("tools/soap");
-    public static final TagKey<Item> FLINT_AND_STEEL = forgeItemTag("tools/flint_and_steel");
+    public static final TagKey<Item> FLINT_AND_STEELS = forgeItemTag("tools/flint_and_steels");
     public static final TagKey<Item> SWORDS = forgeItemTag("tools/swords");
     public static final TagKey<Item> SHOVELS = forgeItemTag("tools/shovels");
     public static final TagKey<Item> PICKAXES = forgeItemTag("tools/pickaxes");
@@ -55,9 +55,8 @@ public class ForgeTags
     public static final TagKey<Item> HELMETS = forgeItemTag("armors/helmets");
 
     // --------- / FOOD / --------- //
-
-    // --- / MEAT / --- //
     public static final TagKey<Item> BERRIES = forgeItemTag("berries");
+    public static final TagKey<Item> SALT = forgeItemTag("dusts/salt");
     public static final TagKey<Item> EGGS = forgeItemTag("eggs");
     public static final TagKey<Item> MILK = forgeItemTag("milk");
     public static final TagKey<Item> MILK_BUCKET = forgeItemTag("milk/milk");
@@ -68,19 +67,23 @@ public class ForgeTags
 
     // --------------- / BLOCKS / --------------- //
 
-    // --------- / WOOD / --------- //
-    public static final TagKey<Block> FENCES = forgeBlockTag("fences");
-    public static final TagKey<Block> FENCE_GATES = forgeBlockTag("fence_gates");
-
     // --------- / ORES / --------- //
-    public static final TagKey<Block> ORE_BEARING_STONE = forgeBlockTag("ore_bearing_ground/stone");
-    public static final TagKey<Block> ORES_IN_STONE = forgeBlockTag("ores_in_ground/stone");
+    public static final TagKey<Block> ORE_BEARING_MISTY_STONE = forgeBlockTag("ore_bearing_ground/misty_stone");
+    public static final TagKey<Block> ORES_IN_MISTY_STONE = forgeBlockTag("ores_in_ground/misty_stone");
     public static final TagKey<Block> ORE_RATES_SINGULAR = forgeBlockTag("ore_rates/singular");
     public static final TagKey<Block> ORE_RATES_SPARSE = forgeBlockTag("ore_rates/sparse");
     public static final TagKey<Block> ORE_RATES_DENSE = forgeBlockTag("ore_rates/dense");
     public static final TagKey<Block> IRON_ORE = forgeBlockTag("ores/iron");
     public static final TagKey<Block> GOLD_ORE = forgeBlockTag("ores/gold");
     public static final TagKey<Block> LAPIS_ORE = forgeBlockTag("ores/lapis");
+
+    // --------- / STONES / --------- //
+
+    public static final TagKey<Block> COBBLESTONE = forgeBlockTag("cobblestone");
+    public static final TagKey<Block> GRAVEL = forgeBlockTag("gravel");
+    public static final TagKey<Block> SAND = forgeBlockTag("sand");
+    public static final TagKey<Block> SANDSTONE = forgeBlockTag("sandstone");
+    public static final TagKey<Block> STONE = forgeBlockTag("stone");
 
 
     private static TagKey<Block> forgeBlockTag(String path) {

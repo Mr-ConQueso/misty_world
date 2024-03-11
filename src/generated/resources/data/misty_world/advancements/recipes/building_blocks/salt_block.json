@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_salt_food": {
+    "has_salt": {
       "conditions": {
         "items": [
           {
             "items": [
-              "misty_world:salt_food"
+              "misty_world:salt"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_salt_food",
+      "has_salt",
       "has_the_recipe"
     ]
   ],

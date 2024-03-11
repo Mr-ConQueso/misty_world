@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "barvog_meat",
+  "ingredient": {
+    "item": "misty_world:barvog_meat"
+  },
+  "result": "misty_world:barvog_meat_cooked"
+}

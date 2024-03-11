@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "monk_meat",
+  "ingredient": {
+    "item": "misty_world:monk_meat"
+  },
+  "result": "misty_world:monk_meat_cooked"
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:wulder_meat_cooked_from_smelting_wulder_meat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wulder_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:wulder_meat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wulder_meat",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:wulder_meat_cooked_from_smelting_wulder_meat"
+    ]
+  },
+  "sends_telemetry_event": false
+}

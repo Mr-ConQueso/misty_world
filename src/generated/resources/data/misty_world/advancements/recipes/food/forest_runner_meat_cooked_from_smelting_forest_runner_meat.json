@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_forest_runner_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:forest_runner_meat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:forest_runner_meat_cooked_from_smelting_forest_runner_meat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_forest_runner_meat",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:forest_runner_meat_cooked_from_smelting_forest_runner_meat"
+    ]
+  },
+  "sends_telemetry_event": false
+}

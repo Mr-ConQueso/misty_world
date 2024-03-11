@@ -1,6 +1,8 @@
 package net.mrconqueso.misty_world;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,6 +17,7 @@ import net.mrconqueso.misty_world.block.ModBlocks;
 import net.mrconqueso.misty_world.item.tabs.ModCreativeModeBlocksTab;
 import net.mrconqueso.misty_world.item.tabs.ModCreativeModeItemsTab;
 import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.sound.ModSounds;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -31,6 +34,8 @@ public class MistyWorld {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -39,6 +44,9 @@ public class MistyWorld {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VIOLET_VEIL.getId(), ModBlocks.POTTED_VIOLET_VEIL);
+        });
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

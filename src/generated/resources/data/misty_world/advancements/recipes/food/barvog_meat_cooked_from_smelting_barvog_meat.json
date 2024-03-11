@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_barvog_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "misty_world:barvog_meat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "misty_world:barvog_meat_cooked_from_smelting_barvog_meat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_barvog_meat",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "misty_world:barvog_meat_cooked_from_smelting_barvog_meat"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -175,31 +175,32 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.RUBBER_TREE_FENCE_GATE);
         simpleBlockItem(ModBlocks.RUBBER_TREE_DOOR);
         trapdoorItem(ModBlocks.RUBBER_TREE_TRAPDOOR);
+        // --------- / SEEDS / --------- //
+        simpleBlockItem(ModBlocks.ASPEN_SAPLING);
+        simpleBlockItem(ModBlocks.WILLOW_SAPLING);
+        simpleBlockItem(ModBlocks.ARAUCARIA_SAPLING);
+        simpleBlockItem(ModBlocks.FOGGY_OAK_SAPLING);
+        simpleBlockItem(ModBlocks.FOGGY_PINE_SAPLING);
+        simpleBlockItem(ModBlocks.SNOWY_TREE_SAPLING);
+        simpleBlockItem(ModBlocks.STONE_TREE_SAPLING);
+        simpleBlockItem(ModBlocks.RUBBER_TREE_SAPLING);
+        simpleBlockItem(ModBlocks.TROPIC_TREE_SAPLING);
+        simpleBlockItem(ModBlocks.PRICKLY_TREE_SAPLING);
+        simpleBlockItem(ModBlocks.SWAMPY_POPLAR_SAPLING);
+        simpleBlockItem(ModBlocks.UMBRELLA_TREE_SAPLING);
+        simpleBlockItem(ModBlocks.FOREST_DECEIVER_SAPLING);
+        // --------- / NATURAL / --------- //
+        simpleBlockItem(ModBlocks.ROCKS);
 
         // --------- / NATURAL / --------- //
         simpleItem(ModItems.BIO_SHALE);
         simpleItem(ModItems.COMPOST);
-        simpleItem(ModItems.DESERT_COTTON_FLOWER);
         simpleItem(ModItems.DESERT_COTTON_SEED);
+        simpleItem(ModItems.DESERT_COTTON_FLOWER);
         simpleItem(ModItems.HUMUS);
         simpleItem(ModItems.MULCH);
         simpleItem(ModItems.REMAINS);
-        simpleItem(ModItems.ROCKS);
         simpleItem(ModItems.TINDER_FUNGUS);
-        // --- / SEEDS / --- //
-        simpleItem(ModItems.ARAUCARIA_SEED);
-        simpleItem(ModItems.UMBRELLA_TREE_SEED);
-        simpleItem(ModItems.ASPEN_SEED);
-        simpleItem(ModItems.FOREST_DECEIVER_SEED);
-        simpleItem(ModItems.SNOWY_TREE_SEED);
-        simpleItem(ModItems.FOGGY_OAK_SEED);
-        simpleItem(ModItems.FOGGY_PINE_SEED);
-        simpleItem(ModItems.SWAMPY_POPLAR_SEED);
-        simpleItem(ModItems.PRICKLY_TREE_SEED);
-        simpleItem(ModItems.RUBBER_TREE_SEED);
-        simpleItem(ModItems.STONE_TREE_SEED);
-        simpleItem(ModItems.TROPIC_TREE_SEED);
-        simpleItem(ModItems.WILLOW_SEED);
         // --------- / MOB DROPS / --------- //
         simpleItem(ModItems.WING);
         simpleItem(ModItems.TALLOW);
@@ -251,6 +252,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         // --------- / FOOD / --------- //
         simpleItem(ModItems.NIGHTBERRY);
         simpleItem(ModItems.BITTER_PILLS);
+        simpleItem(ModItems.SALT);
         simpleItem(ModItems.SALTPETER);
         simpleItem(ModItems.SPONGE_MEAT);
         // --- / FOOD ON A STICK / --- //
@@ -288,6 +290,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SNIFF_MEAT_COOKED);
         simpleItem(ModItems.WULDER_MEAT);
         simpleItem(ModItems.WULDER_MEAT_COOKED);
+
+        // --------- / NATURAL / --------- //
+
+        // --- / FLOWERS / --- //
+        //simpleBlockItemBlockTexture(ModBlocks.VIOLET_VEIL);
+        simpleBlockItem(ModBlocks.VIOLET_VEIL);
     }
 
     // Shoutout to El_Redstoniano for making this
@@ -372,5 +380,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(MistyWorld.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + item.getId().getPath()));
     }
 }

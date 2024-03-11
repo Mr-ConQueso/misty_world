@@ -1,0 +1,1174 @@
+{
+    "use_gas_analyzer": {
+        "subtitles": "sounds.misty_world.use_gas_analyzer",
+        "category": "player",
+        "sounds": [
+            {
+                "name": "misty_world:item/gas_analyzer"
+            }
+        ]
+    },
+    "urn_open": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "misty_world:block/urn/urn_open"
+            }
+        ],
+        "subtitles": "sounds.misty_world.urn_open"
+    },
+    "urn_close": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "misty_world:block/urn/urn_close"
+            }
+        ],
+        "subtitles": "sounds.misty_world.urn_close"
+    },
+    "urn_break": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "misty_world:block/urn/urn_break"
+            }
+        ],
+        "subtitles": "sounds.misty_world.urn_break"
+    },
+    "stone_break": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "misty_world:block/stone_break"
+            }
+        ],
+        "subtitles": "sounds.misty_world.stone_break"
+    },
+    "wood_creak": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "misty_world:block/wood_creak/wood_creak_1"
+            },
+            {
+                "name": "misty_world:block/wood_creak/wood_creak_2"
+            },
+            {
+                "name": "misty_world:block/wood_creak/wood_creak_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.wood_creak"
+    },
+    "forest_cricket": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/cricket_1"
+            },
+            {
+                "name": "misty_world:ambient/cricket_2"
+            },
+            {
+                "name": "misty_world:ambient/cricket_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_cricket"
+    },
+    "desert_cricket": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/desert_cricket_1"
+            },
+            {
+                "name": "misty_world:ambient/desert_cricket_2"
+            },
+            {
+                "name": "misty_world:ambient/desert_cricket_3"
+            },
+            {
+                "name": "misty_world:ambient/desert_cricket_4"
+            }
+        ],
+        "subtitles": "sounds.misty_world.desert_cricket"
+    },
+    "forest_hopper": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/gh_1"
+            },
+            {
+                "name": "misty_world:ambient/gh_2"
+            },
+            {
+                "name": "misty_world:ambient/gh_3"
+            },
+            {
+                "name": "misty_world:ambient/gh_4"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_hopper"
+    },
+    "swamp_frog": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/frog_1",
+                "weight": 3
+            },
+            {
+                "name": "misty_world:ambient/frog_2"
+            },
+            {
+                "name": "misty_world:ambient/frog_3"
+            },
+            {
+                "name": "misty_world:ambient/frog_4"
+            }
+        ],
+        "subtitles": "sounds.misty_world.swamp_frog"
+    },
+    "swamp_bird": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/swamp_bird_1",
+                "weight": 8
+            },
+            {
+                "name": "misty_world:ambient/swamp_bird_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.swamp_bird"
+    },
+    "tropic_cicada": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/cicada_1"
+            },
+            {
+                "name": "misty_world:ambient/cicada_2"
+            },
+            {
+                "name": "misty_world:ambient/cicada_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.tropic_cicada"
+    },
+    "tropic_hopper": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:ambient/tropic_gh_1"
+            },
+            {
+                "name": "misty_world:ambient/tropic_gh_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.tropic_hopper"
+    },
+    "caravan_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/caravan/caravan_1"
+            },
+            {
+                "name": "misty_world:entity/caravan/caravan_2"
+            },
+            {
+                "name": "misty_world:entity/caravan/caravan_3"
+            },
+            {
+                "name": "misty_world:entity/caravan/caravan_4"
+            }
+        ],
+        "subtitles": "sounds.misty_world.caravan_ambient"
+    },
+    "caravan_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/caravan/caravan_h_1"
+            },
+            {
+                "name": "misty_world:entity/caravan/caravan_h_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.caravan_hurt"
+    },
+    "caravan_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/caravan/caravan_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.caravan_death"
+    },
+    "mossling_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/mossling/mossling_1"
+            },
+            {
+                "name": "misty_world:entity/mossling/mossling_2"
+            },
+            {
+                "name": "misty_world:entity/mossling/mossling_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.mossling_ambient"
+    },
+    "mossling_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/mossling/mossling_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.mossling_hurt"
+    },
+    "mossling_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/mossling/mossling_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.mossling_death"
+    },
+    "barvog_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/barvog/barvog_1"
+            },
+            {
+                "name": "misty_world:entity/barvog/barvog_2"
+            },
+            {
+                "name": "misty_world:entity/barvog/barvog_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.barvog_ambient"
+    },
+    "barvog_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/barvog/barvog_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.barvog_hurt"
+    },
+    "barvog_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/barvog/barvog_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.barvog_death"
+    },
+    "momo_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/momo/momo_1"
+            },
+            {
+                "name": "misty_world:entity/momo/momo_2"
+            },
+            {
+                "name": "misty_world:entity/momo/momo_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.momo_ambient"
+    },
+    "momo_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/momo/momo_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.momo_hurt"
+    },
+    "momo_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/momo/momo_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.momo_death"
+    },
+    "monk_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/monk/monk_1"
+            },
+            {
+                "name": "misty_world:entity/monk/monk_2"
+            },
+            {
+                "name": "misty_world:entity/monk/monk_3"
+            },
+            {
+                "name": "misty_world:entity/monk/monk_4"
+            }
+        ],
+        "subtitles": "sounds.misty_world.monk_ambient"
+    },
+    "monk_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/monk/monk_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.monk_hurt"
+    },
+    "monk_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/monk/monk_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.monk_death"
+    },
+    "monk_warning": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/monk/monk_w_1"
+            },
+            {
+                "name": "misty_world:entity/monk/monk_w_2"
+            },
+            {
+                "name": "misty_world:entity/monk/monk_w_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.monk_warning"
+    },
+    "hulter_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/hulter/hulter_1"
+            },
+            {
+                "name": "misty_world:entity/hulter/hulter_2"
+            },
+            {
+                "name": "misty_world:entity/hulter/hulter_3"
+            },
+            {
+                "name": "misty_world:entity/hulter/hulter_4"
+            },
+            {
+                "name": "misty_world:entity/hulter/hulter_5"
+            }
+        ],
+        "subtitles": "sounds.misty_world.hulter_ambient"
+    },
+    "hulter_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/hulter/hulter_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.hulter_hurt"
+    },
+    "hulter_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/hulter/hulter_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.hulter_death"
+    },
+    "hulter_warning": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/hulter/hulter_w_1"
+            },
+            {
+                "name": "misty_world:entity/hulter/hulter_w_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.hulter_warning"
+    },
+    "forest_runner_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_runner/forest_runner_1"
+            },
+            {
+                "name": "misty_world:entity/forest_runner/forest_runner_2"
+            },
+            {
+                "name": "misty_world:entity/forest_runner/forest_runner_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_runner_ambient"
+    },
+    "forest_runner_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_runner/forest_runner_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_runner_hurt"
+    },
+    "forest_runner_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_runner/forest_runner_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_runner_death"
+    },
+    "wulder_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/wulder/wulder_1"
+            },
+            {
+                "name": "misty_world:entity/wulder/wulder_2"
+            },
+            {
+                "name": "misty_world:entity/wulder/wulder_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.wulder_ambient"
+    },
+    "wulder_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/wulder/wulder_h_1"
+            },
+            {
+                "name": "misty_world:entity/wulder/wulder_h_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.wulder_hurt"
+    },
+    "wulder_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/wulder/wulder_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.wulder_death"
+    },
+    "prickler_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/prickler/prickler_1"
+            },
+            {
+                "name": "misty_world:entity/prickler/prickler_2"
+            },
+            {
+                "name": "misty_world:entity/prickler/prickler_3"
+            },
+            {
+                "name": "misty_world:entity/prickler/prickler_4"
+            },
+            {
+                "name": "misty_world:entity/prickler/prickler_5"
+            }
+        ],
+        "subtitles": "sounds.misty_world.prickler_ambient"
+    },
+    "prickler_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/prickler/prickler_h_1"
+            },
+            {
+                "name": "misty_world:entity/prickler/prickler_h_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.prickler_hurt"
+    },
+    "prickler_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/prickler/prickler_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.prickler_death"
+    },
+    "horb_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/horb/horb_1"
+            },
+            {
+                "name": "misty_world:entity/horb/horb_2"
+            },
+            {
+                "name": "misty_world:entity/horb/horb_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.horb_ambient"
+    },
+    "horb_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/horb/horb_h_1"
+            },
+            {
+                "name": "misty_world:entity/horb/horb_h_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.horb_hurt"
+    },
+    "horb_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/horb/horb_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.horb_death"
+    },
+    "galaga_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/galaga/galaga_1"
+            },
+            {
+                "name": "misty_world:entity/galaga/galaga_2"
+            },
+            {
+                "name": "misty_world:entity/galaga/galaga_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.galaga_ambient"
+    },
+    "galaga_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/galaga/galaga_h_1"
+            },
+            {
+                "name": "misty_world:entity/galaga/galaga_h_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.galaga_hurt"
+    },
+    "galaga_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/galaga/galaga_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.galaga_death"
+    },
+    "sloth_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sloth/sloth_1"
+            },
+            {
+                "name": "misty_world:entity/sloth/sloth_2"
+            },
+            {
+                "name": "misty_world:entity/sloth/sloth_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sloth_ambient"
+    },
+    "sloth_ambient_child": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sloth/sloth_1"
+            },
+            {
+                "name": "misty_world:entity/sloth/sloth_4"
+            },
+            {
+                "name": "misty_world:entity/sloth/sloth_5"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sloth_ambient_child"
+    },
+    "sloth_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sloth/sloth_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sloth_hurt"
+    },
+    "sloth_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sloth/sloth_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sloth_death"
+    },
+    "sniff_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sniff/sniff_1"
+            },
+            {
+                "name": "misty_world:entity/sniff/sniff_2"
+            },
+            {
+                "name": "misty_world:entity/sniff/sniff_3"
+            },
+            {
+                "name": "misty_world:entity/sniff/sniff_4"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sniff_ambient"
+    },
+    "sniff_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sniff/sniff_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sniff_hurt"
+    },
+    "sniff_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/sniff/sniff_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.sniff_death"
+    },
+    "brachiodon_ambient": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/brachiodon/brachiodon_1"
+            },
+            {
+                "name": "misty_world:entity/brachiodon/brachiodon_2"
+            },
+            {
+                "name": "misty_world:entity/brachiodon/brachiodon_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.brachiodon_ambient"
+    },
+    "brachiodon_hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/brachiodon/brachiodon_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.brachiodon_hurt"
+    },
+    "brachiodon_death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "misty_world:entity/brachiodon/brachiodon_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.brachiodon_death"
+    },
+    "swamp_crab_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_1"
+            },
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_2"
+            },
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.swamp_crab_ambient"
+    },
+    "swamp_crab_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.swamp_crab_hurt"
+    },
+    "swamp_crab_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.swamp_crab_death"
+    },
+    "swamp_crab_step": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_s_1"
+            },
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_s_2"
+            },
+            {
+                "name": "misty_world:entity/swamp_crab/swamp_crab_s_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.swamp_crab_step"
+    },
+    "grave_bug_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_1"
+            },
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_2"
+            },
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.grave_bug_ambient"
+    },
+    "grave_bug_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.grave_bug_hurt"
+    },
+    "grave_bug_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.grave_bug_death"
+    },
+    "grave_bug_step": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_s_1"
+            },
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_s_2"
+            },
+            {
+                "name": "misty_world:entity/grave_bug/grave_bug_s_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.grave_bug_step"
+    },
+    "forest_spider_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_1"
+            },
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_2"
+            },
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_spider_ambient"
+    },
+    "forest_spider_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_spider_hurt"
+    },
+    "forest_spider_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_spider_death"
+    },
+    "forest_spider_step": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_s_1"
+            },
+            {
+                "name": "misty_world:entity/forest_spider/forest_spider_s_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.forest_spider_step"
+    },
+    "woodlouse_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/woodlouse/woodlouse_1"
+            },
+            {
+                "name": "misty_world:entity/woodlouse/woodlouse_2"
+            },
+            {
+                "name": "misty_world:entity/woodlouse/woodlouse_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.woodlouse_ambient"
+    },
+    "woodlouse_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/woodlouse/woodlouse_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.woodlouse_hurt"
+    },
+    "woodlouse_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/woodlouse/woodlouse_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.woodlouse_death"
+    },
+    "snow_flea_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_1"
+            },
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_2"
+            },
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.snow_flea_ambient"
+    },
+    "snow_flea_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.snow_flea_hurt"
+    },
+    "snow_flea_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.snow_flea_death"
+    },
+    "snow_flea_step": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_s_1"
+            },
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_s_2"
+            },
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_s_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.snow_flea_step"
+    },
+    "snow_flea_flay": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/snow_flea/snow_flea_f"
+            }
+        ],
+        "subtitles": "sounds.misty_world.snow_flea_flay"
+    },
+    "cyclops_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/cyclops/cyclops"
+            }
+        ],
+        "subtitles": "sounds.misty_world.cyclops_ambient"
+    },
+    "cyclops_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/cyclops/cyclops_h_1"
+            },
+            {
+                "name": "misty_world:entity/cyclops/cyclops_h_2"
+            }
+        ],
+        "subtitles": "sounds.misty_world.cyclops_hurt"
+    },
+    "cyclops_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/cyclops/cyclops_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.cyclops_death"
+    },
+    "cyclops_step": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/cyclops/cyclops_s_1"
+            },
+            {
+                "name": "misty_world:entity/cyclops/cyclops_s_2"
+            },
+            {
+                "name": "misty_world:entity/cyclops/cyclops_s_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.cyclops_step"
+    },
+    "desert_fish_ambient": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/desert_fish/desert_fish_1"
+            }
+        ],
+        "subtitles": "sounds.misty_world.desert_fish_ambient"
+    },
+    "desert_fish_hurt": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/desert_fish/desert_fish_h"
+            }
+        ],
+        "subtitles": "sounds.misty_world.desert_fish_hurt"
+    },
+    "desert_fish_death": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/desert_fish/desert_fish_d"
+            }
+        ],
+        "subtitles": "sounds.misty_world.desert_fish_death"
+    },
+    "desert_fish_step": {
+        "category": "hostile",
+        "sounds": [
+            {
+                "name": "misty_world:entity/desert_fish/desert_fish_s_1"
+            },
+            {
+                "name": "misty_world:entity/desert_fish/desert_fish_s_2"
+            },
+            {
+                "name": "misty_world:entity/desert_fish/desert_fish_s_3"
+            }
+        ],
+        "subtitles": "sounds.misty_world.desert_fish_step"
+    },
+    "sky_boom": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:sky/sky_boom_1",
+                "volume": 3,
+                "stream": true
+            },
+            {
+                "name": "misty_world:sky/sky_boom_2",
+                "volume": 3,
+                "stream": true
+            },
+            {
+                "name": "misty_world:sky/sky_boom_3",
+                "volume": 3,
+                "stream": true
+            },
+            {
+                "name": "misty_world:sky/sky_boom_4",
+                "volume": 3,
+                "stream": true
+            }
+        ],
+        "subtitles": "sounds.misty_world.sky_boom"
+    },
+    "sky_sound": {
+        "category": "ambient",
+        "sounds": [
+            {
+                "name": "misty_world:sky/sky_sound",
+                "volume": 2,
+                "stream": true
+            }
+        ],
+        "subtitles": "sounds.misty_world.sky_sound"
+    },
+    "up_day_music": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "misty_world:music/deceived",
+                "stream": true,
+                "weight": 2
+            },
+            {
+                "name": "misty_world:music/forest_deciever",
+                "stream": true,
+                "volume": 0.55,
+                "weight": 3
+            },
+            {
+                "name": "misty_world:music/pogonip_hoarfrost_mix",
+                "stream": true,
+                "volume": 0.85,
+                "weight": 3
+            },
+            {
+                "name": "misty_world:music/snowfields",
+                "stream": true,
+                "volume": 0.6
+            }
+        ],
+        "subtitles": "sounds.misty_world.up_day_music"
+    },
+    "up_night_music": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "misty_world:music/deceived",
+                "stream": true,
+                "weight": 2
+            },
+            {
+                "name": "misty_world:music/pogonip_hoarfrost_mix",
+                "stream": true,
+                "volume": 0.85
+            },
+            {
+                "name": "misty_world:music/snowfields",
+                "stream": true,
+                "volume": 0.6,
+                "weight": 2
+            }
+        ],
+        "subtitles": "sounds.misty_world.up_night_music"
+    },
+    "sunset_up_music": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "misty_world:music/miasma_veil_piercer",
+                "stream": true,
+                "volume": 0.8,
+                "weight": 3
+            },
+            {
+                "name": "misty_world:music/frontier",
+                "stream": true,
+                "volume": 0.4,
+                "weight": 2
+            }
+        ],
+        "subtitles": "sounds.misty_world.sunset_up_music"
+    },
+    "down_music": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "misty_world:music/echolocation",
+                "stream": true
+            },
+            {
+                "name": "misty_world:music/coalescent_fog",
+                "stream": true,
+                "volume": 0.7,
+                "weight": 2
+            },
+            {
+                "name": "misty_world:music/graveyard",
+                "stream": true,
+                "volume": 0.4,
+                "weight": 2
+            },
+            {
+                "name": "misty_world:music/surge_of_mutations",
+                "stream": true,
+                "volume": 0.45,
+                "weight": 2
+            }
+        ],
+        "subtitles": "sounds.misty_world.down_music"
+    },
+    "sunset_down_music": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "misty_world:music/strange_lifeforms",
+                "stream": true,
+                "volume": 0.65
+            }
+        ],
+        "subtitles": "sounds.misty_world.sunset_down_music"
+    }
+}

@@ -21,6 +21,20 @@ public class ModCreativeModeBlocksTab {
             .icon(() -> new ItemStack(ModItems.ICON.get()))
             .displayItems((params, output) -> {
 
+                // --------- / STONES / --------- //
+
+                output.accept(ModBlocks.FOGGY_STONE.get());
+                output.accept(ModBlocks.POROUS_FOGGY_STONE.get());
+                output.accept(ModBlocks.HARD_FOGGY_STONE.get());
+                output.accept(ModBlocks.MINED_FOGGY_STONE.get());
+                output.accept(ModBlocks.MOSSY_MINED_FOGGY_STONE.get());
+                output.accept(ModBlocks.FOGGY_COBBLESTONE.get());
+                output.accept(ModBlocks.MOSSY_FOGGY_COBBLESTONE.get());
+
+                // --------- / GRAVEL & SAND / --------- //
+
+                output.accept(ModBlocks.FOGGY_GRAVEL.get());
+
                 // --------- / WOOD / --------- //
                 // --- / ASPEN / --- //
                 output.accept(ModBlocks.ASPEN_LOG.get());
@@ -38,8 +52,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.ASPEN_DOOR.get());
                 output.accept(ModBlocks.ASPEN_TRAPDOOR.get());
 
-                output.accept(ModBlocks.ASPEN_LEAVES.get());
-
                 // --- / UMBRELLA TREE / --- //
                 output.accept(ModBlocks.UMBRELLA_TREE_LOG.get());
                 output.accept(ModBlocks.UMBRELLA_TREE_WOOD.get());
@@ -55,8 +67,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.UMBRELLA_TREE_FENCE_GATE.get());
                 output.accept(ModBlocks.UMBRELLA_TREE_DOOR.get());
                 output.accept(ModBlocks.UMBRELLA_TREE_TRAPDOOR.get());
-
-                output.accept(ModBlocks.UMBRELLA_TREE_LEAVES.get());
 
                 // --- / FOREST DECEIVER / --- //
                 output.accept(ModBlocks.FOREST_DECEIVER_LOG.get());
@@ -74,8 +84,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.FOREST_DECEIVER_DOOR.get());
                 output.accept(ModBlocks.FOREST_DECEIVER_TRAPDOOR.get());
 
-                output.accept(ModBlocks.FOREST_DECEIVER_LEAVES.get());
-
                 // --- / ARAUCARIA / --- //
                 output.accept(ModBlocks.ARAUCARIA_LOG.get());
                 output.accept(ModBlocks.ARAUCARIA_WOOD.get());
@@ -91,8 +99,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.ARAUCARIA_FENCE_GATE.get());
                 output.accept(ModBlocks.ARAUCARIA_DOOR.get());
                 output.accept(ModBlocks.ARAUCARIA_TRAPDOOR.get());
-
-                output.accept(ModBlocks.ARAUCARIA_LEAVES.get());
 
                 // --- / FOGGY OAK / --- //
                 output.accept(ModBlocks.FOGGY_OAK_LOG.get());
@@ -110,8 +116,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.FOGGY_OAK_DOOR.get());
                 output.accept(ModBlocks.FOGGY_OAK_TRAPDOOR.get());
 
-                output.accept(ModBlocks.FOGGY_OAK_LEAVES.get());
-
                 // --- / FOGGY PINE / --- //
                 output.accept(ModBlocks.FOGGY_PINE_LOG.get());
                 output.accept(ModBlocks.FOGGY_PINE_WOOD.get());
@@ -127,8 +131,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.FOGGY_PINE_FENCE_GATE.get());
                 output.accept(ModBlocks.FOGGY_PINE_DOOR.get());
                 output.accept(ModBlocks.FOGGY_PINE_TRAPDOOR.get());
-
-                output.accept(ModBlocks.FOGGY_PINE_LEAVES.get());
 
                 // --- / SWAMPY POPLAR / --- //
                 output.accept(ModBlocks.SWAMPY_POPLAR_LOG.get());
@@ -146,8 +148,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.SWAMPY_POPLAR_DOOR.get());
                 output.accept(ModBlocks.SWAMPY_POPLAR_TRAPDOOR.get());
 
-                output.accept(ModBlocks.SWAMPY_POPLAR_LEAVES.get());
-
                 // --- / SNOWY TREE / --- //
                 output.accept(ModBlocks.SNOWY_TREE_LOG.get());
                 output.accept(ModBlocks.SNOWY_TREE_WOOD.get());
@@ -163,8 +163,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.SNOWY_TREE_FENCE_GATE.get());
                 output.accept(ModBlocks.SNOWY_TREE_DOOR.get());
                 output.accept(ModBlocks.SNOWY_TREE_TRAPDOOR.get());
-
-                output.accept(ModBlocks.SNOWY_TREE_LEAVES.get());
 
                 // --- / PRICKLY TREE / --- //
                 output.accept(ModBlocks.PRICKLY_TREE_LOG.get());
@@ -182,8 +180,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.PRICKLY_TREE_DOOR.get());
                 output.accept(ModBlocks.PRICKLY_TREE_TRAPDOOR.get());
 
-                output.accept(ModBlocks.PRICKLY_TREE_LEAVES.get());
-
                 // --- / STONE TREE / --- //
                 output.accept(ModBlocks.STONE_TREE_LOG.get());
                 output.accept(ModBlocks.STONE_TREE_WOOD.get());
@@ -199,8 +195,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.STONE_TREE_FENCE_GATE.get());
                 output.accept(ModBlocks.STONE_TREE_DOOR.get());
                 output.accept(ModBlocks.STONE_TREE_TRAPDOOR.get());
-
-                output.accept(ModBlocks.STONE_TREE_LEAVES.get());
 
                 // --- / TROPIC TREE / --- //
                 output.accept(ModBlocks.TROPIC_TREE_LOG.get());
@@ -218,8 +212,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.TROPIC_TREE_DOOR.get());
                 output.accept(ModBlocks.TROPIC_TREE_TRAPDOOR.get());
 
-                output.accept(ModBlocks.TROPIC_TREE_LEAVES.get());
-
                 // --- / WILLOW / --- //
                 output.accept(ModBlocks.WILLOW_LOG.get());
                 output.accept(ModBlocks.WILLOW_WOOD.get());
@@ -235,8 +227,6 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.WILLOW_FENCE_GATE.get());
                 output.accept(ModBlocks.WILLOW_DOOR.get());
                 output.accept(ModBlocks.WILLOW_TRAPDOOR.get());
-
-                output.accept(ModBlocks.WILLOW_LEAVES.get());
 
                 // --- / RUBBER_TREE / --- //
                 output.accept(ModBlocks.RUBBER_TREE_LOG.get());
@@ -254,7 +244,37 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.RUBBER_TREE_DOOR.get());
                 output.accept(ModBlocks.RUBBER_TREE_TRAPDOOR.get());
 
+                // --------- / LEAVES / --------- //
+
+                output.accept(ModBlocks.ARAUCARIA_LEAVES.get());
+                output.accept(ModBlocks.UMBRELLA_TREE_LEAVES.get());
+                output.accept(ModBlocks.ASPEN_LEAVES.get());
+                output.accept(ModBlocks.SNOWY_TREE_LEAVES.get());
+                output.accept(ModBlocks.FOREST_DECEIVER_LEAVES.get());
+                output.accept(ModBlocks.FOGGY_OAK_LEAVES.get());
+                output.accept(ModBlocks.FOGGY_PINE_LEAVES.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_LEAVES.get());
+                output.accept(ModBlocks.STONE_TREE_LEAVES.get());
+                output.accept(ModBlocks.TROPIC_TREE_LEAVES.get());
                 output.accept(ModBlocks.RUBBER_TREE_LEAVES.get());
+                output.accept(ModBlocks.PRICKLY_TREE_LEAVES.get());
+                output.accept(ModBlocks.WILLOW_LEAVES.get());
+
+                // --------- / SEEDS / --------- //
+
+                output.accept(ModBlocks.ARAUCARIA_SAPLING.get());
+                output.accept(ModBlocks.UMBRELLA_TREE_SAPLING.get());
+                output.accept(ModBlocks.ASPEN_SAPLING.get());
+                output.accept(ModBlocks.SNOWY_TREE_SAPLING.get());
+                output.accept(ModBlocks.FOREST_DECEIVER_SAPLING.get());
+                output.accept(ModBlocks.FOGGY_OAK_SAPLING.get());
+                output.accept(ModBlocks.FOGGY_PINE_SAPLING.get());
+                output.accept(ModBlocks.SWAMPY_POPLAR_SAPLING.get());
+                output.accept(ModBlocks.STONE_TREE_SAPLING.get());
+                output.accept(ModBlocks.TROPIC_TREE_SAPLING.get());
+                output.accept(ModBlocks.RUBBER_TREE_SAPLING.get());
+                output.accept(ModBlocks.PRICKLY_TREE_SAPLING.get());
+                output.accept(ModBlocks.WILLOW_SAPLING.get());
 
                 // --------- / ORES / --------- //
 
@@ -281,6 +301,12 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.SLIGHTLY_POLLUTED_FILTER_COAL_BLOCK.get());
                 output.accept(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK.get());
                 output.accept(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK.get());
+
+                // --------- / NATURAL / --------- //
+                output.accept(ModBlocks.ROCKS.get());
+                // --- / FLOWERS / --- //
+                output.accept(ModBlocks.VIOLET_VEIL.get());
+
             })
             .build()
     );
