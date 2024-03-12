@@ -21,6 +21,22 @@
   "block.misty_world.foggy_gravel": "Foggy Gravel",
 
   "": "------------ WOOD ------------",
+
+  "": "------- CARVED -------",
+  "block.misty_world.carved_aspen_log": "Carved Trembling Tree Log",
+  "block.misty_world.carved_willow_log": "Carved Willow Log",
+  "block.misty_world.carved_araucaria_log": "Carved Araucaria Log",
+  "block.misty_world.carved_foggy_oak_log": "Carved Foggy Oak Log",
+  "block.misty_world.carved_foggy_pine_log": "Carved Foggy Pine Log",
+  "block.misty_world.carved_snowy_tree_log": "Carved Snowy Tree Log",
+  "block.misty_world.carved_stone_tree_log": "Carved Stone Tree Log",
+  "block.misty_world.carved_rubber_tree_log": "Carved Rubber Tree Log",
+  "block.misty_world.carved_tropic_tree_log": "Carved Tropic Tree Log",
+  "block.misty_world.carved_prickly_tree_log": "Carved Prickly Tree Log",
+  "block.misty_world.carved_swampy_poplar_log": "Carved Swampy Poplar Log",
+  "block.misty_world.carved_umbrella_tree_log": "Carved Umbrella Tree Log",
+  "block.misty_world.carved_forest_deceiver_log": "Carved Forest Deceiver Log",
+
   "": "------- ASPEN -------",
   "block.misty_world.aspen_log": "Trembling Tree Log",
   "block.misty_world.aspen_wood": "Trembling Tree Wood",
@@ -274,7 +290,7 @@
   "": "------------ NATURAL ------------",
 
   "block.misty_world.rocks": "Rocks",
-  "block.misty_world.desert_cotton_crop": "Desert Cotton",
+  "block.misty_world.desert_cotton": "Desert Cotton",
 
   "": "------- FLOWERS -------",
   "block.misty_world.violet_veil": "Violet Veil",

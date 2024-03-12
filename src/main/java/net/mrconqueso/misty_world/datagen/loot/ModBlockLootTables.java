@@ -48,6 +48,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         // --- / ASPEN / --- //
         this.dropSelf(ModBlocks.ASPEN_LOG.get());
         this.dropSelf(ModBlocks.ASPEN_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_ASPEN_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ASPEN_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ASPEN_WOOD.get());
         this.dropSelf(ModBlocks.ASPEN_PLANKS.get());
@@ -69,6 +70,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         // --- / UMBRELLA TREE / --- //
         this.dropSelf(ModBlocks.UMBRELLA_TREE_LOG.get());
         this.dropSelf(ModBlocks.UMBRELLA_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_UMBRELLA_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_UMBRELLA_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_UMBRELLA_TREE_WOOD.get());
         this.dropSelf(ModBlocks.UMBRELLA_TREE_PLANKS.get());
@@ -88,8 +90,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.UMBRELLA_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / FOREST DECEIVER / --- //
-        this.dropSelf(ModBlocks.FOREST_DECEIVER_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get());
         this.dropSelf(ModBlocks.FOREST_DECEIVER_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD.get());
         this.dropSelf(ModBlocks.FOREST_DECEIVER_PLANKS.get());
@@ -109,8 +112,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.FOREST_DECEIVER_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / ARAUCARIA / --- //
-        this.dropSelf(ModBlocks.ARAUCARIA_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_ARAUCARIA_LOG.get());
         this.dropSelf(ModBlocks.ARAUCARIA_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_ARAUCARIA_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ARAUCARIA_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ARAUCARIA_WOOD.get());
         this.dropSelf(ModBlocks.ARAUCARIA_PLANKS.get());
@@ -127,11 +131,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ARAUCARIA_TRAPDOOR.get());
 
         this.add(ModBlocks.ARAUCARIA_LEAVES.get(), block ->
-                createLeavesDrops(block, ModBlocks.ARAUCARIA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+                createLeavesDrops(block, ModBlocks.CARVED_ARAUCARIA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / FOGGY OAK / --- //
-        this.dropSelf(ModBlocks.FOGGY_OAK_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_FOGGY_OAK_LOG.get());
         this.dropSelf(ModBlocks.FOGGY_OAK_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_FOGGY_OAK_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FOGGY_OAK_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FOGGY_OAK_WOOD.get());
         this.dropSelf(ModBlocks.FOGGY_OAK_PLANKS.get());
@@ -151,8 +156,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.FOGGY_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / FOGGY PINE / --- //
-        this.dropSelf(ModBlocks.FOGGY_PINE_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_FOGGY_PINE_LOG.get());
         this.dropSelf(ModBlocks.FOGGY_PINE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_FOGGY_PINE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FOGGY_PINE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FOGGY_PINE_WOOD.get());
         this.dropSelf(ModBlocks.FOGGY_PINE_PLANKS.get());
@@ -172,8 +178,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.FOGGY_PINE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / SWAMPY POPLAR / --- //
-        this.dropSelf(ModBlocks.SWAMPY_POPLAR_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get());
         this.dropSelf(ModBlocks.SWAMPY_POPLAR_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_SWAMPY_POPLAR_WOOD.get());
         this.dropSelf(ModBlocks.SWAMPY_POPLAR_PLANKS.get());
@@ -193,8 +200,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.SWAMPY_POPLAR_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / SNOWY TREE / --- //
-        this.dropSelf(ModBlocks.SNOWY_TREE_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_SNOWY_TREE_LOG.get());
         this.dropSelf(ModBlocks.SNOWY_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_SNOWY_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_SNOWY_TREE_WOOD.get());
         this.dropSelf(ModBlocks.SNOWY_TREE_PLANKS.get());
@@ -214,8 +222,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.SNOWY_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / PRICKLY TREE / --- //
-        this.dropSelf(ModBlocks.PRICKLY_TREE_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_PRICKLY_TREE_LOG.get());
         this.dropSelf(ModBlocks.PRICKLY_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_PRICKLY_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PRICKLY_TREE_WOOD.get());
         this.dropSelf(ModBlocks.PRICKLY_TREE_PLANKS.get());
@@ -235,8 +244,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.PRICKLY_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / STONE TREE / --- //
-        this.dropSelf(ModBlocks.STONE_TREE_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_STONE_TREE_LOG.get());
         this.dropSelf(ModBlocks.STONE_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_STONE_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_STONE_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_STONE_TREE_WOOD.get());
         this.dropSelf(ModBlocks.STONE_TREE_PLANKS.get());
@@ -256,8 +266,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.STONE_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / TROPIC TREE / --- //
-        this.dropSelf(ModBlocks.TROPIC_TREE_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_TROPIC_TREE_LOG.get());
         this.dropSelf(ModBlocks.TROPIC_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_TROPIC_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_TROPIC_TREE_WOOD.get());
         this.dropSelf(ModBlocks.TROPIC_TREE_PLANKS.get());
@@ -277,8 +288,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.TROPIC_TREE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / WILLOW / --- //
-        this.dropSelf(ModBlocks.WILLOW_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_WILLOW_LOG.get());
         this.dropSelf(ModBlocks.WILLOW_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_WILLOW_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_WILLOW_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_WILLOW_WOOD.get());
         this.dropSelf(ModBlocks.WILLOW_PLANKS.get());
@@ -298,8 +310,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createLeavesDrops(block, ModBlocks.WILLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         // --- / RUBBER_TREE / --- //
-        this.dropSelf(ModBlocks.RUBBER_TREE_LOG.get());
+        this.dropSelf(ModBlocks.CARVED_RUBBER_TREE_LOG.get());
         this.dropSelf(ModBlocks.RUBBER_TREE_WOOD.get());
+        this.dropSelf(ModBlocks.CARVED_RUBBER_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get());
         this.dropSelf(ModBlocks.RUBBER_TREE_PLANKS.get());
@@ -320,7 +333,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         // --------- / SEEDS / --------- //
 
-        this.dropSelf(ModBlocks.ARAUCARIA_SAPLING.get());
+        this.dropSelf(ModBlocks.CARVED_ARAUCARIA_SAPLING.get());
         this.dropSelf(ModBlocks.UMBRELLA_TREE_SAPLING.get());
         this.dropSelf(ModBlocks.ASPEN_SAPLING.get());
         this.dropSelf(ModBlocks.SNOWY_TREE_SAPLING.get());
@@ -375,10 +388,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ROCKS.get());
 
         LootItemCondition.Builder cottonCropConditionBuilder = LootItemBlockStatePropertyCondition
-                .hasBlockStateProperties(ModBlocks.DESERT_COTTON_CROP.get())
+                .hasBlockStateProperties(ModBlocks.DESERT_COTTON.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(DesertCottonCropBlock.AGE, 13));
 
-        this.add(ModBlocks.DESERT_COTTON_CROP.get(), createCropDrops(ModBlocks.DESERT_COTTON_CROP.get(), ModItems.DESERT_COTTON_FLOWER.get(),
+        this.add(ModBlocks.DESERT_COTTON.get(), createCropDrops(ModBlocks.DESERT_COTTON.get(), ModItems.DESERT_COTTON_FLOWER.get(),
                 ModItems.DESERT_COTTON_SEED.get(), cottonCropConditionBuilder));
 
         // --- / FLOWERS / --- //

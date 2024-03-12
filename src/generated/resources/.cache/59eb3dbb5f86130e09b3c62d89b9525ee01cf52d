@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-12T00:41:38.9376365	Loot Tables
+// 1.20.1	2024-03-12T10:50:06.985236316	Loot Tables
 3b57d2f5b75d1ebde8332c410414b73e988f10eb data/misty_world/loot_tables/blocks/araucaria_button.json
 45d5d14a8cdf5eaee1338c027c03c63b6ac70088 data/misty_world/loot_tables/blocks/araucaria_door.json
 a54781052ddf4f559cd9f012f8b2f1bfbf39a2ff data/misty_world/loot_tables/blocks/araucaria_fence.json
@@ -28,7 +28,7 @@ d743ddfc6a50d0994b45553cddb4e167a96e835e data/misty_world/loot_tables/blocks/asp
 da7e19f0cf73bfe106753e6bce7345e626e3ba06 data/misty_world/loot_tables/blocks/bio_shale_block.json
 46e330812c0c99c6068bff5b533712e009bd8f0e data/misty_world/loot_tables/blocks/bio_shale_ore.json
 84a5929d8c43e4f821ce20dcb740ec71cce5da10 data/misty_world/loot_tables/blocks/clean_filter_coal_block.json
-b8ad2e1d6858b9a935bb3bfd918f4aa548b4ffbc data/misty_world/loot_tables/blocks/desert_cotton_crop.json
+9029920184d573ac75ed94a6be0346970491915e data/misty_world/loot_tables/blocks/desert_cotton.json
 ddb1c3b0c37c4096acd7afbb56dbba26d5c03584 data/misty_world/loot_tables/blocks/filter_coal_ore.json
 f990994e832b1de8307ed472a01fa128556ec8c6 data/misty_world/loot_tables/blocks/foggy_cobblestone.json
 1474b8d713e81d4690a24a132b1faf42cf2c58e7 data/misty_world/loot_tables/blocks/foggy_gravel.json

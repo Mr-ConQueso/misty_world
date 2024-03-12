@@ -1,0 +1,9 @@
+{
+    "parent": "misty_world:block/tinted_cross_3",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "cross_0": "misty_world:block/desert_cotton_stage_10",
+        "cross_1": "misty_world:block/desert_cotton_stage_10b",
+        "cross_2": "misty_world:block/desert_cotton_stage_10f"
+    }
+}

@@ -8,9 +8,8 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
 import net.mrconqueso.misty_world.block.ModBlocks;
 import net.mrconqueso.misty_world.item.custom.CentrometerItem;
-import net.mrconqueso.misty_world.item.custom.FilterItem;
+import net.mrconqueso.misty_world.item.item_classes.*;
 import net.mrconqueso.misty_world.item.custom.GasAnalyzerItem;
-import net.mrconqueso.misty_world.item.custom.ToxicFoodItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -24,7 +23,7 @@ public class ModItems {
     public static final RegistryObject<Item> COMPOST = ITEMS.register("compost",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DESERT_COTTON_SEED = ITEMS.register("desert_cotton_seed",
-            () -> new ItemNameBlockItem(ModBlocks.DESERT_COTTON_CROP.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.DESERT_COTTON.get(), new Item.Properties()));
     public static final RegistryObject<Item> DESERT_COTTON_FLOWER = ITEMS.register("desert_cotton_flower",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HUMUS = ITEMS.register("humus",
@@ -54,7 +53,7 @@ public class ModItems {
     public static final RegistryObject<Item> GRAY_BRICK = ITEMS.register("gray_brick",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FILTER_COAL = ITEMS.register("filter_coal",
-            () -> new FilterItem(1000, new Item.Properties().durability(100).defaultDurability(85)));
+            () -> new ModFilterItem(1000, new Item.Properties().durability(100).defaultDurability(85)));
     public static final RegistryObject<Item> LATEX = ITEMS.register("latex",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_NIOBIUM = ITEMS.register("raw_niobium",
@@ -70,7 +69,7 @@ public class ModItems {
     public static final RegistryObject<Item> SPONGE_FIBRE = ITEMS.register("sponge_fibre",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CLEAR_SPONGE_FIBRE = ITEMS.register("clear_sponge_fibre",
-                () -> new FilterItem(300, new Item.Properties().durability(90)));
+                () -> new ModFilterItem(300, new Item.Properties().durability(90)));
     public static final RegistryObject<Item> SPONGE_SLIME = ITEMS.register("sponge_slime",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SPONGE_SPORE = ITEMS.register("sponge_spore",
@@ -148,15 +147,15 @@ public class ModItems {
     public static final RegistryObject<Item> NIGHTBERRY = ITEMS.register("nightberry",
             () -> new Item(new Item.Properties().food(ModFoods.NIGHTBERRY)));
     public static final RegistryObject<Item> BITTER_PILLS = ITEMS.register("bitter_pills",
-            () -> new ToxicFoodItem(new Item.Properties().food(ModFoods.BITTER_PILLS), -1000));
+            () -> new ModToxicFoodItem(new Item.Properties().food(ModFoods.BITTER_PILLS), -1000));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt",
             () -> new Item(new Item.Properties().food(ModFoods.SALT_FOOD)));
     public static final RegistryObject<Item> SOUP = ITEMS.register("soup",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SPONGE_MEAT = ITEMS.register("sponge_meat",
-            () -> new ToxicFoodItem(new Item.Properties().food(ModFoods.SPONGE_MEAT), 128));
+            () -> new ModToxicFoodItem(new Item.Properties().food(ModFoods.SPONGE_MEAT), 128));
     public static final RegistryObject<Item> SWIM_BLADDER = ITEMS.register("swim_bladder",
-            () -> new ToxicFoodItem(new Item.Properties().food(ModFoods.SWIM_BLADDER), -300));
+            () -> new ModToxicFoodItem(new Item.Properties().food(ModFoods.SWIM_BLADDER), -300));
 
     // --- / MUSHROOMS ON A STICK / --- //
     public static final RegistryObject<Item> CUP_MUSHROOM_ON_A_STICK = ITEMS.register("cup_mushroom_on_a_stick",

@@ -178,7 +178,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         // --------- / SEEDS / --------- //
         simpleBlockItem(ModBlocks.ASPEN_SAPLING);
         simpleBlockItem(ModBlocks.WILLOW_SAPLING);
-        simpleBlockItem(ModBlocks.ARAUCARIA_SAPLING);
+        simpleBlockItem(ModBlocks.CARVED_ARAUCARIA_SAPLING);
         simpleBlockItem(ModBlocks.FOGGY_OAK_SAPLING);
         simpleBlockItem(ModBlocks.FOGGY_PINE_SAPLING);
         simpleBlockItem(ModBlocks.SNOWY_TREE_SAPLING);

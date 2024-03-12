@@ -21,26 +21,27 @@ import net.mrconqueso.misty_world.item.ModItems;
 
 public class DesertCottonCropBlock extends CropBlock {
     public static final int FIRST_STAGE_MAX_AGE = 7;
-    public static final int SECOND_STAGE_MAX_AGE = 6;
+    public static final int SECOND_STAGE_MAX_AGE = 7;
 
     public static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[] {
-            Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 6.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 10.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 12.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 14.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),
-            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
+            Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0), // Stage 0 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0), // Stage 1 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 6.0, 16.0), // Stage 2 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 8.0, 16.0), // Stage 3 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 10.0, 16.0), // Stage 4 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 12.0, 16.0), // Stage 5 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 14.0, 16.0), // Stage 6 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 7 (Bottom)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 8 (Top)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 9 (Top)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 10 (Top)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 11 (Top)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 12 (Top)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0), // Stage 13 (Top)
+            Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0) // Stage 14 (Top)
     };
 
-    public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 13);
+    public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 14);
 
     public DesertCottonCropBlock(Properties pProperties) {
         super(pProperties);
@@ -78,7 +79,7 @@ public class DesertCottonCropBlock extends CropBlock {
     @Override
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
         return super.canSurvive(pState, pLevel, pPos) || (pLevel.getBlockState(pPos.below(1)).is(this) &&
-                pLevel.getBlockState(pPos.below(1)).getValue(AGE) == 8);
+                pLevel.getBlockState(pPos.below(1)).getValue(AGE) == FIRST_STAGE_MAX_AGE);
     }
 
     @Override

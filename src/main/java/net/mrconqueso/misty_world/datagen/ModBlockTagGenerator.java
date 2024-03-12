@@ -110,7 +110,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.ASPEN_SAPLING.get())
                 .add(ModBlocks.WILLOW_SAPLING.get())
-                .add(ModBlocks.ARAUCARIA_SAPLING.get())
+                .add(ModBlocks.CARVED_ARAUCARIA_SAPLING.get())
                 .add(ModBlocks.FOGGY_OAK_SAPLING.get())
                 .add(ModBlocks.FOGGY_PINE_SAPLING.get())
                 .add(ModBlocks.SNOWY_TREE_SAPLING.get())
@@ -170,78 +170,91 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.ASPEN_LOGS)
                 .add(ModBlocks.ASPEN_LOG.get())
                 .add(ModBlocks.ASPEN_WOOD.get())
+                .add(ModBlocks.CARVED_ASPEN_LOG.get())
                 .add(ModBlocks.STRIPPED_ASPEN_LOG.get())
                 .add(ModBlocks.STRIPPED_ASPEN_WOOD.get());
 
         this.tag(ModTags.Blocks.WILLOW_LOGS)
                 .add(ModBlocks.WILLOW_LOG.get())
                 .add(ModBlocks.WILLOW_WOOD.get())
+                .add(ModBlocks.CARVED_WILLOW_LOG.get())
                 .add(ModBlocks.STRIPPED_WILLOW_LOG.get())
                 .add(ModBlocks.STRIPPED_WILLOW_WOOD.get());
 
         this.tag(ModTags.Blocks.ARAUCARIA_LOGS)
                 .add(ModBlocks.ARAUCARIA_LOG.get())
                 .add(ModBlocks.ARAUCARIA_WOOD.get())
+                .add(ModBlocks.CARVED_ARAUCARIA_LOG.get())
                 .add(ModBlocks.STRIPPED_ARAUCARIA_LOG.get())
                 .add(ModBlocks.STRIPPED_ARAUCARIA_WOOD.get());
 
         this.tag(ModTags.Blocks.FOGGY_OAK_LOGS)
                 .add(ModBlocks.FOGGY_OAK_LOG.get())
                 .add(ModBlocks.FOGGY_OAK_WOOD.get())
+                .add(ModBlocks.CARVED_FOGGY_OAK_LOG.get())
                 .add(ModBlocks.STRIPPED_FOGGY_OAK_LOG.get())
                 .add(ModBlocks.STRIPPED_FOGGY_OAK_WOOD.get());
 
         this.tag(ModTags.Blocks.FOGGY_PINE_LOGS)
                 .add(ModBlocks.FOGGY_PINE_LOG.get())
                 .add(ModBlocks.FOGGY_PINE_WOOD.get())
+                .add(ModBlocks.CARVED_FOGGY_PINE_LOG.get())
                 .add(ModBlocks.STRIPPED_FOGGY_PINE_LOG.get())
                 .add(ModBlocks.STRIPPED_FOGGY_PINE_WOOD.get());
 
         this.tag(ModTags.Blocks.SNOWY_TREE_LOGS)
                 .add(ModBlocks.SNOWY_TREE_LOG.get())
                 .add(ModBlocks.SNOWY_TREE_WOOD.get())
+                .add(ModBlocks.CARVED_SNOWY_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_SNOWY_TREE_WOOD.get());
 
         this.tag(ModTags.Blocks.STONE_TREE_LOGS)
                 .add(ModBlocks.STONE_TREE_LOG.get())
                 .add(ModBlocks.STONE_TREE_WOOD.get())
+                .add(ModBlocks.CARVED_STONE_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_STONE_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_STONE_TREE_WOOD.get());
 
         this.tag(ModTags.Blocks.RUBBER_TREE_LOGS)
                 .add(ModBlocks.RUBBER_TREE_LOG.get())
                 .add(ModBlocks.RUBBER_TREE_WOOD.get())
+                .add(ModBlocks.CARVED_RUBBER_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get());
 
         this.tag(ModTags.Blocks.TROPIC_TREE_LOGS)
                 .add(ModBlocks.TROPIC_TREE_LOG.get())
                 .add(ModBlocks.TROPIC_TREE_WOOD.get())
+                .add(ModBlocks.CARVED_TROPIC_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_TROPIC_TREE_WOOD.get());
 
         this.tag(ModTags.Blocks.PRICKLY_TREE_LOGS)
                 .add(ModBlocks.PRICKLY_TREE_LOG.get())
                 .add(ModBlocks.PRICKLY_TREE_WOOD.get())
+                .add(ModBlocks.CARVED_PRICKLY_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_PRICKLY_TREE_WOOD.get());
 
         this.tag(ModTags.Blocks.SWAMPY_POPLAR_LOGS)
                 .add(ModBlocks.SWAMPY_POPLAR_LOG.get())
                 .add(ModBlocks.SWAMPY_POPLAR_WOOD.get())
+                .add(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get())
                 .add(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get())
                 .add(ModBlocks.STRIPPED_SWAMPY_POPLAR_WOOD.get());
 
         this.tag(ModTags.Blocks.UMBRELLA_TREE_LOGS)
                 .add(ModBlocks.UMBRELLA_TREE_LOG.get())
                 .add(ModBlocks.UMBRELLA_TREE_WOOD.get())
+                .add(ModBlocks.CARVED_UMBRELLA_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_UMBRELLA_TREE_LOG.get())
                 .add(ModBlocks.STRIPPED_UMBRELLA_TREE_WOOD.get());
 
         this.tag(ModTags.Blocks.FOREST_DECEIVER_LOGS)
                 .add(ModBlocks.FOREST_DECEIVER_LOG.get())
                 .add(ModBlocks.FOREST_DECEIVER_WOOD.get())
+                .add(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get())
                 .add(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get())
                 .add(ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD.get());
 

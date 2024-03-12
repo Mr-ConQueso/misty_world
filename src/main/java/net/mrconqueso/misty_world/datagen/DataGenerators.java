@@ -8,6 +8,7 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.mrconqueso.misty_world.MistyWorld;
+import net.mrconqueso.misty_world.datagen.loot.ModLootTableProvider;
 
 import java.util.concurrent.CompletableFuture;
 
