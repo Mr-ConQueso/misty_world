@@ -101,7 +101,7 @@ public class ModItems {
     public static final RegistryObject<Item> NIOBIUM_AXE = ITEMS.register("niobium_axe",
             () -> new AxeItem(ModToolTiers.NIOBIUM, 8.0f, -3.1f, new  Item.Properties()));
     public static final RegistryObject<Item> NIOBIUM_CHISEL = ITEMS.register("niobium_chisel",
-            () -> new Item(new Item.Properties()));
+            () -> new ModChiselItem(new Item.Properties()));
     public static final RegistryObject<Item> NIOBIUM_HOE = ITEMS.register("niobium_hoe",
             () -> new HoeItem(ModToolTiers.NIOBIUM, 4, 1, new Item.Properties()));
     public static final RegistryObject<Item> NIOBIUM_PICKAXE = ITEMS.register("niobium_pickaxe",

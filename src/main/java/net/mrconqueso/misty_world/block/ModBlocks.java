@@ -13,10 +13,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.custom.*;
 import net.mrconqueso.misty_world.api.block.PollutableBlock;
 import net.mrconqueso.misty_world.block.block_classes.ModFlammableRotatedPillarBlock;
 import net.mrconqueso.misty_world.block.block_classes.ModLeavesBlock;
+import net.mrconqueso.misty_world.block.custom.*;
 import net.mrconqueso.misty_world.item.ModItems;
 import net.mrconqueso.misty_world.worldgen.tree.*;
 
