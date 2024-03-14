@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "misty_world:block/willow_log_top",
+    "side": "misty_world:block/carved_willow_log"
+  }
+}

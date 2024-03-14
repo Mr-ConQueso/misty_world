@@ -1,0 +1,7 @@
+{
+    "parent": "misty_world:block/cube_all_moss",
+    "textures": {
+        "all": "misty_world:block/foggy_stone_bricks_3",
+        "moss": "misty_world:block/foggy_stone_bricks_moss_overlay_3"
+    }
+}

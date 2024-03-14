@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "misty_world:wet_gray_clay"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "misty_world:gray_clay_ball"
+  }
+}

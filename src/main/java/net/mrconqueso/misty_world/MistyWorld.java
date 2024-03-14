@@ -1,6 +1,7 @@
 package net.mrconqueso.misty_world;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,6 +15,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.block.entity.ModBlockEntities;
+import net.mrconqueso.misty_world.screen.FoggyStoneFurnaceScreen;
+import net.mrconqueso.misty_world.screen.ModMenuTypes;
 import net.mrconqueso.misty_world.tabs.ModCreativeModeBlocksTab;
 import net.mrconqueso.misty_world.tabs.ModCreativeModeItemsTab;
 import net.mrconqueso.misty_world.item.ModItems;
@@ -35,6 +39,9 @@ public class MistyWorld {
         ModBlocks.register(modEventBus);
 
         ModSounds.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -62,6 +69,8 @@ public class MistyWorld {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            MenuScreens.register(ModMenuTypes.FOGGY_STONE_FURNACE_MENU.get(), FoggyStoneFurnaceScreen::new);
 
         }
     }

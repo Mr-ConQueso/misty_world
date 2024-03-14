@@ -56,7 +56,9 @@ public class ForgeTags
 
     // --------- / FOOD / --------- //
     public static final TagKey<Item> BERRIES = forgeItemTag("berries");
-    public static final TagKey<Item> SALT = forgeItemTag("dusts/salt");
+    public static final TagKey<Item> SALT_DUSTS = forgeItemTag("dusts/salt");
+    public static final TagKey<Item> SALT = forgeItemTag("salt");
+    public static final TagKey<Item> SALTS = forgeItemTag("salts");
     public static final TagKey<Item> EGGS = forgeItemTag("eggs");
     public static final TagKey<Item> MILK = forgeItemTag("milk");
     public static final TagKey<Item> MILK_BUCKET = forgeItemTag("milk/milk");

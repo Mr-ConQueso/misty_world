@@ -1,14 +1,18 @@
 package net.mrconqueso.misty_world.tabs;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
 import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.block.custom.DesertCottonCropBlock;
 import net.mrconqueso.misty_world.item.ModItems;
 
 public class ModCreativeModeBlocksTab {
@@ -31,9 +35,55 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.FOGGY_COBBLESTONE.get());
                 output.accept(ModBlocks.MOSSY_FOGGY_COBBLESTONE.get());
 
-                // --------- / GRAVEL & SAND / --------- //
+                // --- / BUILDING BLOCKS / --- //
 
+                output.accept(ModBlocks.CHISELED_FOGGY_STONE.get());
+                output.accept(ModBlocks.MOSSY_FOGGY_STONE.get());
+                output.accept(ModBlocks.FOGGY_STONE_BRICKS.get());
+                output.accept(ModBlocks.MOSSY_FOGGY_STONE_BRICKS.get());
+                //output.accept(ModBlocks.FOGGY_STONE_MASONRY.get());
+                //output.accept(ModBlocks.MOSSY_FOGGY_STONE_MASONRY.get());
+                output.accept(ModBlocks.FOGGY_COBBLESTONE_WALL.get());
+                output.accept(ModBlocks.MOSSY_FOGGY_COBBLESTONE_WALL.get());
+                output.accept(ModBlocks.FOGGY_STONE_WALL.get());
+                output.accept(ModBlocks.MOSSY_FOGGY_STONE_WALL.get());
+
+                // --------- / SAND & GRAVEL / --------- //
+
+                output.accept(ModBlocks.WET_SAND.get());
+                output.accept(ModBlocks.DRY_SAND.get());
+                output.accept(ModBlocks.WET_RED_SAND.get());
+                output.accept(ModBlocks.DRY_RED_SAND.get());
+                output.accept(ModBlocks.WET_ACIDIC_SAND.get());
+                output.accept(ModBlocks.DRY_ACIDIC_SAND.get());
                 output.accept(ModBlocks.FOGGY_GRAVEL.get());
+
+                // --------- / CLAY / --------- //
+
+                output.accept(ModBlocks.WET_GRAY_CLAY.get());
+                output.accept(ModBlocks.DRY_GRAY_CLAY.get());
+                output.accept(ModBlocks.WET_VIRGIN_GRAY_CLAY.get());
+                output.accept(ModBlocks.DRY_VIRGIN_GRAY_CLAY.get());
+                output.accept(ModBlocks.WET_CRACKED_GRAY_CLAY.get());
+                output.accept(ModBlocks.DRY_CRACKED_GRAY_CLAY.get());
+
+                output.accept(ModBlocks.WET_RED_CLAY.get());
+                output.accept(ModBlocks.DRY_RED_CLAY.get());
+                output.accept(ModBlocks.WET_VIRGIN_RED_CLAY.get());
+                output.accept(ModBlocks.DRY_VIRGIN_RED_CLAY.get());
+                output.accept(ModBlocks.WET_CRACKED_RED_CLAY.get());
+                output.accept(ModBlocks.DRY_CRACKED_RED_CLAY.get());
+
+                // --------- / GROUND / --------- //
+
+                output.accept(ModBlocks.DRY_PEAT.get());
+                output.accept(ModBlocks.WET_PEAT.get());
+                output.accept(ModBlocks.DRY_SAPROPEL.get());
+                output.accept(ModBlocks.WET_SAPROPEL.get());
+                output.accept(ModBlocks.DRY_VIRGIN_SAPROPEL.get());
+                output.accept(ModBlocks.WET_VIRGIN_SAPROPEL.get());
+                output.accept(ModBlocks.DRY_HUMUS.get());
+                output.accept(ModBlocks.WET_HUMUS.get());
 
                 // --------- / WOOD / --------- //
                 // --- / ASPEN / --- //
@@ -275,7 +325,7 @@ public class ModCreativeModeBlocksTab {
 
                 // --------- / SEEDS / --------- //
 
-                output.accept(ModBlocks.CARVED_ARAUCARIA_SAPLING.get());
+                output.accept(ModBlocks.ARAUCARIA_SAPLING.get());
                 output.accept(ModBlocks.UMBRELLA_TREE_SAPLING.get());
                 output.accept(ModBlocks.ASPEN_SAPLING.get());
                 output.accept(ModBlocks.SNOWY_TREE_SAPLING.get());
@@ -315,8 +365,38 @@ public class ModCreativeModeBlocksTab {
                 output.accept(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK.get());
                 output.accept(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK.get());
 
+                // --------- / MATERIAL BLOCKS / --------- //
+
+                output.accept(ModBlocks.TALLOW_BLOCK.get());
+                output.accept(ModBlocks.SOAP_BLOCK.get());
+                output.accept(ModBlocks.LATEX_BLOCK.get());
+                output.accept(ModBlocks.RUBBER_BLOCK.get());
+
                 // --------- / NATURAL / --------- //
+
+                output.accept(ModBlocks.MULCH_BLOCK.get());
+                output.accept(ModBlocks.REMAINS_BLOCK.get());
+                output.accept(ModBlocks.FLOATING_MAT.get());
                 output.accept(ModBlocks.ROCKS.get());
+                output.accept(ModBlocks.DESERT_COTTON.get());
+                output.accept(ModBlocks.FOGGY_SPONGE.get());
+
+                // --- / DECORATIONS & UTILITY / --- //
+
+                output.accept(ModBlocks.NIOBIUM_DOOR.get());
+                output.accept(ModBlocks.NIOBIUM_TRAPDOOR.get());
+                output.accept(ModBlocks.NIOBIUM_CHEST.get());
+                output.accept(ModBlocks.TRAPPED_NIOBIUM_CHEST.get());
+                output.accept(ModBlocks.FOGGY_STONE_FURNACE.get());
+
+                output.accept(ModBlocks.CERAMIC_URN.get());
+                output.accept(ModBlocks.LATEX_POT.get());
+
+                // --- / PORTAL / --- //
+
+                output.accept(ModBlocks.PORTAL_BLOCK_BOTTOM.get());
+                output.accept(ModBlocks.PORTAL_BLOCK_TOP.get());
+
                 // --- / FLOWERS / --- //
                 output.accept(ModBlocks.VIOLET_VEIL.get());
 

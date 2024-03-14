@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -42,10 +43,96 @@ public class    ModBlocks {
     public static final RegistryObject<Block> MOSSY_FOGGY_COBBLESTONE = registerBlock("mossy_foggy_cobblestone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
 
-    // --------- / GRAVEL & SAND / --------- //
+    // --- / BUILDING BLOCKS / --- //
+    public static final RegistryObject<Block> CHISELED_FOGGY_STONE = registerBlock("chiseled_foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_FOGGY_STONE = registerBlock("mossy_foggy_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+    public static final RegistryObject<Block> FOGGY_STONE_BRICKS = registerBlock("foggy_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_FOGGY_STONE_BRICKS = registerBlock("mossy_foggy_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+    /*
+    public static final RegistryObject<Block> FOGGY_STONE_MASONRY = registerBlock("foggy_stone_masonry",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+    public static final RegistryObject<Block> MOSSY_FOGGY_STONE_MASONRY = registerBlock("mossy_foggy_stone_masonry",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+
+     */
+
+    public static final RegistryObject<Block> FOGGY_COBBLESTONE_WALL = registerBlock("foggy_cobblestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+    public static final RegistryObject<Block> MOSSY_FOGGY_COBBLESTONE_WALL = registerBlock("mossy_foggy_cobblestone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+    public static final RegistryObject<Block> FOGGY_STONE_WALL = registerBlock("foggy_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+    public static final RegistryObject<Block> MOSSY_FOGGY_STONE_WALL = registerBlock("mossy_foggy_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE_WALL)));
+
+    // --------- / SAND & GRAVEL / --------- //
+    public static final RegistryObject<Block> WET_SAND = registerBlock("wet_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> DRY_SAND = registerBlock("dry_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> WET_RED_SAND = registerBlock("wet_red_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> DRY_RED_SAND = registerBlock("dry_red_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> WET_ACIDIC_SAND = registerBlock("wet_acidic_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<Block> DRY_ACIDIC_SAND = registerBlock("dry_acidic_sand",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> FOGGY_GRAVEL = registerBlock("foggy_gravel",
             () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
 
+    // --------- / CLAY / --------- //
+    public static final RegistryObject<Block> WET_GRAY_CLAY = registerBlock("wet_gray_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+    public static final RegistryObject<Block> DRY_GRAY_CLAY = registerBlock("dry_gray_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAY_TERRACOTTA)));
+    public static final RegistryObject<Block> WET_VIRGIN_GRAY_CLAY = registerBlock("wet_virgin_gray_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+    public static final RegistryObject<Block> DRY_VIRGIN_GRAY_CLAY = registerBlock("dry_virgin_gray_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAY_TERRACOTTA)));
+    public static final RegistryObject<Block> WET_CRACKED_GRAY_CLAY = registerBlock("wet_cracked_gray_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+    public static final RegistryObject<Block> DRY_CRACKED_GRAY_CLAY = registerBlock("dry_cracked_gray_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAY_TERRACOTTA)));
+
+    public static final RegistryObject<Block> WET_RED_CLAY = registerBlock("wet_red_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+    public static final RegistryObject<Block> DRY_RED_CLAY = registerBlock("dry_red_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_TERRACOTTA)));
+    public static final RegistryObject<Block> WET_VIRGIN_RED_CLAY = registerBlock("wet_virgin_red_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+    public static final RegistryObject<Block> DRY_VIRGIN_RED_CLAY = registerBlock("dry_virgin_red_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_TERRACOTTA)));
+    public static final RegistryObject<Block> WET_CRACKED_RED_CLAY = registerBlock("wet_cracked_red_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY)));
+    public static final RegistryObject<Block> DRY_CRACKED_RED_CLAY = registerBlock("dry_cracked_red_clay",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_TERRACOTTA)));
+
+
+    // --------- / GROUND / --------- //
+    public static final RegistryObject<Block> DRY_PEAT = registerBlock("dry_peat",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> WET_PEAT = registerBlock("wet_peat",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
+    public static final RegistryObject<Block> DRY_SAPROPEL = registerBlock("dry_sapropel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> WET_SAPROPEL = registerBlock("wet_sapropel",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> DRY_VIRGIN_SAPROPEL = registerBlock("dry_virgin_sapropel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> WET_VIRGIN_SAPROPEL = registerBlock("wet_virgin_sapropel",
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
+    public static final RegistryObject<Block> DRY_HUMUS = registerBlock("dry_humus",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> WET_HUMUS = registerBlock("wet_humus",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    
     // --------- / WOOD / --------- //
 
     // --- / ASPEN / --- //
@@ -53,8 +140,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor(DyeColor.LIME)));
     public static final RegistryObject<Block> ASPEN_WOOD = registerBlock("aspen_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(DyeColor.LIME)));
-    public static final RegistryObject<Block> CARVED_ASPEN_LOG = registerBlock("carved_aspen_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(DyeColor.LIME)));
     public static final RegistryObject<Block> STRIPPED_ASPEN_LOG = registerBlock("stripped_aspen_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).mapColor(DyeColor.LIME)));
     public static final RegistryObject<Block> STRIPPED_ASPEN_WOOD = registerBlock("stripped_aspen_wood",
@@ -97,8 +182,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_LOG)));
     public static final RegistryObject<Block> UMBRELLA_TREE_WOOD = registerBlock("umbrella_tree_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_WOOD)));
-    public static final RegistryObject<Block> CARVED_UMBRELLA_TREE_LOG = registerBlock("carved_umbrella_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_MANGROVE_LOG)));
     public static final RegistryObject<Block> STRIPPED_UMBRELLA_TREE_LOG = registerBlock("stripped_umbrella_tree_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_MANGROVE_LOG)));
     public static final RegistryObject<Block> STRIPPED_UMBRELLA_TREE_WOOD = registerBlock("stripped_umbrella_tree_wood",
@@ -139,8 +222,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> FOREST_DECEIVER_WOOD = registerBlock("forest_deceiver_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_FOREST_DECEIVER_LOG = registerBlock("carved_forest_deceiver_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FOREST_DECEIVER_LOG = registerBlock("stripped_forest_deceiver_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FOREST_DECEIVER_WOOD = registerBlock("stripped_forest_deceiver_wood",
@@ -181,8 +262,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> ARAUCARIA_WOOD = registerBlock("araucaria_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_ARAUCARIA_LOG = registerBlock("carved_araucaria_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_ARAUCARIA_LOG = registerBlock("stripped_araucaria_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_ARAUCARIA_WOOD = registerBlock("stripped_araucaria_wood",
@@ -223,8 +302,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> FOGGY_OAK_WOOD = registerBlock("foggy_oak_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_FOGGY_OAK_LOG = registerBlock("carved_foggy_oak_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FOGGY_OAK_LOG = registerBlock("stripped_foggy_oak_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FOGGY_OAK_WOOD = registerBlock("stripped_foggy_oak_wood",
@@ -265,8 +342,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> FOGGY_PINE_WOOD = registerBlock("foggy_pine_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_FOGGY_PINE_LOG = registerBlock("carved_foggy_pine_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FOGGY_PINE_LOG = registerBlock("stripped_foggy_pine_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FOGGY_PINE_WOOD = registerBlock("stripped_foggy_pine_wood",
@@ -307,8 +382,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> SWAMPY_POPLAR_WOOD = registerBlock("swampy_poplar_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_SWAMPY_POPLAR_LOG = registerBlock("carved_swampy_poplar_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_SWAMPY_POPLAR_LOG = registerBlock("stripped_swampy_poplar_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_SWAMPY_POPLAR_WOOD = registerBlock("stripped_swampy_poplar_wood",
@@ -349,8 +422,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> SNOWY_TREE_WOOD = registerBlock("snowy_tree_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_SNOWY_TREE_LOG = registerBlock("carved_snowy_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_SNOWY_TREE_LOG = registerBlock("stripped_snowy_tree_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_SNOWY_TREE_WOOD = registerBlock("stripped_snowy_tree_wood",
@@ -391,8 +462,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> PRICKLY_TREE_WOOD = registerBlock("prickly_tree_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_PRICKLY_TREE_LOG = registerBlock("carved_prickly_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_PRICKLY_TREE_LOG = registerBlock("stripped_prickly_tree_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_PRICKLY_TREE_WOOD = registerBlock("stripped_prickly_tree_wood",
@@ -433,8 +502,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STONE_TREE_WOOD = registerBlock("stone_tree_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_STONE_TREE_LOG = registerBlock("carved_stone_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_STONE_TREE_LOG = registerBlock("stripped_stone_tree_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_STONE_TREE_WOOD = registerBlock("stripped_stone_tree_wood",
@@ -475,8 +542,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> TROPIC_TREE_WOOD = registerBlock("tropic_tree_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_TROPIC_TREE_LOG = registerBlock("carved_tropic_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_TROPIC_TREE_LOG = registerBlock("stripped_tropic_tree_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_TROPIC_TREE_WOOD = registerBlock("stripped_tropic_tree_wood",
@@ -517,8 +582,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> WILLOW_WOOD = registerBlock("willow_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_WILLOW_LOG = registerBlock("carved_willow_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood",
@@ -559,8 +622,6 @@ public class    ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> RUBBER_TREE_WOOD = registerBlock("rubber_tree_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> CARVED_RUBBER_TREE_LOG = registerBlock("carved_rubber_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_RUBBER_TREE_LOG = registerBlock("stripped_rubber_tree_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_RUBBER_TREE_WOOD = registerBlock("stripped_rubber_tree_wood",
@@ -596,14 +657,40 @@ public class    ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR ),
                     BlockSetType.OAK));
 
+    // --- / CARVED / --- //
+    public static final RegistryObject<Block> CARVED_ASPEN_LOG = registerBlock("carved_aspen_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(ASPEN_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_WILLOW_LOG = registerBlock("carved_willow_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(WILLOW_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_ARAUCARIA_LOG = registerBlock("carved_araucaria_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(ARAUCARIA_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_FOGGY_OAK_LOG = registerBlock("carved_foggy_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(FOGGY_OAK_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_FOGGY_PINE_LOG = registerBlock("carved_foggy_pine_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(FOGGY_PINE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_SNOWY_TREE_LOG = registerBlock("carved_snowy_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(SNOWY_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_STONE_TREE_LOG = registerBlock("carved_stone_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(STONE_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_RUBBER_TREE_LOG = registerBlock("carved_rubber_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(RUBBER_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_TROPIC_TREE_LOG = registerBlock("carved_tropic_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(TROPIC_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_PRICKLY_TREE_LOG = registerBlock("carved_prickly_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(PRICKLY_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_SWAMPY_POPLAR_LOG = registerBlock("carved_swampy_poplar_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(SWAMPY_POPLAR_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_UMBRELLA_TREE_LOG = registerBlock("carved_umbrella_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(UMBRELLA_TREE_PLANKS.get())));
+    public static final RegistryObject<Block> CARVED_FOREST_DECEIVER_LOG = registerBlock("carved_forest_deceiver_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(FOREST_DECEIVER_PLANKS.get())));
+
     // --- / SEEDS / --- //
     
     public static final RegistryObject<Block> ARAUCARIA_SAPLING = registerBlock("araucaria_sapling",
             () -> new SaplingBlock(new AraucariaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> UMBRELLA_TREE_SAPLING = registerBlock("umbrella_tree_sapling",
             () -> new SaplingBlock(new UmbrellaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-    public static final RegistryObject<Block> CARVED_ARAUCARIA_SAPLING = registerBlock("carved_araucaria_sapling",
-            () -> new SaplingBlock(new AraucariaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> ASPEN_SAPLING = registerBlock("aspen_sapling",
             () -> new SaplingBlock(new AspenTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> FOREST_DECEIVER_SAPLING = registerBlock("forest_deceiver_sapling",
@@ -673,12 +760,55 @@ public class    ModBlocks {
     public static final RegistryObject<Block> VERY_POLLUTED_FILTER_COAL_BLOCK = registerBlock("very_polluted_filter_coal_block",
             () -> new CompletelyPollutedModFilterCoalBlock(BlockBehaviour.Properties.copy(Blocks.COAL_BLOCK), PollutableBlock.PollutionState.CLEAN));
 
+    // --------- / MATERIAL BLOCKS / --------- //
+    public static final RegistryObject<Block> TALLOW_BLOCK = registerBlock("tallow_block",
+            () -> new TallowBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.SLIME_BLOCK).mapColor(MapColor.TERRACOTTA_WHITE).strength(0.5F)));
+    public static final RegistryObject<Block> SOAP_BLOCK = registerBlock("soap_block",
+            () -> new SoapBlock(BlockBehaviour.Properties.copy(Blocks.CLAY).friction(0.99F).strength(0.6F)));
+    public static final RegistryObject<Block> LATEX_BLOCK = registerBlock("latex_block",
+            () -> new LatexBlock(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK).friction(0.8F).strength(0.5F).mapColor(MapColor.QUARTZ)));
+    public static final RegistryObject<Block> RUBBER_BLOCK = registerBlock("rubber_block",
+            () -> new RubberBlock(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK).friction(0.9F).strength(0.6F).mapColor(DyeColor.GRAY)));
 
     // --------- / NATURAL / --------- //
+    public static final RegistryObject<Block> MULCH_BLOCK = registerBlock("mulch_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> REMAINS_BLOCK = registerBlock("remains_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> FLOATING_MAT = registerBlock("floating_mat",
+            () -> new FloatingMatBlock(BlockBehaviour.Properties.copy(Blocks.COBWEB)));
     public static final RegistryObject<Block> ROCKS = registerBlock("rocks",
-            () -> new RocksBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE).noCollission()));
+            () -> new RocksBlock(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
     public static final RegistryObject<Block> DESERT_COTTON = BLOCKS.register("desert_cotton",
             () -> new DesertCottonCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+
+    public static final RegistryObject<Block> FOGGY_SPONGE = registerBlock("foggy_sponge",
+            () -> new FoggySpongeBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM_BLOCK).noOcclusion()));
+
+    // --- / DECORATIONS & UTILITY / --- //
+    public static final RegistryObject<Block> NIOBIUM_DOOR = registerBlock("niobium_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(DyeColor.LIGHT_BLUE),
+                    BlockSetType.IRON));
+    public static final RegistryObject<Block> NIOBIUM_TRAPDOOR = registerBlock("niobium_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_TRAPDOOR ).mapColor(DyeColor.LIGHT_BLUE),
+                    BlockSetType.IRON));
+    public static final RegistryObject<Block> NIOBIUM_CHEST = registerBlock("niobium_chest",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHEST)));
+    public static final RegistryObject<Block> TRAPPED_NIOBIUM_CHEST = registerBlock("trapped_niobium_chest",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TRAPPED_CHEST)));
+
+    public static final RegistryObject<Block> FOGGY_STONE_FURNACE = registerBlock("foggy_stone_furnace",
+            () -> new FoggyStoneFurnaceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> CERAMIC_URN = registerBlock("ceramic_urn",
+            () -> new CeramicUrnBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)));
+    public static final RegistryObject<Block> LATEX_POT = registerBlock("latex_pot",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.FLOWER_POT)));
+
+    // --- / PORTAL / --- //
+    public static final RegistryObject<Block> PORTAL_BLOCK_BOTTOM = registerBlock("portal_block_bottom",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> PORTAL_BLOCK_TOP = registerBlock("portal_block_top",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // --- / FLOWERS / --- //
     public static final RegistryObject<Block> VIOLET_VEIL = registerBlock("violet_veil",

@@ -1,0 +1,77 @@
+// --- / BUILDING BLOCKS / --- //
+CHISELED_FOGGY_STONE "chiseled_foggy_stone"
+MOSSY_FOGGY_STONE "mossy_foggy_stone"
+FOGGY_STONE_BRICKS "foggy_stone_bricks"
+MOSSY_FOGGY_STONE_BRICKS "mossy_foggy_stone_bricks"
+FOGGY_STONE_MASONRY "foggy_stone_masonry"
+MOSSY_FOGGY_STONE_MASONRY "mossy_foggy_stone_masonry"
+FOGGY_COBBLESTONE_WALL "foggy_cobblestone_wall"
+MOSSY_FOGGY_COBBLESTONE_WALL "mossy_foggy_cobblestone_wall"
+FOGGY_STONE_WALL "foggy_stone_wall"
+MOSSY_FOGGY_STONE_WALL "mossy_foggy_stone_wall"
+
+// --------- / SAND & GRAVEL / --------- //
+WET_SAND "wet_sand"
+DRY_SAND "dry_sand"
+RED_WET_SAND "red_wet_sand"
+RED_DRY_SAND "red_dry_sand"
+WET_ACIDIC_SAND "wet_acidic_sand"
+DRY_ACIDIC_SAND "dry_acidic_sand"
+FOGGY_GRAVEL "foggy_gravel"
+
+// --------- / CLAY / --------- //
+WET_GRAY_CLAY "wet_gray_clay"
+DRY_GRAY_CLAY "dry_gray_clay"
+WET_VIRGIN_GRAY_CLAY "wet_virgin_gray_clay"
+DRY_VIRGIN_GRAY_CLAY "dry_virgin_gray_clay"
+CRACKED_WET_GRAY_CLAY "cracked_wet_gray_clay"
+CRACKED_DRY_GRAY_CLAY "cracked_dry_gray_clay"
+
+WET_RED_CLAY "wet_red_clay"
+DRY_RED_CLAY "dry_red_clay"
+WET_VIRGIN_RED_CLAY "wet_virgin_red_clay"
+DRY_VIRGIN_RED_CLAY "dry_virgin_red_clay"
+CRACKED_WET_RED_CLAY "cracked_wet_red_clay"
+CRACKED_DRY_RED_CLAY "cracked_dry_red_clay"
+
+// --------- / GROUND / --------- //
+DRY_PEAT "dry_peat"
+WET_PEAT "wet_peat"
+DRY_SAPROPEL "dry_sapropel"
+WET_SAPROPEL "wet_sapropel"
+DRY_VIRGIN_SAPROPEL "dry_virgin_sapropel"
+WET_VIRGIN_SAPROPEL "wet_virgin_sapropel"
+DRY_HUMUS "dry_humus"
+WET_HUMUS "wet_humus"
+
+
+
+
+// --------- / MATERIAL BLOCKS / --------- //
+TALLOW_BLOCK "tallow_block"
+SOAP_BLOCK "soap_block"
+LATEX_BLOCK "latex_block"
+RUBBER_BLOCK "rubber_block"
+
+// --------- / NATURAL / --------- //
+MULCH_BLOCK "mulch_block"
+REMAINS_BLOCK "remains_block"
+FLOATING_MAT "floating_mat"
+ROCKS "rocks"
+DESERT_COTTON = BLOCKS.register("desert_cotton"
+FOGGY_SPONGE "foggy_sponge"
+
+// --- / DECORATIONS & UTILITY / --- //
+NIOBIUM_DOOR "niobium_door"
+NIOBIUM_TRAPDOOR "niobium_trapdoor"
+NIOBIUM_CHEST "niobium_chest"
+TRAPPED_NIOBIUM_CHEST "trapped_niobium_chest"
+FOGGY_STONE_FURNACE "foggy_stone_furnace"
+
+CLAY_URN "clay_urn"
+CERAMIC_URN "ceramic_urn"
+LATEX_POT "latex_pot"
+
+// --- / PORTAL / --- //
+PORTAL_BLOCK_BOTTOM "portal_block_bottom"
+PORTAL_BLOCK_TOP "portal_block_top"

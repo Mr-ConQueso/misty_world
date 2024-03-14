@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-12T00:41:38.940047792	Tags for minecraft:item mod id misty_world
+// 1.20.1	2024-03-13T12:30:46.506545502	Tags for minecraft:item mod id misty_world
 3315f68077a63d9c26fb14f9f170a1eed757b0d3 data/forge/tags/items/armors/boots.json
 afe71dd01f50de749cddd9b84722faac4d349bb0 data/forge/tags/items/armors/chestplates.json
 3287d1c1a4c9a94919282f75ec570515e538f63b data/forge/tags/items/armors/helmets.json
@@ -15,7 +15,9 @@ e5b8b8cd319a7bf3f846bf562faa138a35bd7b64 data/forge/tags/items/dusts/sulfur.json
 8cb44f797454c3956d721053cee585d198d3c158 data/forge/tags/items/nuggets.json
 0fa90aab0c231d587dc4170a23e362033b2b22e1 data/forge/tags/items/raw_materials.json
 78f73ff2f602bd58bcdf027364d35cbdc98b40e5 data/forge/tags/items/rubber.json
-c527afaad22516e303ef31d6813be4e3402f7d49 data/forge/tags/items/seeds.json
+93a33f1d884076a4f976256230acc4edaae9cd55 data/forge/tags/items/salt.json
+93a33f1d884076a4f976256230acc4edaae9cd55 data/forge/tags/items/salts.json
+754d0e42a771b1e1c3e30c11992c0586b106f83d data/forge/tags/items/seeds.json
 2973b81282d1f0667e5d4e898887893405015c60 data/forge/tags/items/slimeballs.json
 dda9eb959c63cdbeef4f6b052b28963bce6d51c0 data/forge/tags/items/tallow.json
 4efad9ce93bac7067b5451bb16e3b0395b4b9558 data/forge/tags/items/tools/axes.json
@@ -29,16 +31,16 @@ b09f9c7b6cb013543b6058189368f4320e86cd7b data/forge/tags/items/tools/swords.json
 02929f6bafbc0e2568371e50bbbd5af01f620234 data/minecraft/tags/items/logs_that_burn.json
 6a6b2a0bd667e90c87d37c5d06aea80b17f68ea3 data/minecraft/tags/items/planks.json
 47003b72b676354080488cb6f9b1aafb5e551163 data/minecraft/tags/items/trimmable_armor.json
-829e9ce7e291f798eb78a17f643ed14d88348a0b data/misty_world/tags/items/araucaria_logs.json
-8e29b095737346009894bb1f73e2d0d8bb4c550d data/misty_world/tags/items/aspen_logs.json
-53243b04a9e66e423d4f2008eadaf63c4f46a5c7 data/misty_world/tags/items/foggy_oak_logs.json
-db87aa4bbee8d78089e3bbbb86dac08d05ed4e67 data/misty_world/tags/items/foggy_pine_logs.json
-af279957079bfc770cb762848fa31daf02cf656d data/misty_world/tags/items/forest_deceiver_logs.json
-8394b69519ac13d05020aa89122f7ce7d06a7f8e data/misty_world/tags/items/prickly_tree_logs.json
-c6eb803a140e9aab59b9ee544e7af1652cfd746b data/misty_world/tags/items/rubber_tree_logs.json
-4813bf85f9eb988cb47c8541fd90902ae3d96986 data/misty_world/tags/items/snow_tree_logs.json
-5e735633b1300d6cc2d69090f7caee4d213802b9 data/misty_world/tags/items/stone_tree_logs.json
-61e830ff4f31addae863c887475f7ec06d04c2bf data/misty_world/tags/items/swampy_poplar_logs.json
-3818a75e4c52cdc5eadf10b554bf375b52bfcaf1 data/misty_world/tags/items/tropic_tree_logs.json
-0a4f6cc33e9340fc0c7e052b37f21cd08a2191f7 data/misty_world/tags/items/umbrella_tree_logs.json
-ac91cacba3f620d0e8439251cc3eb9ce373fb6c8 data/misty_world/tags/items/willow_logs.json
+f6762018ad27a634d4f8ed8c7a5538a279decfea data/misty_world/tags/items/araucaria_logs.json
+60eb872b92a2bc6e1d4e2baeadda49e987bc44ce data/misty_world/tags/items/aspen_logs.json
+e94c921ea3860ab8d4a04d9c5943333d043d7bfe data/misty_world/tags/items/foggy_oak_logs.json
+5c583d0a06590aa42f3e0818606d340762ae9e83 data/misty_world/tags/items/foggy_pine_logs.json
+3cf80ccb502cbfdfd5283eee4388cf568ca1338c data/misty_world/tags/items/forest_deceiver_logs.json
+8882cb29442ea47fc56e793b3f486120996d21db data/misty_world/tags/items/prickly_tree_logs.json
+c236d0a8a047be97f8500582b239f70fc3526375 data/misty_world/tags/items/rubber_tree_logs.json
+c5081c5db1fc2b5631b5d8dec6da21538f1f26db data/misty_world/tags/items/snow_tree_logs.json
+e9012846fbbbf7ad7bab8d4e0d73e96af82ddc9a data/misty_world/tags/items/stone_tree_logs.json
+6a3fe9506b388fb03e17073c1681a4a9c0690506 data/misty_world/tags/items/swampy_poplar_logs.json
+fd69a95e30a270dd21253b25099bcd5ef8817312 data/misty_world/tags/items/tropic_tree_logs.json
+587ceb70faddef0f14ede17ad7aab3a6b2d3d8c2 data/misty_world/tags/items/umbrella_tree_logs.json
+655ea610796995d8a69189476f4cca7ac72b9db2 data/misty_world/tags/items/willow_logs.json

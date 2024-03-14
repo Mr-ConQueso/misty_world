@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "misty_world:block/forest_deceiver_log_top",
+    "side": "misty_world:block/carved_forest_deceiver_log"
+  }
+}

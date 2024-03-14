@@ -30,30 +30,61 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.POROUS_FOGGY_STONE);
         blockWithItem(ModBlocks.HARD_FOGGY_STONE);
         blockWithItem(ModBlocks.MINED_FOGGY_STONE);
-        blockWithItem(ModBlocks.MOSSY_MINED_FOGGY_STONE);
+        //blockWithItem(ModBlocks.MOSSY_MINED_FOGGY_STONE);
         blockWithItem(ModBlocks.FOGGY_COBBLESTONE);
-        blockWithItem(ModBlocks.MOSSY_FOGGY_COBBLESTONE);
+        //blockWithItem(ModBlocks.MOSSY_FOGGY_COBBLESTONE);
 
-        // --------- / GRAVEL & SAND / --------- //
+        // --- / BUILDING BLOCKS / --- //
 
+        blockWithItem(ModBlocks.CHISELED_FOGGY_STONE);
+        //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE);
+        //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE_BRICKS);
+        //blockWithItem(ModBlocks.FOGGY_STONE_MASONRY);
+        //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE_MASONRY);
+
+        wallBlock(((WallBlock) ModBlocks.FOGGY_COBBLESTONE_WALL.get()), blockTexture(ModBlocks.FOGGY_COBBLESTONE.get()));
+        //blockWithItem(ModBlocks.MOSSY_FOGGY_COBBLESTONE_WALL);
+        wallBlock(((WallBlock) ModBlocks.FOGGY_STONE_WALL.get()), blockTexture(ModBlocks.FOGGY_STONE.get()));
+        //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE_WALL);
+
+        // --------- / SAND & GRAVEL / --------- //
+
+        blockWithItem(ModBlocks.WET_SAND);
+        blockWithItem(ModBlocks.DRY_SAND);
+        blockWithItem(ModBlocks.WET_RED_SAND);
+        blockWithItem(ModBlocks.DRY_RED_SAND);
+        blockWithItem(ModBlocks.WET_ACIDIC_SAND);
+        blockWithItem(ModBlocks.DRY_ACIDIC_SAND);
         blockWithItem(ModBlocks.FOGGY_GRAVEL);
 
-        // --------- / WOOD / --------- //
+        // --------- / CLAY / --------- //
 
-        // --- / CARVED / --- //
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_ASPEN_LOG.get()), blockTexture(ModBlocks.CARVED_ASPEN_LOG.get()), blockTexture(ModBlocks.ASPEN_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_WILLOW_LOG.get()), blockTexture(ModBlocks.CARVED_WILLOW_LOG.get()), blockTexture(ModBlocks.WILLOW_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_ARAUCARIA_LOG.get()), blockTexture(ModBlocks.CARVED_ARAUCARIA_LOG.get()), blockTexture(ModBlocks.ARAUCARIA_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOGGY_OAK_LOG.get()), blockTexture(ModBlocks.CARVED_FOGGY_OAK_LOG.get()), blockTexture(ModBlocks.FOGGY_OAK_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOGGY_PINE_LOG.get()), blockTexture(ModBlocks.CARVED_FOGGY_PINE_LOG.get()), blockTexture(ModBlocks.FOGGY_PINE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_SNOWY_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_SNOWY_TREE_LOG.get()), blockTexture(ModBlocks.SNOWY_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_STONE_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_STONE_TREE_LOG.get()), blockTexture(ModBlocks.STONE_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.RUBBER_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_TROPIC_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_TROPIC_TREE_LOG.get()), blockTexture(ModBlocks.TROPIC_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_PRICKLY_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_PRICKLY_TREE_LOG.get()), blockTexture(ModBlocks.PRICKLY_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()), blockTexture(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()), blockTexture(ModBlocks.SWAMPY_POPLAR_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_UMBRELLA_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_UMBRELLA_TREE_LOG.get()), blockTexture(ModBlocks.UMBRELLA_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()), blockTexture(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()), blockTexture(ModBlocks.FOREST_DECEIVER_LOG.get()));
+        blockWithItem(ModBlocks.WET_GRAY_CLAY);
+        blockWithItem(ModBlocks.DRY_GRAY_CLAY);
+        blockWithTop(ModBlocks.WET_VIRGIN_GRAY_CLAY, ModBlocks.WET_VIRGIN_GRAY_CLAY.get(), ModBlocks.WET_GRAY_CLAY.get());
+        blockWithTop(ModBlocks.DRY_VIRGIN_GRAY_CLAY, ModBlocks.DRY_VIRGIN_GRAY_CLAY.get(), ModBlocks.DRY_GRAY_CLAY.get());
+        blockWithTop(ModBlocks.WET_CRACKED_GRAY_CLAY);
+        blockWithTop(ModBlocks.DRY_CRACKED_GRAY_CLAY);
+
+        blockWithItem(ModBlocks.WET_RED_CLAY);
+        blockWithItem(ModBlocks.DRY_RED_CLAY);
+        blockWithTop(ModBlocks.WET_VIRGIN_RED_CLAY, ModBlocks.WET_VIRGIN_RED_CLAY.get(), ModBlocks.WET_RED_CLAY.get());
+        blockWithTop(ModBlocks.DRY_VIRGIN_RED_CLAY, ModBlocks.DRY_VIRGIN_RED_CLAY.get(), ModBlocks.DRY_RED_CLAY.get());
+        blockWithTop(ModBlocks.WET_CRACKED_RED_CLAY);
+        blockWithTop(ModBlocks.DRY_CRACKED_RED_CLAY);
+
+        // --------- / GROUND / --------- //
+
+        blockWithTop(ModBlocks.DRY_PEAT);
+        blockWithTop(ModBlocks.WET_PEAT);
+        blockWithItem(ModBlocks.DRY_SAPROPEL);
+        blockWithItem(ModBlocks.WET_SAPROPEL);
+        blockWithTop(ModBlocks.DRY_VIRGIN_SAPROPEL, ModBlocks.DRY_VIRGIN_SAPROPEL.get(), ModBlocks.DRY_SAPROPEL.get());
+        blockWithTop(ModBlocks.WET_VIRGIN_SAPROPEL, ModBlocks.WET_VIRGIN_SAPROPEL.get(), ModBlocks.WET_SAPROPEL.get());
+        blockWithItem(ModBlocks.DRY_HUMUS);
+        blockWithItem(ModBlocks.WET_HUMUS);
+
+        // --------- / WOOD / --------- //
 
         // --- / ASPEN / --- //
         logBlock(((RotatedPillarBlock) ModBlocks.ASPEN_LOG.get()));
@@ -110,14 +141,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.UMBRELLA_TREE_TRAPDOOR.get()), modLoc("block/umbrella_tree_trapdoor"), true, "cutout");
 
         // --- / FOREST DECEIVER / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.FOREST_DECEIVER_WOOD.get()), blockTexture(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()), blockTexture(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.FOREST_DECEIVER_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.FOREST_DECEIVER_WOOD.get()), blockTexture(ModBlocks.FOREST_DECEIVER_LOG.get()), blockTexture(ModBlocks.FOREST_DECEIVER_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get()), blockTexture(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_forest_deceiver_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD.get()), blockTexture(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_FOREST_DECEIVER_LOG);
+        blockItem(ModBlocks.FOREST_DECEIVER_LOG);
         blockItem(ModBlocks.FOREST_DECEIVER_WOOD);
         blockItem(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG);
         blockItem(ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD);
@@ -137,14 +168,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.FOREST_DECEIVER_TRAPDOOR.get()), modLoc("block/forest_deceiver_trapdoor"), true, "cutout");
 
         // --- / ARAUCARIA / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_ARAUCARIA_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.ARAUCARIA_WOOD.get()), blockTexture(ModBlocks.CARVED_ARAUCARIA_LOG.get()), blockTexture(ModBlocks.CARVED_ARAUCARIA_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.ARAUCARIA_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.ARAUCARIA_WOOD.get()), blockTexture(ModBlocks.ARAUCARIA_LOG.get()), blockTexture(ModBlocks.ARAUCARIA_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_ARAUCARIA_LOG.get()), blockTexture(ModBlocks.STRIPPED_ARAUCARIA_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_araucaria_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_ARAUCARIA_WOOD.get()), blockTexture(ModBlocks.STRIPPED_ARAUCARIA_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_ARAUCARIA_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_ARAUCARIA_LOG);
+        blockItem(ModBlocks.ARAUCARIA_LOG);
         blockItem(ModBlocks.ARAUCARIA_WOOD);
         blockItem(ModBlocks.STRIPPED_ARAUCARIA_LOG);
         blockItem(ModBlocks.STRIPPED_ARAUCARIA_WOOD);
@@ -164,14 +195,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.ARAUCARIA_TRAPDOOR.get()), modLoc("block/araucaria_trapdoor"), true, "cutout");
 
         // --- / FOGGY OAK / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOGGY_OAK_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.FOGGY_OAK_WOOD.get()), blockTexture(ModBlocks.CARVED_FOGGY_OAK_LOG.get()), blockTexture(ModBlocks.CARVED_FOGGY_OAK_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.FOGGY_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.FOGGY_OAK_WOOD.get()), blockTexture(ModBlocks.FOGGY_OAK_LOG.get()), blockTexture(ModBlocks.FOGGY_OAK_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FOGGY_OAK_LOG.get()), blockTexture(ModBlocks.STRIPPED_FOGGY_OAK_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_foggy_oak_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FOGGY_OAK_WOOD.get()), blockTexture(ModBlocks.STRIPPED_FOGGY_OAK_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_FOGGY_OAK_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_FOGGY_OAK_LOG);
+        blockItem(ModBlocks.FOGGY_OAK_LOG);
         blockItem(ModBlocks.FOGGY_OAK_WOOD);
         blockItem(ModBlocks.STRIPPED_FOGGY_OAK_LOG);
         blockItem(ModBlocks.STRIPPED_FOGGY_OAK_WOOD);
@@ -191,14 +222,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.FOGGY_OAK_TRAPDOOR.get()), modLoc("block/foggy_oak_trapdoor"), true, "cutout");
 
         // --- / FOGGY PINE / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOGGY_PINE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.FOGGY_PINE_WOOD.get()), blockTexture(ModBlocks.CARVED_FOGGY_PINE_LOG.get()), blockTexture(ModBlocks.CARVED_FOGGY_PINE_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.FOGGY_PINE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.FOGGY_PINE_WOOD.get()), blockTexture(ModBlocks.FOGGY_PINE_LOG.get()), blockTexture(ModBlocks.FOGGY_PINE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FOGGY_PINE_LOG.get()), blockTexture(ModBlocks.STRIPPED_FOGGY_PINE_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_foggy_pine_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FOGGY_PINE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_FOGGY_PINE_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_FOGGY_PINE_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_FOGGY_PINE_LOG);
+        blockItem(ModBlocks.FOGGY_PINE_LOG);
         blockItem(ModBlocks.FOGGY_PINE_WOOD);
         blockItem(ModBlocks.STRIPPED_FOGGY_PINE_LOG);
         blockItem(ModBlocks.STRIPPED_FOGGY_PINE_WOOD);
@@ -218,14 +249,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.FOGGY_PINE_TRAPDOOR.get()), modLoc("block/foggy_pine_trapdoor"), true, "cutout");
 
         // --- / SWAMPY POPLAR / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.SWAMPY_POPLAR_WOOD.get()), blockTexture(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()), blockTexture(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.SWAMPY_POPLAR_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.SWAMPY_POPLAR_WOOD.get()), blockTexture(ModBlocks.SWAMPY_POPLAR_LOG.get()), blockTexture(ModBlocks.SWAMPY_POPLAR_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get()), blockTexture(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_swampy_poplar_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_SWAMPY_POPLAR_WOOD.get()), blockTexture(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_SWAMPY_POPLAR_LOG);
+        blockItem(ModBlocks.SWAMPY_POPLAR_LOG);
         blockItem(ModBlocks.SWAMPY_POPLAR_WOOD);
         blockItem(ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG);
         blockItem(ModBlocks.STRIPPED_SWAMPY_POPLAR_WOOD);
@@ -245,14 +276,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.SWAMPY_POPLAR_TRAPDOOR.get()), modLoc("block/swampy_poplar_trapdoor"), true, "cutout");
 
         // --- / SNOWY TREE / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_SNOWY_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.SNOWY_TREE_WOOD.get()), blockTexture(ModBlocks.CARVED_SNOWY_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_SNOWY_TREE_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.SNOWY_TREE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.SNOWY_TREE_WOOD.get()), blockTexture(ModBlocks.SNOWY_TREE_LOG.get()), blockTexture(ModBlocks.SNOWY_TREE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_SNOWY_TREE_LOG.get()), blockTexture(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_snowy_tree_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_SNOWY_TREE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_SNOWY_TREE_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_SNOWY_TREE_LOG);
+        blockItem(ModBlocks.SNOWY_TREE_LOG);
         blockItem(ModBlocks.SNOWY_TREE_WOOD);
         blockItem(ModBlocks.STRIPPED_SNOWY_TREE_LOG);
         blockItem(ModBlocks.STRIPPED_SNOWY_TREE_WOOD);
@@ -272,14 +303,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.SNOWY_TREE_TRAPDOOR.get()), modLoc("block/snowy_tree_trapdoor"), true, "cutout");
 
         // --- / PRICKLY TREE / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_PRICKLY_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.PRICKLY_TREE_WOOD.get()), blockTexture(ModBlocks.CARVED_PRICKLY_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_PRICKLY_TREE_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.PRICKLY_TREE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PRICKLY_TREE_WOOD.get()), blockTexture(ModBlocks.PRICKLY_TREE_LOG.get()), blockTexture(ModBlocks.PRICKLY_TREE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get()), blockTexture(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_prickly_tree_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PRICKLY_TREE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_PRICKLY_TREE_LOG);
+        blockItem(ModBlocks.PRICKLY_TREE_LOG);
         blockItem(ModBlocks.PRICKLY_TREE_WOOD);
         blockItem(ModBlocks.STRIPPED_PRICKLY_TREE_LOG);
         blockItem(ModBlocks.STRIPPED_PRICKLY_TREE_WOOD);
@@ -299,14 +330,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PRICKLY_TREE_TRAPDOOR.get()), modLoc("block/prickly_tree_trapdoor"), true, "cutout");
 
         // --- / STONE TREE / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_STONE_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.STONE_TREE_WOOD.get()), blockTexture(ModBlocks.CARVED_STONE_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_STONE_TREE_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.STONE_TREE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STONE_TREE_WOOD.get()), blockTexture(ModBlocks.STONE_TREE_LOG.get()), blockTexture(ModBlocks.STONE_TREE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_STONE_TREE_LOG.get()), blockTexture(ModBlocks.STRIPPED_STONE_TREE_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_stone_tree_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_STONE_TREE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_STONE_TREE_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_STONE_TREE_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_STONE_TREE_LOG);
+        blockItem(ModBlocks.STONE_TREE_LOG);
         blockItem(ModBlocks.STONE_TREE_WOOD);
         blockItem(ModBlocks.STRIPPED_STONE_TREE_LOG);
         blockItem(ModBlocks.STRIPPED_STONE_TREE_WOOD);
@@ -326,14 +357,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.STONE_TREE_TRAPDOOR.get()), modLoc("block/stone_tree_trapdoor"), true, "cutout");
 
         // --- / TROPIC TREE / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_TROPIC_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.TROPIC_TREE_WOOD.get()), blockTexture(ModBlocks.CARVED_TROPIC_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_TROPIC_TREE_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.TROPIC_TREE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.TROPIC_TREE_WOOD.get()), blockTexture(ModBlocks.TROPIC_TREE_LOG.get()), blockTexture(ModBlocks.TROPIC_TREE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_TROPIC_TREE_LOG.get()), blockTexture(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_tropic_tree_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_TROPIC_TREE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_TROPIC_TREE_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_TROPIC_TREE_LOG);
+        blockItem(ModBlocks.TROPIC_TREE_LOG);
         blockItem(ModBlocks.TROPIC_TREE_WOOD);
         blockItem(ModBlocks.STRIPPED_TROPIC_TREE_LOG);
         blockItem(ModBlocks.STRIPPED_TROPIC_TREE_WOOD);
@@ -353,14 +384,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.TROPIC_TREE_TRAPDOOR.get()), modLoc("block/tropic_tree_trapdoor"), true, "cutout");
 
         // --- / WILLOW / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_WILLOW_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.WILLOW_WOOD.get()), blockTexture(ModBlocks.CARVED_WILLOW_LOG.get()), blockTexture(ModBlocks.CARVED_WILLOW_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.WILLOW_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.WILLOW_WOOD.get()), blockTexture(ModBlocks.WILLOW_LOG.get()), blockTexture(ModBlocks.WILLOW_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_WILLOW_LOG.get()), blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_willow_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_WILLOW_WOOD.get()), blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_WILLOW_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_WILLOW_LOG);
+        blockItem(ModBlocks.WILLOW_LOG);
         blockItem(ModBlocks.WILLOW_WOOD);
         blockItem(ModBlocks.STRIPPED_WILLOW_LOG);
         blockItem(ModBlocks.STRIPPED_WILLOW_WOOD);
@@ -380,14 +411,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.WILLOW_TRAPDOOR.get()), modLoc("block/willow_trapdoor"), true, "cutout");
 
         // --- / RUBBER_TREE / --- //
-        logBlock(((RotatedPillarBlock) ModBlocks.CARVED_RUBBER_TREE_LOG.get()));
-        axisBlock(((RotatedPillarBlock) ModBlocks.RUBBER_TREE_WOOD.get()), blockTexture(ModBlocks.CARVED_RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_RUBBER_TREE_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.RUBBER_TREE_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.RUBBER_TREE_WOOD.get()), blockTexture(ModBlocks.RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.RUBBER_TREE_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get()),
                 new ResourceLocation(MistyWorld.MOD_ID, "block/stripped_rubber_tree_log_top"));
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get()), blockTexture(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get()),
                 blockTexture(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get()));
 
-        blockItem(ModBlocks.CARVED_RUBBER_TREE_LOG);
+        blockItem(ModBlocks.RUBBER_TREE_LOG);
         blockItem(ModBlocks.RUBBER_TREE_WOOD);
         blockItem(ModBlocks.STRIPPED_RUBBER_TREE_LOG);
         blockItem(ModBlocks.STRIPPED_RUBBER_TREE_WOOD);
@@ -406,11 +437,54 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.RUBBER_TREE_DOOR.get()), modLoc("block/rubber_tree_door_bottom"), modLoc("block/rubber_tree_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.RUBBER_TREE_TRAPDOOR.get()), modLoc("block/rubber_tree_trapdoor"), true, "cutout");
 
+        // --- / CARVED / --- //
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_ASPEN_LOG.get()), blockTexture(ModBlocks.CARVED_ASPEN_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/aspen_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_WILLOW_LOG.get()), blockTexture(ModBlocks.CARVED_WILLOW_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/willow_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_ARAUCARIA_LOG.get()), blockTexture(ModBlocks.CARVED_ARAUCARIA_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/araucaria_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOGGY_OAK_LOG.get()), blockTexture(ModBlocks.CARVED_FOGGY_OAK_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/foggy_oak_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOGGY_PINE_LOG.get()), blockTexture(ModBlocks.CARVED_FOGGY_PINE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/foggy_pine_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_SNOWY_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_SNOWY_TREE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/snowy_tree_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_STONE_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_STONE_TREE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/stone_tree_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_RUBBER_TREE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/rubber_tree_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_TROPIC_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_TROPIC_TREE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/tropic_tree_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_PRICKLY_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_PRICKLY_TREE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/prickly_tree_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()), blockTexture(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/swampy_poplar_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_UMBRELLA_TREE_LOG.get()), blockTexture(ModBlocks.CARVED_UMBRELLA_TREE_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/umbrella_tree_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()), blockTexture(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/forest_deceiver_log_top"));
+
+        blockItem(ModBlocks.CARVED_ASPEN_LOG);
+        blockItem(ModBlocks.CARVED_WILLOW_LOG);
+        blockItem(ModBlocks.CARVED_ARAUCARIA_LOG);
+        blockItem(ModBlocks.CARVED_FOGGY_OAK_LOG);
+        blockItem(ModBlocks.CARVED_FOGGY_PINE_LOG);
+        blockItem(ModBlocks.CARVED_SNOWY_TREE_LOG);
+        blockItem(ModBlocks.CARVED_STONE_TREE_LOG);
+        blockItem(ModBlocks.CARVED_RUBBER_TREE_LOG);
+        blockItem(ModBlocks.CARVED_TROPIC_TREE_LOG);
+        blockItem(ModBlocks.CARVED_PRICKLY_TREE_LOG);
+        blockItem(ModBlocks.CARVED_SWAMPY_POPLAR_LOG);
+        blockItem(ModBlocks.CARVED_UMBRELLA_TREE_LOG);
+        blockItem(ModBlocks.CARVED_FOREST_DECEIVER_LOG);
+
         // --------- / SEEDS / --------- //
         
         saplingBlock(ModBlocks.ASPEN_SAPLING);
         saplingBlock(ModBlocks.WILLOW_SAPLING);
-        saplingBlock(ModBlocks.CARVED_ARAUCARIA_SAPLING);
+        saplingBlock(ModBlocks.ARAUCARIA_SAPLING);
         saplingBlock(ModBlocks.FOGGY_OAK_SAPLING);
         saplingBlock(ModBlocks.FOGGY_PINE_SAPLING);
         saplingBlock(ModBlocks.SNOWY_TREE_SAPLING);
@@ -448,8 +522,29 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MODERATELY_POLLUTED_FILTER_COAL_BLOCK);
         blockWithItem(ModBlocks.VERY_POLLUTED_FILTER_COAL_BLOCK);
 
+        // --------- / MATERIAL BLOCKS / --------- //
+        blockWithItem(ModBlocks.TALLOW_BLOCK);
+        blockWithItem(ModBlocks.SOAP_BLOCK);
+        blockWithItem(ModBlocks.LATEX_BLOCK);
+        blockWithItem(ModBlocks.RUBBER_BLOCK);
+
         // --------- / NATURAL / --------- //
         //makeTwoTallCrop(((CropBlock) ModBlocks.DESERT_COTTON.get()), "desert_cotton_stage_", "desert_cotton_stage_");
+        blockWithItem(ModBlocks.MULCH_BLOCK);
+        blockItem(ModBlocks.FLOATING_MAT);
+        blockWithItem(ModBlocks.REMAINS_BLOCK);
+
+        // --- / DECORATIONS & UTILITY / --- //
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.NIOBIUM_DOOR.get()), modLoc("block/niobium_door_bottom"), modLoc("block/niobium_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.NIOBIUM_TRAPDOOR.get()), modLoc("block/niobium_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.NIOBIUM_CHEST);
+        blockItem(ModBlocks.TRAPPED_NIOBIUM_CHEST);
+        blockItem(ModBlocks.FOGGY_STONE_FURNACE);
+        //blockWithItem(ModBlocks.LATEX_POT);
+
+        // --- / PORTAL / --- //
+        blockWithBottomTop(ModBlocks.PORTAL_BLOCK_BOTTOM);
+        blockWithBottomTop(ModBlocks.PORTAL_BLOCK_TOP);
 
         // --- / FLOWERS / --- //
         simpleBlockWithItem(ModBlocks.VIOLET_VEIL.get(), models().cross(blockTexture(ModBlocks.VIOLET_VEIL.get()).getPath(),
@@ -470,6 +565,44 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation(MistyWorld.MOD_ID, "block/" + textureName + state.getValue(((DesertCottonCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
+    }
+    public void blockWithTop(RegistryObject<Block> blockRegistryObject) {
+        Block block = blockRegistryObject.get();
+        this.simpleBlock(block,
+                models().cubeTop(getBlockPath(block),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_side"),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_top")));
+        blockItem(blockRegistryObject);
+    }
+
+    public void blockWithBottomTop(RegistryObject<Block> blockRegistryObject) {
+        Block block = blockRegistryObject.get();
+        this.simpleBlock(block,
+                models().cubeBottomTop(getBlockPath(block),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_side"),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_bottom"),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_top")));
+        blockItem(blockRegistryObject);
+    }
+
+    public void blockWithTop(RegistryObject<Block> blockRegistryObject, Block sideBlock, Block topBlock) {
+        Block block = blockRegistryObject.get();
+        this.simpleBlock(block,
+                models().cubeTop(getBlockPath(block),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(sideBlock) + "_side"),
+                        new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(topBlock))));
+        blockItem(blockRegistryObject);
+    }
+
+    private void mossyBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+
+    }
+
+    private String getBlockPath(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block).getPath();
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "leaves",
+        "textures": {
+            "all": "misty_world:block/urn_side"
+        }
+    },
+    "variants": {
+        "normal": { "model": "leaves" }
+    }
+}

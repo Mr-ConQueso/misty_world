@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "misty_world:block/portal_block_top_bottom",
+    "side": "misty_world:block/portal_block_top_side",
+    "top": "misty_world:block/portal_block_top_top"
+  }
+}

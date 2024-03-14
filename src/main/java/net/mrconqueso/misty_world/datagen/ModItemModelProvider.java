@@ -43,7 +43,10 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.ICON);
         // --------- / BLOCKS / --------- //
-        
+
+        wallItem(ModBlocks.FOGGY_STONE_WALL, ModBlocks.FOGGY_STONE);
+        wallItem(ModBlocks.FOGGY_COBBLESTONE_WALL, ModBlocks.FOGGY_COBBLESTONE);
+
         // --------- / WOOD / --------- //
         // --- / ASPEN / --- //
         evenSimplerBlockItem(ModBlocks.ASPEN_PLANKS);
@@ -178,7 +181,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         // --------- / SEEDS / --------- //
         simpleBlockItem(ModBlocks.ASPEN_SAPLING);
         simpleBlockItem(ModBlocks.WILLOW_SAPLING);
-        simpleBlockItem(ModBlocks.CARVED_ARAUCARIA_SAPLING);
+        simpleBlockItem(ModBlocks.ARAUCARIA_SAPLING);
         simpleBlockItem(ModBlocks.FOGGY_OAK_SAPLING);
         simpleBlockItem(ModBlocks.FOGGY_PINE_SAPLING);
         simpleBlockItem(ModBlocks.SNOWY_TREE_SAPLING);
@@ -189,8 +192,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.SWAMPY_POPLAR_SAPLING);
         simpleBlockItem(ModBlocks.UMBRELLA_TREE_SAPLING);
         simpleBlockItem(ModBlocks.FOREST_DECEIVER_SAPLING);
+
         // --------- / NATURAL / --------- //
         simpleBlockItem(ModBlocks.ROCKS);
+
+        // --- / DECORATIONS & UTILITY / --- //
+        simpleBlockItem(ModBlocks.NIOBIUM_DOOR);
+        trapdoorItem(ModBlocks.NIOBIUM_TRAPDOOR);
+
+        simpleBlockItem(ModBlocks.CERAMIC_URN);
+        simpleBlockItem(ModBlocks.LATEX_POT);
+
+        // --- / PORTAL / --- //
 
         // --------- / NATURAL / --------- //
         simpleItem(ModItems.BIO_SHALE);
@@ -222,6 +235,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SPONGE_SLIME);
         simpleItem(ModItems.SPONGE_SPORE);
         simpleItem(ModItems.SULFUR);
+        simpleItem(ModItems.CLAY_URN);
         // --------- / TOOLS / --------- //
         simpleItem(ModItems.CENTROMETER);
         simpleItem(ModItems.GAS_ANALYZER);

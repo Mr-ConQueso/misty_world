@@ -51,6 +51,7 @@ public class ModCreativeModeItemsTab {
                 output.accept(ModItems.SPONGE_SPORE.get());
                 output.accept(ModItems.SULFUR.get());
                 output.accept(ModItems.SALTPETER.get());
+                output.accept(ModItems.CLAY_URN.get());
                 // --------- / TOOLS / --------- //
                 output.accept(ModItems.CENTROMETER.get());
                 output.accept(ModItems.GAS_ANALYZER.get());

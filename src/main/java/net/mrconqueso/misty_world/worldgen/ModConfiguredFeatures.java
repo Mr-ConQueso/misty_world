@@ -62,70 +62,70 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, WILLOW_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_WILLOW_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.WILLOW_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.WILLOW_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, ARAUCARIA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_ARAUCARIA_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.ARAUCARIA_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.ARAUCARIA_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, FOGGY_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_FOGGY_OAK_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.FOGGY_OAK_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.FOGGY_OAK_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, FOGGY_PINE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_FOGGY_PINE_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.FOGGY_PINE_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.FOGGY_PINE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, SNOWY_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_SNOWY_TREE_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.SNOWY_TREE_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.SNOWY_TREE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, STONE_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_STONE_TREE_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.STONE_TREE_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.STONE_TREE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, RUBBER_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_RUBBER_TREE_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.RUBBER_TREE_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.RUBBER_TREE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, TROPIC_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_TROPIC_TREE_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.TROPIC_TREE_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.TROPIC_TREE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, PRICKLY_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_PRICKLY_TREE_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.PRICKLY_TREE_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.PRICKLY_TREE_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, SWAMPY_POPLAR_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.SWAMPY_POPLAR_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.SWAMPY_POPLAR_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
@@ -139,7 +139,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, FOREST_DECEIVER_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.FOREST_DECEIVER_LOG.get()),
                 new StraightTrunkPlacer(5, 4, 3),
                 BlockStateProvider.simple(ModBlocks.FOREST_DECEIVER_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),

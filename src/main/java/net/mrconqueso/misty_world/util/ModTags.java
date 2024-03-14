@@ -14,6 +14,15 @@ public class ModTags {
         // --------- / STONES / --------- //
         public static final TagKey<Block> FOGGY_STONES = tag("foggy_stones");
 
+        // --------- / GROUND / --------- //
+        public static final TagKey<Block> WET_SAND = tag("wet_sand");
+        public static final TagKey<Block> DRY_SAND = tag("dry_sand");
+        public static final TagKey<Block> WET_CLAY = tag("wet_clay");
+        public static final TagKey<Block> DRY_CLAY = tag("dry_clay");
+
+        public static final TagKey<Block> WET_GROUND = tag("wet_ground");
+        public static final TagKey<Block> DRY_GROUND = tag("dry_ground");
+
         // --------- / LOGS / --------- //
         public static final TagKey<Block> ASPEN_LOGS = tag("aspen_logs");
         public static final TagKey<Block> WILLOW_LOGS = tag("willow_logs");

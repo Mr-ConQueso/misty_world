@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "misty_world:block/wet_virgin_gray_clay_side",
+    "top": "misty_world:block/wet_gray_clay"
+  }
+}

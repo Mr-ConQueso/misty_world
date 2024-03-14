@@ -79,6 +79,9 @@ public class ModItems {
     public static final RegistryObject<Item> SALTPETER = ITEMS.register("saltpeter",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> CLAY_URN = ITEMS.register("clay_urn",
+            () -> new Item(new Item.Properties()));
+
 
     // --------- / TOOLS / --------- //
     public static final RegistryObject<Item> CENTROMETER = ITEMS.register("centrometer",

@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "growth=true": [
+            { "model": "misty_world:block/floating_mat_growth" },
+            { "model": "misty_world:block/floating_mat_growth", "y": 90 },
+            { "model": "misty_world:block/floating_mat_growth", "y": 180 },
+            { "model": "misty_world:block/floating_mat_growth", "y": 270 }
+        ],
+        "growth=false": [
+            { "model": "misty_world:block/floating_mat" },
+            { "model": "misty_world:block/floating_mat", "y": 90 },
+            { "model": "misty_world:block/floating_mat", "y": 180},
+            { "model": "misty_world:block/floating_mat", "y": 270 }
+        ]
+    }
+}

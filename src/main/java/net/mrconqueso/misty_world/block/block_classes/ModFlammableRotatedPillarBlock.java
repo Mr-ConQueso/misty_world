@@ -22,8 +22,6 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     private static final Map<Block, Block> woodToStrippedWoodMap = new HashMap<>();
     public ModFlammableRotatedPillarBlock(Properties pProperties) {
         super(pProperties);
-        //setLogToStrippedLogMap();
-        //setWoodToStrippedWoodMap(woodToStrippedWoodMap);
     }
 
     @Override
@@ -40,22 +38,21 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 5;
     }
-
-
+    
     public static void setLogToStrippedLogMap() {
         logToStrippedLogMap.put(ModBlocks.ASPEN_LOG.get(), ModBlocks.STRIPPED_ASPEN_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_WILLOW_LOG.get(), ModBlocks.STRIPPED_WILLOW_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_ARAUCARIA_LOG.get(), ModBlocks.STRIPPED_ARAUCARIA_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_FOGGY_OAK_LOG.get(), ModBlocks.STRIPPED_FOGGY_OAK_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_FOGGY_PINE_LOG.get(), ModBlocks.STRIPPED_FOGGY_PINE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_SNOWY_TREE_LOG.get(), ModBlocks.STRIPPED_SNOWY_TREE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_STONE_TREE_LOG.get(), ModBlocks.STRIPPED_STONE_TREE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_RUBBER_TREE_LOG.get(), ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_TROPIC_TREE_LOG.get(), ModBlocks.STRIPPED_TROPIC_TREE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_PRICKLY_TREE_LOG.get(), ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get(), ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.WILLOW_LOG.get(), ModBlocks.STRIPPED_WILLOW_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.ARAUCARIA_LOG.get(), ModBlocks.STRIPPED_ARAUCARIA_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.FOGGY_OAK_LOG.get(), ModBlocks.STRIPPED_FOGGY_OAK_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.FOGGY_PINE_LOG.get(), ModBlocks.STRIPPED_FOGGY_PINE_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.SNOWY_TREE_LOG.get(), ModBlocks.STRIPPED_SNOWY_TREE_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.STONE_TREE_LOG.get(), ModBlocks.STRIPPED_STONE_TREE_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.RUBBER_TREE_LOG.get(), ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.TROPIC_TREE_LOG.get(), ModBlocks.STRIPPED_TROPIC_TREE_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.PRICKLY_TREE_LOG.get(), ModBlocks.STRIPPED_PRICKLY_TREE_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.SWAMPY_POPLAR_LOG.get(), ModBlocks.STRIPPED_SWAMPY_POPLAR_LOG.get());
         logToStrippedLogMap.put(ModBlocks.UMBRELLA_TREE_LOG.get(), ModBlocks.STRIPPED_UMBRELLA_TREE_LOG.get());
-        logToStrippedLogMap.put(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get(), ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get());
+        logToStrippedLogMap.put(ModBlocks.FOREST_DECEIVER_LOG.get(), ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get());
     }
     public Map<Block, Block> getLogToStrippedLogMap() {
         return logToStrippedLogMap;
@@ -63,18 +60,18 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
     public static void setLogToCarvedLogMap() {
         logToCarvedLogMap.put(ModBlocks.ASPEN_LOG.get(), ModBlocks.CARVED_ASPEN_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_WILLOW_LOG.get(), ModBlocks.CARVED_WILLOW_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_ARAUCARIA_LOG.get(), ModBlocks.CARVED_ARAUCARIA_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_FOGGY_OAK_LOG.get(), ModBlocks.CARVED_FOGGY_OAK_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_FOGGY_PINE_LOG.get(), ModBlocks.CARVED_FOGGY_PINE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_SNOWY_TREE_LOG.get(), ModBlocks.CARVED_SNOWY_TREE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_STONE_TREE_LOG.get(), ModBlocks.CARVED_STONE_TREE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_RUBBER_TREE_LOG.get(), ModBlocks.CARVED_RUBBER_TREE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_TROPIC_TREE_LOG.get(), ModBlocks.CARVED_TROPIC_TREE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_PRICKLY_TREE_LOG.get(), ModBlocks.CARVED_PRICKLY_TREE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get(), ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.WILLOW_LOG.get(), ModBlocks.CARVED_WILLOW_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.ARAUCARIA_LOG.get(), ModBlocks.CARVED_ARAUCARIA_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.FOGGY_OAK_LOG.get(), ModBlocks.CARVED_FOGGY_OAK_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.FOGGY_PINE_LOG.get(), ModBlocks.CARVED_FOGGY_PINE_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.SNOWY_TREE_LOG.get(), ModBlocks.CARVED_SNOWY_TREE_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.STONE_TREE_LOG.get(), ModBlocks.CARVED_STONE_TREE_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.RUBBER_TREE_LOG.get(), ModBlocks.CARVED_RUBBER_TREE_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.TROPIC_TREE_LOG.get(), ModBlocks.CARVED_TROPIC_TREE_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.PRICKLY_TREE_LOG.get(), ModBlocks.CARVED_PRICKLY_TREE_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.SWAMPY_POPLAR_LOG.get(), ModBlocks.CARVED_SWAMPY_POPLAR_LOG.get());
         logToCarvedLogMap.put(ModBlocks.UMBRELLA_TREE_LOG.get(), ModBlocks.CARVED_UMBRELLA_TREE_LOG.get());
-        logToCarvedLogMap.put(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get(), ModBlocks.CARVED_FOREST_DECEIVER_LOG.get());
+        logToCarvedLogMap.put(ModBlocks.FOREST_DECEIVER_LOG.get(), ModBlocks.CARVED_FOREST_DECEIVER_LOG.get());
     }
 
     public static Map<Block, Block> getLogToCarvedLogMap() {
@@ -104,6 +101,7 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
 
         setLogToStrippedLogMap();
+        setLogToCarvedLogMap();
         setWoodToStrippedWoodMap();
 
         Block block = state.getBlock();
@@ -124,5 +122,4 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
         return super.getToolModifiedState(state, context, toolAction, simulate);
     }
-
 }

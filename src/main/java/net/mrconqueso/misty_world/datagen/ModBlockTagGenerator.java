@@ -79,6 +79,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
          */
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.WET_SAND.get())
+                .add(ModBlocks.DRY_SAND.get())
+                .add(ModBlocks.WET_RED_SAND.get())
+                .add(ModBlocks.DRY_RED_SAND.get())
+                .add(ModBlocks.WET_ACIDIC_SAND.get())
+                .add(ModBlocks.DRY_ACIDIC_SAND.get())
                 .add(ModBlocks.FOGGY_GRAVEL.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -110,8 +116,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.SAPLINGS)
                 .add(ModBlocks.ASPEN_SAPLING.get())
                 .add(ModBlocks.WILLOW_SAPLING.get())
-                .add(ModBlocks.CARVED_ARAUCARIA_SAPLING.get())
                 .add(ModBlocks.FOGGY_OAK_SAPLING.get())
+                .add(ModBlocks.ARAUCARIA_SAPLING.get())
                 .add(ModBlocks.FOGGY_PINE_SAPLING.get())
                 .add(ModBlocks.SNOWY_TREE_SAPLING.get())
                 .add(ModBlocks.STONE_TREE_SAPLING.get())
@@ -132,6 +138,48 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.MOSSY_MINED_FOGGY_STONE.get())
                 .add(ModBlocks.FOGGY_COBBLESTONE.get())
                 .add(ModBlocks.MOSSY_FOGGY_COBBLESTONE.get());
+
+        // --------- / GROUND / --------- //
+
+        this.tag(ModTags.Blocks.WET_SAND)
+                .add(ModBlocks.WET_SAND.get())
+                .add(ModBlocks.WET_RED_SAND.get())
+                .add(ModBlocks.WET_ACIDIC_SAND.get());
+
+        this.tag(ModTags.Blocks.DRY_SAND)
+                .add(ModBlocks.DRY_SAND.get())
+                .add(ModBlocks.DRY_RED_SAND.get())
+                .add(ModBlocks.DRY_ACIDIC_SAND.get());
+
+        this.tag(ModTags.Blocks.WET_CLAY)
+                .add(ModBlocks.WET_GRAY_CLAY.get())
+                .add(ModBlocks.WET_VIRGIN_GRAY_CLAY.get())
+                .add(ModBlocks.WET_CRACKED_GRAY_CLAY.get())
+                .add(ModBlocks.WET_RED_CLAY.get())
+                .add(ModBlocks.WET_VIRGIN_RED_CLAY.get())
+                .add(ModBlocks.WET_CRACKED_RED_CLAY.get());
+
+        this.tag(ModTags.Blocks.DRY_CLAY)
+                .add(ModBlocks.DRY_GRAY_CLAY.get())
+                .add(ModBlocks.DRY_VIRGIN_GRAY_CLAY.get())
+                .add(ModBlocks.DRY_CRACKED_GRAY_CLAY.get())
+                .add(ModBlocks.DRY_RED_CLAY.get())
+                .add(ModBlocks.DRY_VIRGIN_RED_CLAY.get())
+                .add(ModBlocks.DRY_CRACKED_RED_CLAY.get());
+        
+        this.tag(ModTags.Blocks.WET_GROUND)
+                .addTag(ModTags.Blocks.WET_SAND)
+                .addTag(ModTags.Blocks.WET_CLAY)
+                .add(ModBlocks.WET_PEAT.get())
+                .add(ModBlocks.WET_VIRGIN_SAPROPEL.get())
+                .add(ModBlocks.WET_HUMUS.get());
+
+        this.tag(ModTags.Blocks.DRY_GROUND)
+                .addTag(ModTags.Blocks.DRY_SAND)
+                .addTag(ModTags.Blocks.DRY_CLAY)
+                .add(ModBlocks.DRY_PEAT.get())
+                .add(ModBlocks.DRY_VIRGIN_SAPROPEL.get())
+                .add(ModBlocks.DRY_HUMUS.get());
 
         // --------- / WOOD TYPES / --------- //
 
@@ -288,6 +336,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SWAMPY_POPLAR_FENCE_GATE.get())
                 .add(ModBlocks.UMBRELLA_TREE_FENCE_GATE.get())
                 .add(ModBlocks.FOREST_DECEIVER_FENCE_GATE.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.FOGGY_STONE_WALL.get())
+                .add(ModBlocks.MOSSY_FOGGY_STONE_WALL.get())
+                .add(ModBlocks.FOGGY_COBBLESTONE_WALL.get())
+                .add(ModBlocks.MOSSY_FOGGY_COBBLESTONE_WALL.get());
 
         this.tag(BlockTags.FLOWER_POTS).add(ModBlocks.POTTED_VIOLET_VEIL.get());
         this.tag(BlockTags.SMALL_FLOWERS).add(ModBlocks.VIOLET_VEIL.get());

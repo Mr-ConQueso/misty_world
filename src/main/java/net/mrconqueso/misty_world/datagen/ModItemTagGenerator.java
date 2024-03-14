@@ -3,7 +3,6 @@ package net.mrconqueso.misty_world.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -163,18 +162,33 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.CARVED_FOREST_DECEIVER_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_FOREST_DECEIVER_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_FOREST_DECEIVER_WOOD.get().asItem());
+
     }
 
     @SuppressWarnings("unchecked")
     private void registerForgeTags() {
 
         tag(ForgeTags.SALT).add(ModItems.SALT.get());
+        tag(ForgeTags.SALT_DUSTS).add(ModItems.SALT.get());
+        tag(ForgeTags.SALTS).add(ModItems.SALT.get());
 
         tag(ForgeTags.COMPOST).add(ModItems.COMPOST.get());
 
-        tag(ForgeTags.SEEDS).add(
-                ModItems.DESERT_COTTON_FLOWER.get()
-        );
+        tag(ForgeTags.SEEDS)
+                .add(ModItems.DESERT_COTTON_FLOWER.get())
+                .add(ModBlocks.ASPEN_SAPLING.get().asItem())
+                .add(ModBlocks.WILLOW_SAPLING.get().asItem())
+                .add(ModBlocks.FOGGY_OAK_SAPLING.get().asItem())
+                .add(ModBlocks.ARAUCARIA_SAPLING.get().asItem())
+                .add(ModBlocks.FOGGY_PINE_SAPLING.get().asItem())
+                .add(ModBlocks.SNOWY_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.STONE_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.RUBBER_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.TROPIC_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.PRICKLY_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.SWAMPY_POPLAR_SAPLING.get().asItem())
+                .add(ModBlocks.UMBRELLA_TREE_SAPLING.get().asItem())
+                .add(ModBlocks.FOREST_DECEIVER_SAPLING.get().asItem());
 
         tag(ForgeTags.FEATHERS).add(ModItems.WING.get());
         tag(ForgeTags.TALLOW).add(ModItems.TALLOW.get());

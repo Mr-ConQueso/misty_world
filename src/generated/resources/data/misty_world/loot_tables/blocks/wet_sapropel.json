@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "misty_world:wet_sapropel"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "misty_world:blocks/wet_sapropel"
+}
