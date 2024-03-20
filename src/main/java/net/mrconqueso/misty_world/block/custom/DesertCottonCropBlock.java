@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.IPlantable;
-import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.init.ModItems;
 
 public class DesertCottonCropBlock extends CropBlock {
     public static final int FIRST_STAGE_MAX_AGE = 7;

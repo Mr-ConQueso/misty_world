@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "X X",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "misty_world:rocks"
+        }
+    },
+    "result": {
+        "item": "misty_world:foggy_stone_furnace",
+        "data": 0
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "misty_world:block/cube_moss_all",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "all": "misty_world:block/foggy_stone_bricks",
+    "moss": "misty_world:block/foggy_stone_bricks_moss_overlay"
+  }
+}

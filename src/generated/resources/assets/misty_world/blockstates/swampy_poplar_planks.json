@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "misty_world:block/swampy_poplar_planks"
+    },
+    "axis=y": {
+      "model": "misty_world:block/swampy_poplar_planks_vertical",
+      "x": 90
+    },
+    "axis=z": {
+      "model": "misty_world:block/swampy_poplar_planks_vertical"
+    }
+  }
+}

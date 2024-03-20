@@ -1,19 +1,26 @@
 package net.mrconqueso.misty_world.datagen;
 
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.VariantBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 import net.mrconqueso.misty_world.block.custom.DesertCottonCropBlock;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -27,18 +34,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // --------- / STONES / --------- //
 
         blockWithItem(ModBlocks.FOGGY_STONE);
+        mossCubeAll(ModBlocks.MOSSY_FOGGY_STONE, ModBlocks.FOGGY_STONE);
         blockWithItem(ModBlocks.POROUS_FOGGY_STONE);
         blockWithItem(ModBlocks.HARD_FOGGY_STONE);
         blockWithItem(ModBlocks.MINED_FOGGY_STONE);
-        //blockWithItem(ModBlocks.MOSSY_MINED_FOGGY_STONE);
+        mossCubeAll(ModBlocks.MOSSY_MINED_FOGGY_STONE, ModBlocks.MINED_FOGGY_STONE);
         blockWithItem(ModBlocks.FOGGY_COBBLESTONE);
-        //blockWithItem(ModBlocks.MOSSY_FOGGY_COBBLESTONE);
+        mossCubeAll(ModBlocks.MOSSY_FOGGY_COBBLESTONE, ModBlocks.FOGGY_COBBLESTONE);
 
         // --- / BUILDING BLOCKS / --- //
 
         blockWithItem(ModBlocks.CHISELED_FOGGY_STONE);
-        //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE);
-        //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE_BRICKS);
+        mossCubeAll(ModBlocks.MOSSY_CHISELED_FOGGY_STONE, ModBlocks.CHISELED_FOGGY_STONE);
+        randomizedBricks(ModBlocks.FOGGY_STONE_BRICKS);
+        randomizedMossyBricks(ModBlocks.MOSSY_FOGGY_STONE_BRICKS, ModBlocks.FOGGY_STONE_BRICKS);
         //blockWithItem(ModBlocks.FOGGY_STONE_MASONRY);
         //blockWithItem(ModBlocks.MOSSY_FOGGY_STONE_MASONRY);
 
@@ -85,6 +94,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.WET_HUMUS);
 
         // --------- / WOOD / --------- //
+
+        rotatedPlanks(ModBlocks.ASPEN_PLANKS);
+        rotatedPlanks(ModBlocks.WILLOW_PLANKS);
+        rotatedPlanks(ModBlocks.ARAUCARIA_PLANKS);
+        rotatedPlanks(ModBlocks.FOGGY_OAK_PLANKS);
+        rotatedPlanks(ModBlocks.FOGGY_PINE_PLANKS);
+        rotatedPlanks(ModBlocks.SNOWY_TREE_PLANKS);
+        rotatedPlanks(ModBlocks.STONE_TREE_PLANKS);
+        rotatedPlanks(ModBlocks.RUBBER_TREE_PLANKS);
+        rotatedPlanks(ModBlocks.TROPIC_TREE_PLANKS);
+        rotatedPlanks(ModBlocks.PRICKLY_TREE_PLANKS);
+        rotatedPlanks(ModBlocks.SWAMPY_POPLAR_PLANKS);
+        rotatedPlanks(ModBlocks.UMBRELLA_TREE_PLANKS);
+        rotatedPlanks(ModBlocks.FOREST_DECEIVER_PLANKS);
 
         // --- / ASPEN / --- //
         logBlock(((RotatedPillarBlock) ModBlocks.ASPEN_LOG.get()));
@@ -531,15 +554,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // --------- / NATURAL / --------- //
         //makeTwoTallCrop(((CropBlock) ModBlocks.DESERT_COTTON.get()), "desert_cotton_stage_", "desert_cotton_stage_");
         blockWithItem(ModBlocks.MULCH_BLOCK);
-        blockItem(ModBlocks.FLOATING_MAT);
         blockWithItem(ModBlocks.REMAINS_BLOCK);
 
         // --- / DECORATIONS & UTILITY / --- //
         doorBlockWithRenderType(((DoorBlock) ModBlocks.NIOBIUM_DOOR.get()), modLoc("block/niobium_door_bottom"), modLoc("block/niobium_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.NIOBIUM_TRAPDOOR.get()), modLoc("block/niobium_trapdoor"), true, "cutout");
-        blockItem(ModBlocks.NIOBIUM_CHEST);
-        blockItem(ModBlocks.TRAPPED_NIOBIUM_CHEST);
-        blockItem(ModBlocks.FOGGY_STONE_FURNACE);
         //blockWithItem(ModBlocks.LATEX_POT);
 
         // --- / PORTAL / --- //
@@ -553,10 +572,102 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ResourceLocation("flower_pot_cross"), "plant", blockTexture(ModBlocks.VIOLET_VEIL.get())).renderType("cutout"));
     }
 
+
     public void makeTwoTallCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> desertCottonStates(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
+    }
+
+    private void rotatedPlanks(RegistryObject<Block> blockRegistryObject) {
+        Block block = blockRegistryObject.get();
+        EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
+
+        ModelFile normalPlanks = cubeAll(block);
+
+        ModelFile verticalPlanks = models().cubeColumn(getBlockPath(block) + "_vertical",
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block)),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_rotated"));
+
+        this.getVariantBuilder(blockRegistryObject.get())
+                .partialState().with(AXIS, Direction.Axis.Y).modelForState().modelFile(verticalPlanks).rotationX(90).addModel()
+                .partialState().with(AXIS, Direction.Axis.Z).modelForState().modelFile(verticalPlanks).addModel()
+                .partialState().with(AXIS, Direction.Axis.X).modelForState().modelFile(normalPlanks).addModel();
+
+        blockItem(blockRegistryObject);
+    }
+
+    private void randomizedBricks(RegistryObject<Block> blockRegistryObject) {
+        Block block = blockRegistryObject.get();
+
+        ModelFile randomBricks1 = models().cubeAll(getBlockPath(block), new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block)));
+        ModelFile randomBricks2 = models().cubeAll(getBlockPath(block) + "_2", new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_2"));
+        ModelFile randomBricks3 = models().cubeAll(getBlockPath(block) + "_3", new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_3"));
+        ModelFile randomBricks4 = models().cubeAll(getBlockPath(block) + "_4", new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_4"));
+        ModelFile randomBricks5 = models().cubeAll(getBlockPath(block) + "_5", new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(block) + "_5"));
+
+        this.getVariantBuilder(blockRegistryObject.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(randomBricks1).weight(3).nextModel()
+                                .modelFile(randomBricks2).weight(3).nextModel()
+                                .modelFile(randomBricks3).weight(3).nextModel()
+                                .modelFile(randomBricks4).weight(2).nextModel()
+                                .modelFile(randomBricks5).weight(1)
+                                .build());
+
+        blockItem(blockRegistryObject);
+    }
+
+    private void randomizedMossyBricks(RegistryObject<Block> mossBlock, RegistryObject<Block> baseBlock) {
+        Block baseBlockName = baseBlock.get();
+        Block mossBlockName = mossBlock.get();
+
+        ModelFile randomBricks1 = mossCubeAll(getBlockPath(mossBlockName),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName)),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_moss_overlay"));
+        ModelFile randomBricks2 = mossCubeAll(getBlockPath(mossBlockName) + "_2",
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_2"),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_moss_overlay_2"));
+        ModelFile randomBricks3 = mossCubeAll(getBlockPath(mossBlockName) + "_3",
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_3"),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_moss_overlay_3"));
+        ModelFile randomBricks4 = mossCubeAll(getBlockPath(mossBlockName) + "_4",
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_4"),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_moss_overlay_4"));
+        ModelFile randomBricks5 = mossCubeAll(getBlockPath(mossBlockName) + "_5",
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_5"),
+                new ResourceLocation(MistyWorld.MOD_ID, "block/" + getBlockPath(baseBlockName) + "_moss_overlay_5"));
+
+        this.getVariantBuilder(mossBlock.get())
+                .forAllStates(state ->
+                        ConfiguredModel.builder()
+                                .modelFile(randomBricks1).weight(3).nextModel()
+                                .modelFile(randomBricks2).weight(3).nextModel()
+                                .modelFile(randomBricks3).weight(3).nextModel()
+                                .modelFile(randomBricks4).weight(2).nextModel()
+                                .modelFile(randomBricks5).weight(1)
+                                .build()
+                );
+
+        blockItem(mossBlock);
+    }
+
+    private ModelFile mossCubeAll(String name, ResourceLocation all, ResourceLocation moss) {
+        return models().withExistingParent(name, MistyWorld.MOD_ID + ":block/cube_moss_all")
+                .texture("all", all)
+                .texture("moss", moss)
+                .renderType("cutout");
+    }
+
+    private void mossCubeAll(RegistryObject<Block> mossBlock, RegistryObject<Block> baseBlock) {
+        String mossBlockName = getBlockPath(mossBlock.get());
+        String baseBlockName = getBlockPath(baseBlock.get());
+        this.simpleBlock(mossBlock.get(), models().withExistingParent(mossBlockName, MistyWorld.MOD_ID + ":block/cube_moss_all")
+                .texture("all", "block/" + baseBlockName)
+                .texture("moss","block/" + baseBlockName + "_moss_overlay")
+                .renderType("cutout"));
+        blockItem(mossBlock);
     }
 
     private ConfiguredModel[] desertCottonStates(BlockState state, CropBlock block, String modelName, String textureName) {
@@ -566,6 +677,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         return models;
     }
+
     public void blockWithTop(RegistryObject<Block> blockRegistryObject) {
         Block block = blockRegistryObject.get();
         this.simpleBlock(block,
@@ -594,31 +706,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(blockRegistryObject);
     }
 
-    private void mossyBlock(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(),
-                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
-                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
-
-    }
-
     private String getBlockPath(Block block) {
-        return ForgeRegistries.BLOCKS.getKey(block).getPath();
+        return Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath();
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
-                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+                models().cross(getBlockPath(blockRegistryObject.get()), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(),
-                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                models().singleTexture(getBlockPath(blockRegistryObject.get()), new ResourceLocation("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
 
     }
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(MistyWorld.MOD_ID +
-                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+                ":block/" + getBlockPath(blockRegistryObject.get())));
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

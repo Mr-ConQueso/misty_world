@@ -1,0 +1,15 @@
+{
+    "parent": "minecraft:block/wall_moss",
+    "textures": {
+        "bottom": "misty_world:blocks/foggy_cobblestone_bricks",
+        "top": "misty_world:blocks/foggy_cobblestone_bricks",
+        "bottom_rot": "misty_world:blocks/foggy_cobblestone_bricks",
+        "top_rot": "misty_world:blocks/foggy_cobblestone_bricks",
+        "side": "misty_world:blocks/foggy_cobblestone_bricks",
+        "moss_bottom": "misty_world:blocks/foggy_cobblestone_bricks_moss_overlay",
+        "moss_top": "misty_world:blocks/foggy_cobblestone_bricks_moss_overlay",
+        "moss_bottom_rot": "misty_world:blocks/foggy_cobblestone_bricks_moss_overlay",
+        "moss_top_rot": "misty_world:blocks/foggy_cobblestone_bricks_moss_overlay",
+        "moss": "misty_world:blocks/foggy_cobblestone_bricks_moss_overlay"
+    }
+}

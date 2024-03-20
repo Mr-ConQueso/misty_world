@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "misty_world:block/foggy_stone_furnace_front_warm",
+    "side": "misty_world:block/foggy_stone_furnace_side",
+    "top": "misty_world:block/foggy_stone_furnace_top"
+  }
+}

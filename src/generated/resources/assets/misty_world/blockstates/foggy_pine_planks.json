@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "misty_world:block/foggy_pine_planks"
+    },
+    "axis=y": {
+      "model": "misty_world:block/foggy_pine_planks_vertical",
+      "x": 90
+    },
+    "axis=z": {
+      "model": "misty_world:block/foggy_pine_planks_vertical"
+    }
+  }
+}

@@ -1,12 +1,24 @@
 {
     "variants": {
-        "growth=true": [
+        "growth=true, has_block_on_top=true": [
+            { "model": "misty_world:block/floating_mat_bottom" },
+            { "model": "misty_world:block/floating_mat_bottom", "y": 90 },
+            { "model": "misty_world:block/floating_mat_bottom", "y": 180 },
+            { "model": "misty_world:block/floating_mat_bottom", "y": 270 }
+        ],
+        "growth=true, has_block_on_top=false": [
             { "model": "misty_world:block/floating_mat_growth" },
             { "model": "misty_world:block/floating_mat_growth", "y": 90 },
             { "model": "misty_world:block/floating_mat_growth", "y": 180 },
             { "model": "misty_world:block/floating_mat_growth", "y": 270 }
         ],
-        "growth=false": [
+        "growth=false, has_block_on_top=true": [
+            { "model": "misty_world:block/floating_mat_bottom" },
+            { "model": "misty_world:block/floating_mat_bottom", "y": 90 },
+            { "model": "misty_world:block/floating_mat_bottom", "y": 180},
+            { "model": "misty_world:block/floating_mat_bottom", "y": 270 }
+        ],
+        "growth=false, has_block_on_top=false": [
             { "model": "misty_world:block/floating_mat" },
             { "model": "misty_world:block/floating_mat", "y": 90 },
             { "model": "misty_world:block/floating_mat", "y": 180},

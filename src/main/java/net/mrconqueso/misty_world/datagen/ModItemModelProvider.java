@@ -16,8 +16,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.ModBlocks;
-import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.init.ModBlocks;
+import net.mrconqueso.misty_world.init.ModItems;
 
 import java.util.LinkedHashMap;
 
@@ -46,10 +46,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         wallItem(ModBlocks.FOGGY_STONE_WALL, ModBlocks.FOGGY_STONE);
         wallItem(ModBlocks.FOGGY_COBBLESTONE_WALL, ModBlocks.FOGGY_COBBLESTONE);
+        wallItem(ModBlocks.MOSSY_FOGGY_STONE_WALL, ModBlocks.FOGGY_STONE);
+        wallItem(ModBlocks.MOSSY_FOGGY_COBBLESTONE_WALL, ModBlocks.FOGGY_COBBLESTONE);
 
         // --------- / WOOD / --------- //
         // --- / ASPEN / --- //
-        evenSimplerBlockItem(ModBlocks.ASPEN_PLANKS);
         evenSimplerBlockItem(ModBlocks.ASPEN_STAIRS);
         evenSimplerBlockItem(ModBlocks.ASPEN_SLAB);
         buttonItem(ModBlocks.ASPEN_BUTTON, ModBlocks.ASPEN_PLANKS);
@@ -59,7 +60,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.ASPEN_DOOR);
         trapdoorItem(ModBlocks.ASPEN_TRAPDOOR);
         // --- / UMBRELLA TREE / --- //
-        evenSimplerBlockItem(ModBlocks.UMBRELLA_TREE_PLANKS);
         evenSimplerBlockItem(ModBlocks.UMBRELLA_TREE_STAIRS);
         evenSimplerBlockItem(ModBlocks.UMBRELLA_TREE_SLAB);
         buttonItem(ModBlocks.UMBRELLA_TREE_BUTTON, ModBlocks.UMBRELLA_TREE_PLANKS);
@@ -69,7 +69,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.UMBRELLA_TREE_DOOR);
         trapdoorItem(ModBlocks.UMBRELLA_TREE_TRAPDOOR);
         // --- / FOREST DECEIVER / --- //
-        evenSimplerBlockItem(ModBlocks.FOREST_DECEIVER_PLANKS);
         evenSimplerBlockItem(ModBlocks.FOREST_DECEIVER_STAIRS);
         evenSimplerBlockItem(ModBlocks.FOREST_DECEIVER_SLAB);
         buttonItem(ModBlocks.FOREST_DECEIVER_BUTTON, ModBlocks.FOREST_DECEIVER_PLANKS);
@@ -79,7 +78,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.FOREST_DECEIVER_DOOR);
         trapdoorItem(ModBlocks.FOREST_DECEIVER_TRAPDOOR);
         // --- / ARAUCARIA / --- //
-        evenSimplerBlockItem(ModBlocks.ARAUCARIA_PLANKS);
         evenSimplerBlockItem(ModBlocks.ARAUCARIA_STAIRS);
         evenSimplerBlockItem(ModBlocks.ARAUCARIA_SLAB);
         buttonItem(ModBlocks.ARAUCARIA_BUTTON, ModBlocks.ARAUCARIA_PLANKS);
@@ -89,7 +87,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.ARAUCARIA_DOOR);
         trapdoorItem(ModBlocks.ARAUCARIA_TRAPDOOR);
         // --- / FOGGY OAK / --- //
-        evenSimplerBlockItem(ModBlocks.FOGGY_OAK_PLANKS);
         evenSimplerBlockItem(ModBlocks.FOGGY_OAK_STAIRS);
         evenSimplerBlockItem(ModBlocks.FOGGY_OAK_SLAB);
         buttonItem(ModBlocks.FOGGY_OAK_BUTTON, ModBlocks.FOGGY_OAK_PLANKS);
@@ -99,7 +96,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.FOGGY_OAK_DOOR);
         trapdoorItem(ModBlocks.FOGGY_OAK_TRAPDOOR);
         // --- / FOGGY PINE / --- //
-        evenSimplerBlockItem(ModBlocks.FOGGY_PINE_PLANKS);
         evenSimplerBlockItem(ModBlocks.FOGGY_PINE_STAIRS);
         evenSimplerBlockItem(ModBlocks.FOGGY_PINE_SLAB);
         buttonItem(ModBlocks.FOGGY_PINE_BUTTON, ModBlocks.FOGGY_PINE_PLANKS);
@@ -109,7 +105,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.FOGGY_PINE_DOOR);
         trapdoorItem(ModBlocks.FOGGY_PINE_TRAPDOOR);
         // --- / SWAMPY POPLAR / --- //
-        evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_PLANKS);
         evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_STAIRS);
         evenSimplerBlockItem(ModBlocks.SWAMPY_POPLAR_SLAB);
         buttonItem(ModBlocks.SWAMPY_POPLAR_BUTTON, ModBlocks.SWAMPY_POPLAR_PLANKS);
@@ -119,7 +114,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.SWAMPY_POPLAR_DOOR);
         trapdoorItem(ModBlocks.SWAMPY_POPLAR_TRAPDOOR);
         // --- / SNOWY TREE / --- //
-        evenSimplerBlockItem(ModBlocks.SNOWY_TREE_PLANKS);
         evenSimplerBlockItem(ModBlocks.SNOWY_TREE_STAIRS);
         evenSimplerBlockItem(ModBlocks.SNOWY_TREE_SLAB);
         buttonItem(ModBlocks.SNOWY_TREE_BUTTON, ModBlocks.SNOWY_TREE_PLANKS);
@@ -129,7 +123,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.SNOWY_TREE_DOOR);
         trapdoorItem(ModBlocks.SNOWY_TREE_TRAPDOOR);
         // --- / PRICKLY TREE / --- //
-        evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_PLANKS);
         evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_STAIRS);
         evenSimplerBlockItem(ModBlocks.PRICKLY_TREE_SLAB);
         buttonItem(ModBlocks.PRICKLY_TREE_BUTTON, ModBlocks.PRICKLY_TREE_PLANKS);
@@ -139,7 +132,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.PRICKLY_TREE_DOOR);
         trapdoorItem(ModBlocks.PRICKLY_TREE_TRAPDOOR);
         // --- / STONE TREE / --- //
-        evenSimplerBlockItem(ModBlocks.STONE_TREE_PLANKS);
         evenSimplerBlockItem(ModBlocks.STONE_TREE_STAIRS);
         evenSimplerBlockItem(ModBlocks.STONE_TREE_SLAB);
         buttonItem(ModBlocks.STONE_TREE_BUTTON, ModBlocks.STONE_TREE_PLANKS);
@@ -149,7 +141,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.STONE_TREE_DOOR);
         trapdoorItem(ModBlocks.STONE_TREE_TRAPDOOR);
         // --- / TROPIC TREE / --- //
-        evenSimplerBlockItem(ModBlocks.TROPIC_TREE_PLANKS);
         evenSimplerBlockItem(ModBlocks.TROPIC_TREE_STAIRS);
         evenSimplerBlockItem(ModBlocks.TROPIC_TREE_SLAB);
         buttonItem(ModBlocks.TROPIC_TREE_BUTTON, ModBlocks.TROPIC_TREE_PLANKS);
@@ -159,7 +150,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.TROPIC_TREE_DOOR);
         trapdoorItem(ModBlocks.TROPIC_TREE_TRAPDOOR);
         // --- / WILLOW / --- //
-        evenSimplerBlockItem(ModBlocks.WILLOW_PLANKS);
         evenSimplerBlockItem(ModBlocks.WILLOW_STAIRS);
         evenSimplerBlockItem(ModBlocks.WILLOW_SLAB);
         buttonItem(ModBlocks.WILLOW_BUTTON, ModBlocks.WILLOW_PLANKS);
@@ -169,7 +159,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.WILLOW_DOOR);
         trapdoorItem(ModBlocks.WILLOW_TRAPDOOR);
         // --- / RUBBER_TREE / --- //
-        evenSimplerBlockItem(ModBlocks.RUBBER_TREE_PLANKS);
         evenSimplerBlockItem(ModBlocks.RUBBER_TREE_STAIRS);
         evenSimplerBlockItem(ModBlocks.RUBBER_TREE_SLAB);
         buttonItem(ModBlocks.RUBBER_TREE_BUTTON, ModBlocks.RUBBER_TREE_PLANKS);
@@ -202,6 +191,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleBlockItem(ModBlocks.CERAMIC_URN);
         simpleBlockItem(ModBlocks.LATEX_POT);
+        simpleBlockItem(ModBlocks.CAMPFIRE);
 
         // --- / PORTAL / --- //
 

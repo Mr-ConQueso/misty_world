@@ -7,7 +7,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.init.ModItems;
 
 import java.util.function.Supplier;
 

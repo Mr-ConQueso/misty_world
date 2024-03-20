@@ -13,7 +13,6 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.mrconqueso.misty_world.api.block.UrnType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -24,8 +23,8 @@ public class FoggySpongeBlock extends Block {
     public FoggySpongeBlock(Properties pProperties) {
         super(pProperties);
         this.registerDefaultState(this.defaultBlockState()
-                .setValue(STAGE, 0)
-                .setValue(VAR, 0)
+                .setValue(STAGE, 4)
+                .setValue(VAR, 7)
                 .setValue(WATERLOGGED, false));
     }
 
@@ -36,8 +35,8 @@ public class FoggySpongeBlock extends Block {
         FluidState fluid = level.getFluidState(context.getClickedPos());
 
         BlockState state = this.defaultBlockState()
-                .setValue(STAGE, 0)
-                .setValue(VAR, 0)
+                .setValue(STAGE, 4)
+                .setValue(VAR, 7)
                 .setValue(WATERLOGGED, fluid.getType() == Fluids.WATER);
 
         return state;

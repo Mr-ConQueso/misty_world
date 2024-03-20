@@ -11,7 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.init.ModItems;
 
 import java.util.List;
 

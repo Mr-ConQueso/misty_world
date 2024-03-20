@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 import net.mrconqueso.misty_world.item.item_classes.ModChiselItem;
 import org.jetbrains.annotations.Nullable;
 

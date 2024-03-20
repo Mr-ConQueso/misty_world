@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-13T12:30:46.500547988	Tags for minecraft:block mod id misty_world
+// 1.20.1	2024-03-19T18:03:12.420082535	Tags for minecraft:block mod id misty_world
 d15f92c8940fb5e93e74a26aac7fd3eb80cc033e data/forge/tags/blocks/cobblestone.json
 d66a1f66046f72550540ddeed10308259dd4bd0f data/forge/tags/blocks/gravel.json
 f353fed501ffbc644884b8e5590e38ea030fa567 data/forge/tags/blocks/ore_bearing_ground/misty_stone.json
@@ -15,12 +15,13 @@ f353fed501ffbc644884b8e5590e38ea030fa567 data/forge/tags/blocks/stone.json
 3a925f765ebbe1de82157561fdd411bf49c17bca data/minecraft/tags/blocks/fence_gates.json
 02d628f9f57c46885a899b199a6ed780075c52d4 data/minecraft/tags/blocks/fences.json
 d3eefb712508ebe155e6481b2761c6922d11995e data/minecraft/tags/blocks/flower_pots.json
+7b67540e6c778653f5f0da1cc8f10a2f29174045 data/minecraft/tags/blocks/guarded_by_piglins.json
 02929f6bafbc0e2568371e50bbbd5af01f620234 data/minecraft/tags/blocks/logs_that_burn.json
 aa54996fa04a7fcfc20e0056c88eee96e7944ab5 data/minecraft/tags/blocks/mineable/axe.json
-16809d0aa0f5b450ed16995771a1f9e840dc0815 data/minecraft/tags/blocks/mineable/pickaxe.json
-95f593fa021185b9bf678c4eea067dee4e879641 data/minecraft/tags/blocks/mineable/shovel.json
+750d1f529412d5450e10fc97341fffd151ee1dc1 data/minecraft/tags/blocks/mineable/pickaxe.json
+f363dc5ab1008a306a487baad354d3d132afcbde data/minecraft/tags/blocks/mineable/shovel.json
 2b9642e4a203e0ca1fd5760bccdc2ab0a32c3b04 data/minecraft/tags/blocks/needs_iron_tool.json
-7820db924652acb559f8d3fd53e141d389ee5973 data/minecraft/tags/blocks/needs_stone_tool.json
+f910d21d718a8f7fae6f5faf4aa7b51479515ee8 data/minecraft/tags/blocks/needs_stone_tool.json
 6a6b2a0bd667e90c87d37c5d06aea80b17f68ea3 data/minecraft/tags/blocks/planks.json
 f37fbb736905478f04310140f7f8844a7b2161ea data/minecraft/tags/blocks/saplings.json
 350e188ef3f8b6de67c3dbf6b5658bb25c82cea4 data/minecraft/tags/blocks/small_flowers.json
@@ -34,7 +35,7 @@ e94c921ea3860ab8d4a04d9c5943333d043d7bfe data/misty_world/tags/blocks/foggy_oak_
 5c583d0a06590aa42f3e0818606d340762ae9e83 data/misty_world/tags/blocks/foggy_pine_logs.json
 22aaa763ca68ce85c0ffc62220a45fe3d29f7d5d data/misty_world/tags/blocks/foggy_stones.json
 3cf80ccb502cbfdfd5283eee4388cf568ca1338c data/misty_world/tags/blocks/forest_deceiver_logs.json
-97f368f0fe28e9ad8e349ff123dc41c4989e2254 data/misty_world/tags/blocks/needs_niobium_tool.json
+61d66f777f8a517e28f3724ccd87352aeec2f04a data/misty_world/tags/blocks/needs_niobium_tool.json
 8882cb29442ea47fc56e793b3f486120996d21db data/misty_world/tags/blocks/prickly_tree_logs.json
 c236d0a8a047be97f8500582b239f70fc3526375 data/misty_world/tags/blocks/rubber_tree_logs.json
 c5081c5db1fc2b5631b5d8dec6da21538f1f26db data/misty_world/tags/blocks/snow_tree_logs.json

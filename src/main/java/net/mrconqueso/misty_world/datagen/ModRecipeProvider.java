@@ -11,8 +11,8 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.ModBlocks;
-import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.init.ModBlocks;
+import net.mrconqueso.misty_world.init.ModItems;
 import net.mrconqueso.misty_world.util.ModTags;
 
 import java.util.Iterator;

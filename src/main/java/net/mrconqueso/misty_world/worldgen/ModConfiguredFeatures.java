@@ -18,7 +18,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 
 import java.util.List;
 

@@ -32,7 +32,7 @@ public class ModFilterItem extends Item implements IFilter {
         float itemDamage = (float)pStack.getDamageValue() / pStack.getMaxDamage() * 100;
         float filtrationDepth = this.filteringDepth / 10;
 
-        pTooltipComponents.add(Component.translatable("item.misty_world.filter_depth.tooltip")
+        pTooltipComponents.add(Component.translatable("item.misty_world.filter.filter_depth.tooltip")
                 .append(": ").withStyle(ChatFormatting.GREEN)
                 .append(String.format("%.2f", filtrationDepth))
                 .append("%"));
@@ -49,7 +49,7 @@ public class ModFilterItem extends Item implements IFilter {
             filterDamage = Component.empty().withStyle(ChatFormatting.RED);
         }
 
-        pTooltipComponents.add(Component.translatable("item.misty_world.filter_damage.tooltip")
+        pTooltipComponents.add(Component.translatable("item.misty_world.filter.filter_damage.tooltip")
                 .append(": ").append(filterDamage)
                 .append(String.format("%.2f", itemDamage))
                 .append("%"));

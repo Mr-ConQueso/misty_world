@@ -11,6 +11,13 @@ import net.mrconqueso.misty_world.MistyWorld;
 
 public class FoggyStoneFurnaceScreen extends AbstractContainerScreen<FoggyStoneFurnaceMenu> {
     private static final ResourceLocation TEXTURE = new ResourceLocation(MistyWorld.MOD_ID, "textures/gui/container/foggy_stone_furnace.png");
+    private boolean close = false;
+    private static final int[] xTempCoord = new int[] { 56, 58, 62, 67, 74, 81, 96, 102, 106, 110, 111 };
+    private static final int[] yTempCoord = new int[] { 38, 31, 25, 21, 18, 16, 18, 21, 25, 31, 38 };
+    private static final int[] xTexCoord = new int[] { 1, 1, 1, 1, 1, 4, 15, 14, 13, 13, 12 };
+    private static final int[] yTexCoord = new int[] { 203, 196, 188, 181, 174, 167, 174, 181, 188, 196, 203 };
+    private static final int[] xTempSize = new int[] { 9, 8, 8, 7, 6, 14, 6, 7, 8, 8, 9 };
+    private static final int[] yTempSize = new int[] { 5, 6, 7, 6, 6, 6, 6, 6, 7, 6, 5 };
     public FoggyStoneFurnaceScreen(FoggyStoneFurnaceMenu pMenu, Inventory pPlayerInventory, Component pTitle) {
         super(pMenu, pPlayerInventory, pTitle);
     }
@@ -18,8 +25,8 @@ public class FoggyStoneFurnaceScreen extends AbstractContainerScreen<FoggyStoneF
     @Override
     protected void init() {
         super.init();
-        this.inventoryLabelX = 10000;
-        this.titleLabelY = 10000;
+        //this.inventoryLabelX = 10000;
+        //this.titleLabelY = 10000;
     }
 
     @Override

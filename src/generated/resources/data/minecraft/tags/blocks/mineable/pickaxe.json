@@ -18,7 +18,21 @@
     "misty_world:raw_niobium_block",
     "misty_world:niobium_block",
     "misty_world:bio_shale_block",
-    "misty_world:porous_foggy_stone",
-    "misty_world:mossy_foggy_cobblestone"
+    "#misty_world:foggy_stones",
+    "misty_world:chiseled_foggy_stone",
+    "misty_world:mossy_chiseled_foggy_stone",
+    "misty_world:foggy_stone_bricks",
+    "misty_world:mossy_foggy_stone_bricks",
+    "misty_world:foggy_cobblestone_wall",
+    "misty_world:mossy_foggy_cobblestone_wall",
+    "misty_world:foggy_stone_wall",
+    "misty_world:mossy_foggy_stone_wall",
+    "misty_world:niobium_door",
+    "misty_world:niobium_trapdoor",
+    "misty_world:niobium_chest",
+    "misty_world:niobium_trapped_chest",
+    "misty_world:foggy_stone_furnace",
+    "misty_world:portal_block_bottom",
+    "misty_world:portal_block_top"
   ]
 }

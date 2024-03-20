@@ -15,9 +15,9 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePrope
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 import net.mrconqueso.misty_world.block.custom.DesertCottonCropBlock;
-import net.mrconqueso.misty_world.item.ModItems;
+import net.mrconqueso.misty_world.init.ModItems;
 
 import java.util.Set;
 
@@ -42,6 +42,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         // --- / BUILDING BLOCKS / --- //
 
         this.dropSelf(ModBlocks.CHISELED_FOGGY_STONE.get());
+        this.dropSelf(ModBlocks.MOSSY_CHISELED_FOGGY_STONE.get());
         this.dropSelf(ModBlocks.MOSSY_FOGGY_STONE.get());
         this.dropSelf(ModBlocks.FOGGY_STONE_BRICKS.get());
         this.dropSelf(ModBlocks.MOSSY_FOGGY_STONE_BRICKS.get());
@@ -460,12 +461,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.NIOBIUM_DOOR.get());
         this.dropSelf(ModBlocks.NIOBIUM_TRAPDOOR.get());
-        this.dropSelf(ModBlocks.NIOBIUM_CHEST.get());
-        this.dropSelf(ModBlocks.TRAPPED_NIOBIUM_CHEST.get());
         this.dropSelf(ModBlocks.FOGGY_STONE_FURNACE.get());
+
+        this.add(ModBlocks.NIOBIUM_CHEST.get(), this::createNameableBlockEntityTable);
+        this.add(ModBlocks.NIOBIUM_TRAPPED_CHEST.get(), this::createNameableBlockEntityTable);
 
         this.dropSelf(ModBlocks.CERAMIC_URN.get());
         this.dropSelf(ModBlocks.LATEX_POT.get());
+        this.dropSelf(ModBlocks.CAMPFIRE.get());
 
         // --- / PORTAL / --- //
 

@@ -1,0 +1,7 @@
+{
+    "parent": "misty_world:block/chests/chest_base",
+    "textures": {
+        "particle": "misty_world:block/niobium_block",
+        "wood_type": "misty_world:block/niobium_block"
+    }
+}

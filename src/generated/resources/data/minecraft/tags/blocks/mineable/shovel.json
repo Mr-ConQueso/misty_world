@@ -1,11 +1,10 @@
 {
   "values": [
-    "misty_world:wet_sand",
-    "misty_world:dry_sand",
-    "misty_world:wet_red_sand",
-    "misty_world:dry_red_sand",
-    "misty_world:wet_acidic_sand",
-    "misty_world:dry_acidic_sand",
-    "misty_world:foggy_gravel"
+    "misty_world:foggy_gravel",
+    "misty_world:mulch_block",
+    "misty_world:remains_block",
+    "misty_world:floating_mat",
+    "#misty_world:dry_ground",
+    "#misty_world:wet_ground"
   ]
 }

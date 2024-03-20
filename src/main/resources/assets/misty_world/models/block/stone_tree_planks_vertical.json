@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "misty_world:block/stone_tree_planks",
-        "side": "misty_world:block/stone_tree_planks_rotated"
-    }
-}

@@ -18,7 +18,7 @@ import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.ToolAction;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;

@@ -9,7 +9,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 import net.mrconqueso.misty_world.block.entity.FoggyStoneFurnaceBlockEntity;
 
 public class FoggyStoneFurnaceMenu extends AbstractContainerMenu {
@@ -17,8 +17,18 @@ public class FoggyStoneFurnaceMenu extends AbstractContainerMenu {
     private final Level level;
     private final ContainerData data;
 
+    private Inventory tileFurnace;
+    private int[] cookTime = new int[2];
+    private int[] totalCookTime = new int[2];
+    private int[] furnaceBurnTime = new int[2];
+    private int[] currentItemBurnTime = new int[2];
+    private int[] ashTimer = new int[2];
+    private int[] temperarure = new int[11];
+    private boolean close = false;
+
     public FoggyStoneFurnaceMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
         this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));
+        this.tileFurnace = inv;
     }
 
     public FoggyStoneFurnaceMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
@@ -32,10 +42,10 @@ public class FoggyStoneFurnaceMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 42, 61));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 86, 61));
-            this.addSlot(new SlotItemHandler(iItemHandler, 2, 105, 61));
-            this.addSlot(new SlotItemHandler(iItemHandler, 3, 150, 61));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 71, 46));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 89, 46));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 26, 46));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 134, 46));
         });
 
         addDataSlots(data);

@@ -2,15 +2,11 @@ package net.mrconqueso.misty_world.item.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.mrconqueso.misty_world.sound.ModSounds;
+import net.mrconqueso.misty_world.init.ModSounds;
 
 public class GasAnalyzerItem extends Item {
     public GasAnalyzerItem(Properties pProperties) {

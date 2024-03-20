@@ -16,9 +16,54 @@
   "block.misty_world.foggy_cobblestone": "Foggy Cobblestone",
   "block.misty_world.mossy_foggy_cobblestone": "Overgrown Foggy Cobblestone",
 
-  "": "------------ GRAVEL & SAND ------------",
+  "": "------------ BUILDING BLOCKS ------------",
 
+  "block.misty_world.chiseled_foggy_stone": "Chiseled Foggy Stone",
+  "block.misty_world.mossy_foggy_stone": "Overgrown Foggy Stone",
+  "block.misty_world.foggy_stone_bricks": "Foggy Stone Bricks",
+  "block.misty_world.mossy_foggy_stone_bricks": "Overgrown Foggy Stone Bricks",
+  "block.misty_world.foggy_stone_masonry": "Foggy Stone Masonry",
+  "block.misty_world.mossy_foggy_stone_masonry": "Overgrown Foggy Stone Masonry",
+  "block.misty_world.foggy_cobblestone_wall": "Foggy Cobblestone Wall",
+  "block.misty_world.mossy_foggy_cobblestone_wall": "Overgrown Foggy Cobblestone Wall",
+  "block.misty_world.foggy_stone_wall": "Foggy Stone Wall",
+  "block.misty_world.mossy_foggy_stone_wall": "Overgrown Foggy Stone Wall",
+
+  "": "------------ SAND & GRAVEL ------------",
+  
+  "block.misty_world.wet_sand": "Sand",
+  "block.misty_world.dry_sand": "Sand",
+  "block.misty_world.wet_red_sand": "Red Sand",
+  "block.misty_world.dry_red_sand": "Red Sand",
+  "block.misty_world.wet_acidic_sand": "Acidic Sand",
+  "block.misty_world.dry_acidic_sand": "Acidic Sand",
+
+  "": "------------ CLAY ------------",
+  
   "block.misty_world.foggy_gravel": "Foggy Gravel",
+  "block.misty_world.wet_gray_clay": "Gray Clay",
+  "block.misty_world.dry_gray_clay": "Gray Clay",
+  "block.misty_world.wet_virgin_gray_clay": "Virgin Gray Clay",
+  "block.misty_world.dry_virgin_gray_clay": "Virgin Gray Clay",
+  "block.misty_world.wet_cracked_gray_clay": "Cracked Gray Clay",
+  "block.misty_world.dry_cracked_gray_clay": "Cracked Gray Clay",
+  "block.misty_world.wet_red_clay": "Red Clay",
+  "block.misty_world.dry_red_clay": "Red Clay",
+  "block.misty_world.wet_virgin_red_clay": "Virgin Red Clay",
+  "block.misty_world.dry_virgin_red_clay": "Virgin Red Clay",
+  "block.misty_world.wet_cracked_red_clay": "Cracked Red Clay",
+  "block.misty_world.dry_cracked_red_clay": "Cracked Red Clay",
+
+  "": "------------ GROUND ------------",
+  
+  "block.misty_world.dry_peat": "Peat",
+  "block.misty_world.wet_peat": "Peat",
+  "block.misty_world.dry_sapropel": "Sapropel",
+  "block.misty_world.wet_sapropel": "Sapropel",
+  "block.misty_world.dry_virgin_sapropel": "Virgin Sapropel",
+  "block.misty_world.wet_virgin_sapropel": "Virgin Sapropel",
+  "block.misty_world.dry_humus": "Humus",
+  "block.misty_world.wet_humus": "Humus",
 
   "": "------------ WOOD ------------",
 
@@ -287,15 +332,41 @@
 
   "block.misty_world.filter_coal_block.tooltip": "Level of pollution: ",
 
+  "": "------------ MATERIAL BLOCKS ------------",
+
+  "block.misty_world.tallow_block": "Tallow Block",
+  "block.misty_world.soap_block": "Soap Block",
+  "block.misty_world.latex_block": "Latex Block",
+  "block.misty_world.rubber_block": "Rubber Block",
+
   "": "------------ NATURAL ------------",
+
+  "block.misty_world.mulch_block": "Mulch Block",
+  "block.misty_world.remains_block": "Remains Block",
+  "block.misty_world.floating_mat": "Floating Mat",
+  "block.misty_world.foggy_sponge": "Foggy Sponge",
 
   "block.misty_world.rocks": "Rocks",
   "block.misty_world.desert_cotton": "Desert Cotton",
 
   "": "------------ DECORATIONS & UTILITY ------------",
 
+  "block.misty_world.niobium_door": "Niobium Door",
+  "block.misty_world.niobium_trapdoor": "Niobium Trapdoor",
+  "block.misty_world.niobium_chest": "Niobium Chest",
+  "block.misty_world.niobium_trapped_chest": "Niobium Trapped Chest",
   "block.misty_world.foggy_stone_furnace": "Foggy Stone Furnace",
   "block.misty_world.foggy_stone_furnace.name": "Foggy Stone Furnace",
+
+
+  "block.misty_world.ceramic_urn": "Ceramic Urn",
+  "block.misty_world.latex_pot": "Latex Pot",
+  "block.misty_world.campfire": "Campfire",
+
+  "": "------- PORTAL -------",
+
+  "block.misty_world.portal_block_bottom": "Unknown Stone",
+  "block.misty_world.portal_block_top": "Unknown Stone",
 
   "": "------- FLOWERS -------",
   "block.misty_world.violet_veil": "Violet Veil",
@@ -345,6 +416,7 @@
   "item.misty_world.sponge_slime": "Poison Extract",
   "item.misty_world.sponge_spore": "Foggy Sponge Spore",
   "item.misty_world.sulfur": "Sulfur",
+  "item.misty_world.clay_urn": "Clay Urn",
 
   "": "------------ TOOLS ------------",
 

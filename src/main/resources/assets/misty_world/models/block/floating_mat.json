@@ -1,34 +1,36 @@
-{  
-    "parent": "block/block",
-    "render_type": "minecraft:cutout",
-    "textures": {
-        "particle": "misty_world:block/floating_mat_top",
-        "down": "misty_world:block/floating_mat",
-        "up": "misty_world:block/floating_mat_top",
-        "side": "misty_world:block/floating_mat",
-        "overlay": "misty_world:block/floating_mat_side"
-    },
-    "elements": [
-        {   "from": [ 0, 0, 0 ],
-            "to": [ 16, 15, 16 ],
-            "faces": {
-                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#down", "cullface": "down" },
-                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#down", "cullface": "up" },
-                "north": { "uv": [ 0, 1, 16, 16 ], "texture": "#side", "cullface": "north" },
-                "south": { "uv": [ 0, 1, 16, 16 ], "texture": "#side", "cullface": "south" },
-                "west":  { "uv": [ 0, 1, 16, 16 ], "texture": "#side", "cullface": "west" },
-                "east":  { "uv": [ 0, 1, 16, 16 ], "texture": "#side", "cullface": "east" }
-            }
-        },
-        {   "from": [ 0, 0, 0 ],
-            "to": [ 16, 15, 16 ],
-            "faces": {
-                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#up",      "tintindex": 0, "cullface": "up" },
-                "north": { "uv": [ 0, 1, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "north" },
-                "south": { "uv": [ 0, 1, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "south" },
-                "west":  { "uv": [ 0, 1, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "west" },
-                "east":  { "uv": [ 0, 1, 16, 16 ], "texture": "#overlay", "tintindex": 0, "cullface": "east" }
-            }
-        }
-    ]
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"particle": "misty_world:block/floating_mat_top",
+		"up": "misty_world:block/floating_mat_top",
+		"side": "misty_world:block/floating_mat",
+		"overlay": "misty_world:block/floating_mat_side"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 15, 16],
+			"faces": {
+				"north": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "north"},
+				"east": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "east"},
+				"south": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "south"},
+				"west": {"uv": [0, 1, 16, 16], "texture": "#side", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#side", "cullface": "down"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 15, 16],
+			"faces": {
+				"north": {"uv": [0, 1, 16, 16], "texture": "#overlay", "cullface": "north", "tintindex": 0},
+				"east": {"uv": [0, 1, 16, 16], "texture": "#overlay", "cullface": "east", "tintindex": 0},
+				"south": {"uv": [0, 1, 16, 16], "texture": "#overlay", "cullface": "south", "tintindex": 0},
+				"west": {"uv": [0, 1, 16, 16], "texture": "#overlay", "cullface": "west", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#up", "cullface": "up", "tintindex": 0}
+			}
+		}
+	]
 }

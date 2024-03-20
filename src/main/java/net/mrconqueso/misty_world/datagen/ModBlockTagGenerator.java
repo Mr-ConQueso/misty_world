@@ -3,11 +3,12 @@ package net.mrconqueso.misty_world.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.block.ModBlocks;
+import net.mrconqueso.misty_world.init.ModBlocks;
 import net.mrconqueso.misty_world.util.ForgeTags;
 import net.mrconqueso.misty_world.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -33,7 +34,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GOLD_ORE.get());
 
         this.tag(ModTags.Blocks.NEEDS_NIOBIUM_TOOL)
-                .add(ModBlocks.FILTER_COAL_ORE.get());
+                .add(ModBlocks.FILTER_COAL_ORE.get())
+                .add(ModBlocks.HARD_FOGGY_STONE.get());
         /*
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ASPEN_PLANKS.get());
@@ -52,7 +54,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SALT_BLOCK.get())
                 .add(ModBlocks.SULFUR_BLOCK.get())
                 .add(ModBlocks.SALT_BLOCK.get())
-                .add(ModBlocks.ROCKS.get())
                 .add(ModBlocks.NIOBIUM_BLOCK.get())
                 .add(ModBlocks.RAW_NIOBIUM_BLOCK.get())
                 .add(ModBlocks.BIO_SHALE_BLOCK.get())
@@ -79,13 +80,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
          */
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
-                .add(ModBlocks.WET_SAND.get())
-                .add(ModBlocks.DRY_SAND.get())
-                .add(ModBlocks.WET_RED_SAND.get())
-                .add(ModBlocks.DRY_RED_SAND.get())
-                .add(ModBlocks.WET_ACIDIC_SAND.get())
-                .add(ModBlocks.DRY_ACIDIC_SAND.get())
-                .add(ModBlocks.FOGGY_GRAVEL.get());
+                .add(ModBlocks.FOGGY_GRAVEL.get())
+                .add(ModBlocks.MULCH_BLOCK.get())
+                .add(ModBlocks.REMAINS_BLOCK.get())
+                .add(ModBlocks.FLOATING_MAT.get())
+                .addTag(ModTags.Blocks.DRY_GROUND)
+                .addTag(ModTags.Blocks.WET_GROUND);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.IRON_ORE.get())
@@ -107,9 +107,31 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RAW_NIOBIUM_BLOCK.get())
                 .add(ModBlocks.NIOBIUM_BLOCK.get())
                 .add(ModBlocks.BIO_SHALE_BLOCK.get())
-                // --------- / STONES / --------- //
-                .add(ModBlocks.POROUS_FOGGY_STONE.get())
-                .add(ModBlocks.MOSSY_FOGGY_COBBLESTONE.get());
+                // --- / BUILDING BLOCKS / --- //
+                .addTag(ModTags.Blocks.FOGGY_STONES)
+                .add(ModBlocks.CHISELED_FOGGY_STONE.get())
+                .add(ModBlocks.MOSSY_CHISELED_FOGGY_STONE.get())
+                .add(ModBlocks.FOGGY_STONE_BRICKS.get())
+                .add(ModBlocks.MOSSY_FOGGY_STONE_BRICKS.get())
+                //.add(ModBlocks.FOGGY_STONE_MASONRY.get())
+                //.add(ModBlocks.MOSSY_FOGGY_STONE_MASONRY.get())
+                .add(ModBlocks.FOGGY_COBBLESTONE_WALL.get())
+                .add(ModBlocks.MOSSY_FOGGY_COBBLESTONE_WALL.get())
+                .add(ModBlocks.FOGGY_STONE_WALL.get())
+                .add(ModBlocks.MOSSY_FOGGY_STONE_WALL.get())
+                // --------- / DECORATION / --------- //
+                .add(ModBlocks.NIOBIUM_DOOR.get())
+                .add(ModBlocks.NIOBIUM_TRAPDOOR.get())
+                .add(ModBlocks.NIOBIUM_CHEST.get())
+                .add(ModBlocks.NIOBIUM_TRAPPED_CHEST.get())
+                .add(ModBlocks.FOGGY_STONE_FURNACE.get())
+                // --------- / PORTAL / --------- //
+                .add(ModBlocks.PORTAL_BLOCK_BOTTOM.get())
+                .add(ModBlocks.PORTAL_BLOCK_TOP.get());
+
+        this.tag(BlockTags.GUARDED_BY_PIGLINS)
+                .add(ModBlocks.NIOBIUM_CHEST.get())
+                .add(ModBlocks.NIOBIUM_TRAPPED_CHEST.get());
 
         // --------- / SEEDS / --------- //
 

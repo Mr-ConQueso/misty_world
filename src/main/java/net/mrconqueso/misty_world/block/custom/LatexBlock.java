@@ -22,16 +22,6 @@ public class LatexBlock extends Block {
     }
 
     @Override
-    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-        return COLLISION_SHAPE;
-    }
-
-    @Override
-    public RenderShape getRenderShape(BlockState pState) {
-        return super.getRenderShape(pState);
-    }
-
-    @Override
     public void fallOn(Level pLevel, BlockState pState, BlockPos pPos, Entity pEntity, float pFallDistance) {
         pEntity.fallDistance = pFallDistance * 0.3F;
     }
