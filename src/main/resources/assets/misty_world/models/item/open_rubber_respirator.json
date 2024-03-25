@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+        "layer0":"misty_world:item/respirator_open",
+        "layer1":"misty_world:item/respirator_overlay"
+    }
+}

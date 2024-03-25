@@ -380,6 +380,8 @@
   "item.misty_world.filter.filter_depth.tooltip": "Filtration depth",
   "item.misty_world.filter.filter_damage.tooltip": "Level of pollution",
   "item.misty_world.filter.filter_empty.tooltip": "Empty",
+  "item.misty_world.suit_protection.tooltip": "Protection",
+  "item.misty_world.suit_inner.tooltip": "Inner layer",
 
   "": "------------ NATURAL ------------",
 
@@ -420,6 +422,7 @@
 
   "": "------------ TOOLS ------------",
 
+  "item.misty_world.glass_food_container": "Glass Food Container",
   "item.misty_world.centrometer": "Mysterious Disk",
   "item.misty_world.gas_analyzer": "Gas Analyzer",
   "item.misty_world.flint_and_stone": "Flint and Stone",

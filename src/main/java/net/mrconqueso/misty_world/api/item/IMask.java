@@ -126,7 +126,7 @@ public interface IMask {
 
     /**Returns the filter in the respirator.*/
     public static ItemStack getFilter(ItemStack stack) {
-        CompoundTag tag = (CompoundTag) stack.getTag().get("filter");
+        CompoundTag tag = stack.getTag().getCompound("filter");
         return tag != null ? new ItemStack((ItemLike) tag) : ItemStack.EMPTY;
     }
 

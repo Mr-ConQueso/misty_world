@@ -41,7 +41,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.ICON);
+
+        // --------- / ADVANCEMENTS / --------- //
+
         // --------- / BLOCKS / --------- //
 
         wallItem(ModBlocks.FOGGY_STONE_WALL, ModBlocks.FOGGY_STONE);
@@ -227,10 +229,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SULFUR);
         simpleItem(ModItems.CLAY_URN);
         // --------- / TOOLS / --------- //
-        simpleItem(ModItems.CENTROMETER);
-        simpleItem(ModItems.GAS_ANALYZER);
+        multiplePredicateItem(ModItems.CENTROMETER, 66);
+        simpleItem(ModItems.GLASS_FOOD_CONTAINER);
         simpleItem(ModItems.FLINT_AND_STONE);
-        simpleItem(ModItems.HYGROMETER);
+        multiplePredicateItem("misty_world:item/gas_analyzer", ModItems.GAS_ANALYZER, 30);
+        multiplePredicateItem(ModItems.HYGROMETER, 15);
         simpleItem(ModItems.SOAP);
         simpleItem(ModItems.MAP_UP);
         simpleItem(ModItems.MAP_DOWN);
@@ -242,7 +245,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.NIOBIUM_SHOVEL);
         handheldItem(ModItems.NIOBIUM_HOE);
         // --------- / ARMOR / --------- //
-        trimmedArmorItem(ModItems.RESPIRATOR);
         // --- / NIOBIUM / --- //
         trimmedArmorItem(ModItems.NIOBIUM_BOOTS);
         trimmedArmorItem(ModItems.NIOBIUM_LEGGINGS);
@@ -347,6 +349,28 @@ public class ModItemModelProvider extends ItemModelProvider {
                                 new ResourceLocation(MOD_ID,
                                         "item/" + itemRegistryObject.getId().getPath()));
             });
+        }
+    }
+
+    private void multiplePredicateItem(String parentItem, RegistryObject<Item> item, int predicateCount) {
+        for (int i = 1; i <= predicateCount; i++) {
+
+            String suffix = String.format("%02d", i);
+            String itemName = item.getId().getPath() + "_" + suffix;
+            this.withExistingParent(itemName,
+                    new ResourceLocation(parentItem)).texture("layer0",
+                    new ResourceLocation(MistyWorld.MOD_ID, "item/" + itemName));
+        }
+    }
+
+    private void multiplePredicateItem(RegistryObject<Item> item, int predicateCount) {
+        for (int i = 1; i <= predicateCount; i++) {
+
+            String suffix = String.format("%02d", i);
+            String itemName = item.getId().getPath() + "_" + suffix;
+            this.withExistingParent(itemName,
+                    new ResourceLocation("item/generated")).texture("layer0",
+                    new ResourceLocation(MistyWorld.MOD_ID, "item/" + itemName));
         }
     }
 

@@ -1,0 +1,410 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "misty_world:item/centrometer_00"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "misty_world:angle": 0
+            },
+            "model": "misty_world:item/centrometer"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 1
+            },
+            "model": "misty_world:item/centrometer_01"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 2
+            },
+            "model": "misty_world:item/centrometer_02"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 3
+            },
+            "model": "misty_world:item/centrometer_03"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 4
+            },
+            "model": "misty_world:item/centrometer_04"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 5
+            },
+            "model": "misty_world:item/centrometer_05"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 6
+            },
+            "model": "misty_world:item/centrometer_06"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 7
+            },
+            "model": "misty_world:item/centrometer_07"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 8
+            },
+            "model": "misty_world:item/centrometer_08"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 9
+            },
+            "model": "misty_world:item/centrometer_09"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 10
+            },
+            "model": "misty_world:item/centrometer_10"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 11
+            },
+            "model": "misty_world:item/centrometer_11"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 12
+            },
+            "model": "misty_world:item/centrometer_12"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 13
+            },
+            "model": "misty_world:item/centrometer_13"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 14
+            },
+            "model": "misty_world:item/centrometer_14"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 15
+            },
+            "model": "misty_world:item/centrometer_15"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 16
+            },
+            "model": "misty_world:item/centrometer_16"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 17
+            },
+            "model": "misty_world:item/centrometer_17"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 18
+            },
+            "model": "misty_world:item/centrometer_18"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 19
+            },
+            "model": "misty_world:item/centrometer_19"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 20
+            },
+            "model": "misty_world:item/centrometer_20"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 21
+            },
+            "model": "misty_world:item/centrometer_21"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 22
+            },
+            "model": "misty_world:item/centrometer_22"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 23
+            },
+            "model": "misty_world:item/centrometer_23"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 24
+            },
+            "model": "misty_world:item/centrometer_24"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 25
+            },
+            "model": "misty_world:item/centrometer_25"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 26
+            },
+            "model": "misty_world:item/centrometer_26"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 27
+            },
+            "model": "misty_world:item/centrometer_27"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 28
+            },
+            "model": "misty_world:item/centrometer_28"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 29
+            },
+            "model": "misty_world:item/centrometer_29"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 30
+            },
+            "model": "misty_world:item/centrometer_30"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 31
+            },
+            "model": "misty_world:item/centrometer_31"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 32
+            },
+            "model": "misty_world:item/centrometer_32"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 33
+            },
+            "model": "misty_world:item/centrometer_33"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 34
+            },
+            "model": "misty_world:item/centrometer_34"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 35
+            },
+            "model": "misty_world:item/centrometer_35"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 36
+            },
+            "model": "misty_world:item/centrometer_36"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 37
+            },
+            "model": "misty_world:item/centrometer_37"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 38
+            },
+            "model": "misty_world:item/centrometer_38"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 39
+            },
+            "model": "misty_world:item/centrometer_39"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 40
+            },
+            "model": "misty_world:item/centrometer_40"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 41
+            },
+            "model": "misty_world:item/centrometer_41"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 42
+            },
+            "model": "misty_world:item/centrometer_42"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 43
+            },
+            "model": "misty_world:item/centrometer_43"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 44
+            },
+            "model": "misty_world:item/centrometer_44"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 45
+            },
+            "model": "misty_world:item/centrometer_45"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 46
+            },
+            "model": "misty_world:item/centrometer_46"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 47
+            },
+            "model": "misty_world:item/centrometer_47"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 48
+            },
+            "model": "misty_world:item/centrometer_48"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 49
+            },
+            "model": "misty_world:item/centrometer_49"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 50
+            },
+            "model": "misty_world:item/centrometer_50"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 51
+            },
+            "model": "misty_world:item/centrometer_51"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 52
+            },
+            "model": "misty_world:item/centrometer_52"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 53
+            },
+            "model": "misty_world:item/centrometer_53"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 54
+            },
+            "model": "misty_world:item/centrometer_54"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 55
+            },
+            "model": "misty_world:item/centrometer_55"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 56
+            },
+            "model": "misty_world:item/centrometer_56"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 57
+            },
+            "model": "misty_world:item/centrometer_57"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 58
+            },
+            "model": "misty_world:item/centrometer_58"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 59
+            },
+            "model": "misty_world:item/centrometer_59"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 60
+            },
+            "model": "misty_world:item/centrometer_60"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 61
+            },
+            "model": "misty_world:item/centrometer_61"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 62
+            },
+            "model": "misty_world:item/centrometer_62"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 63
+            },
+            "model": "misty_world:item/centrometer_63"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 64
+            },
+            "model": "misty_world:item/centrometer_64"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 65
+            },
+            "model": "misty_world:item/centrometer_65"
+        },
+        {
+            "predicate": {
+                "misty_world:angle": 66
+            },
+            "model": "misty_world:item/centrometer_66"
+        }
+    ]
+}

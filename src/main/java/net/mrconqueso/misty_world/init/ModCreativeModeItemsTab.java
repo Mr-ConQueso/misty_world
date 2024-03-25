@@ -8,7 +8,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.init.ModItems;
 
 public class ModCreativeModeItemsTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -17,7 +16,7 @@ public class ModCreativeModeItemsTab {
     public static final RegistryObject<CreativeModeTab> MISTY_WORLD_ITEMS_TAB = CREATIVE_MODE_TABS.register("misty_world_items_tab", () -> CreativeModeTab.builder()
 
             .title(Component.translatable("creativetab." + MistyWorld.MOD_ID + ".misty_world_items_tab"))
-            .icon(() -> new ItemStack(ModItems.ICON.get()))
+            .icon(() -> new ItemStack(ModItems.RUBBER_RESPIRATOR.get()))
             .displayItems((params, output) -> {
 
                 // --------- / NATURAL / --------- //
@@ -55,11 +54,10 @@ public class ModCreativeModeItemsTab {
                 // --------- / TOOLS / --------- //
                 output.accept(ModItems.CENTROMETER.get());
                 output.accept(ModItems.GAS_ANALYZER.get());
-                output.accept(ModItems.FLINT_AND_STONE.get());
                 output.accept(ModItems.HYGROMETER.get());
+                output.accept(ModItems.FLINT_AND_STONE.get());
+                output.accept(ModItems.GLASS_FOOD_CONTAINER.get());
                 output.accept(ModItems.SOAP.get());
-                output.accept(ModItems.MAP_UP.get());
-                output.accept(ModItems.MAP_DOWN.get());
                 // --- / NIOBIUM / --- //
                 output.accept(ModItems.NIOBIUM_SWORD.get());
                 output.accept(ModItems.NIOBIUM_SHOVEL.get());
@@ -68,7 +66,10 @@ public class ModCreativeModeItemsTab {
                 output.accept(ModItems.NIOBIUM_HOE.get());
                 output.accept(ModItems.NIOBIUM_CHISEL.get());
                 // --------- / ARMOR / --------- //
-                output.accept(ModItems.RESPIRATOR.get());
+                output.accept(ModItems.OPEN_LEATHER_RESPIRATOR.get());
+                output.accept(ModItems.LEATHER_RESPIRATOR.get());
+                output.accept(ModItems.OPEN_RUBBER_RESPIRATOR.get());
+                output.accept(ModItems.RUBBER_RESPIRATOR.get());
                 // --- / NIOBIUM / --- //
                 output.accept(ModItems.NIOBIUM_HELMET.get());
                 output.accept(ModItems.NIOBIUM_CHESTPLATE.get());

@@ -1,0 +1,24 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "misty_world:item/hygrometer_07"
+    },
+    "overrides": [
+        { "predicate": { "misty_world:humidity": 0.000 }, "model": "misty_world:item/hygrometer_00" },
+        { "predicate": { "misty_world:humidity": 5.000 }, "model": "misty_world:item/hygrometer_01" },
+        { "predicate": { "misty_world:humidity": 11.25 }, "model": "misty_world:item/hygrometer_02" },
+        { "predicate": { "misty_world:humidity": 17.50 }, "model": "misty_world:item/hygrometer_03" },
+        { "predicate": { "misty_world:humidity": 23.75 }, "model": "misty_world:item/hygrometer_04" },
+        { "predicate": { "misty_world:humidity": 30.00 }, "model": "misty_world:item/hygrometer_05" },
+        { "predicate": { "misty_world:humidity": 36.65 }, "model": "misty_world:item/hygrometer_06" },
+        { "predicate": { "misty_world:humidity": 43.30 }, "model": "misty_world:item/hygrometer" },
+        { "predicate": { "misty_world:humidity": 50.00 }, "model": "misty_world:item/hygrometer_08" },
+        { "predicate": { "misty_world:humidity": 57.10 }, "model": "misty_world:item/hygrometer_09" },
+        { "predicate": { "misty_world:humidity": 64.25 }, "model": "misty_world:item/hygrometer_10" },
+        { "predicate": { "misty_world:humidity": 71.40 }, "model": "misty_world:item/hygrometer_11" },
+        { "predicate": { "misty_world:humidity": 78.55 }, "model": "misty_world:item/hygrometer_12" },
+        { "predicate": { "misty_world:humidity": 85.70 }, "model": "misty_world:item/hygrometer_13" },
+        { "predicate": { "misty_world:humidity": 92.85 }, "model": "misty_world:item/hygrometer_14" },
+        { "predicate": { "misty_world:humidity": 100.0 }, "model": "misty_world:item/hygrometer_15" }
+    ]
+}

@@ -1,65 +1,64 @@
 package net.mrconqueso.misty_world.item.custom;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.Level;
+import net.mrconqueso.misty_world.init.ModSounds;
 
 public class CentrometerItem extends Item {
+    public int angle = 0;
     public CentrometerItem(Properties pProperties) {
         super(pProperties);
     }
-    /*
-    this.setMaxStackSize(1);
-    this.setMaxDamage(0);
-    this.setHasSubtypes(true);
-    this.addPropertyOverride(new ResourceLocation("mist:angle"), new IItemPropertyGetter() {
 
-     */
-
-    /*
     @Override
-    @SideOnly(Side.CLIENT)
-    public float apply(ItemStack stack, @Nullable World world, @Nullable EntityLivingBase entityIn) {
-        if (entityIn == null && !stack.isOnItemFrame()) {
-            return 0;
-        } else {
-            boolean main = stack.getItemDamage() == 1;
-            boolean flag = entityIn != null;
-            Entity entity = flag ? entityIn : stack.getItemFrame();
-            if (world == null) world = entity.world;
-            if (world.provider.getDimension() != Mist.getID()) return 0;
-            BlockPos pos = new BlockPos(MathHelper.floor(entity.posX), entity.posY + (flag ? 1 : 0), MathHelper.floor(entity.posZ));
-            if (!MistWorld.isPosInFog(world, pos)) return 0.0F;
-            BlockPos centralPos = MistWorld.getCenterPos(pos, main);
-            if (centralPos.distanceSq(pos) < 10000) return 33 + (main ? 33 : 0);
-            double d0 = 0;
-            double d1 = flag ? (double)entity.rotationYaw : this.getFrameRotation((EntityItemFrame)entity);
-            d1 = d1 % 360.0D;
-            double d2 = Math.atan2(centralPos.getZ() - pos.getZ(), centralPos.getX() - pos.getX());
-            d0 = (90.0D - d1 + d2 / 0.01745329238474369D) * 0.09D;
-            return MathHelper.positiveModulo((float)d0, 32) + 1 + (main ? 33 : 0);
+    public InteractionResult useOn(UseOnContext pContext) {
+
+        BlockPos positionClicked = pContext.getClickedPos();
+        Level level =pContext.getLevel();
+
+        if (level.isClientSide) {
+            level.playSeededSound(null, positionClicked.getX(), positionClicked.getY(), positionClicked.getZ(),
+                    ModSounds.USE_GAS_ANALYZER.get(), SoundSource.PLAYERS, 1f, 1f, 0);
         }
+
+        return InteractionResult.SUCCESS;
     }
-     */
 
-
-    /*
-    @SideOnly(Side.CLIENT)
-    private double getFrameRotation(EntityItemFrame frame) {
-        return MathHelper.wrapDegrees(180 + frame.facingDirection.getHorizontalIndex() * 90);
+    public static int getValue(ItemStack stack) {
+        CompoundTag nbtCompound = stack.getTag();
+        if (nbtCompound != null) {
+            return nbtCompound.getInt("angle");
+        }
+        return 0;
     }
-     */
 
-    /*
-    @Override
-    public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
-        int i = player.getHeldItem(hand).getMetadata() == 0 ? 1 : 0;
-        player.setActiveHand(hand);
-        return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, new ItemStack(this, 1, i));
+    public static void setValue(ItemStack stack, int angle) {
+        CompoundTag nbtCompound = stack.getOrCreateTag();
+        nbtCompound.putInt("angle", angle);
     }
 
     @Override
-    public EnumRarity getRarity(ItemStack stack) {
-        return EnumRarity.EPIC;
-    }
+    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+        ItemStack itemStack = pPlayer.getItemInHand(pUsedHand);
+        this.angle = getValue(itemStack);
 
-     */
+        if (this.angle < 66)
+            this.angle++;
+        else if (this.angle == 66)
+            this.angle = 0;
+
+        CentrometerItem.setValue(pPlayer.getItemInHand(InteractionHand.MAIN_HAND), this.angle);
+
+
+        return InteractionResultHolder.success(itemStack);
+    }
 }

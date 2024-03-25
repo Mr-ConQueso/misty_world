@@ -1,0 +1,230 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "misty_world:item/gas_analyzer_00"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "misty_world:value": 0
+            },
+            "model": "misty_world:item/gas_analyzer"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 1
+            },
+            "model": "misty_world:item/gas_analyzer_01"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 2
+            },
+            "model": "misty_world:item/gas_analyzer_02"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 3
+            },
+            "model": "misty_world:item/gas_analyzer_03"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 4
+            },
+            "model": "misty_world:item/gas_analyzer_04"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 5
+            },
+            "model": "misty_world:item/gas_analyzer_05"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 6
+            },
+            "model": "misty_world:item/gas_analyzer_06"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 7
+            },
+            "model": "misty_world:item/gas_analyzer_07"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 8
+            },
+            "model": "misty_world:item/gas_analyzer_08"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 9
+            },
+            "model": "misty_world:item/gas_analyzer_09"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 10
+            },
+            "model": "misty_world:item/gas_analyzer_10"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 11
+            },
+            "model": "misty_world:item/gas_analyzer_11"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 12
+            },
+            "model": "misty_world:item/gas_analyzer_12"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 13
+            },
+            "model": "misty_world:item/gas_analyzer_13"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 14
+            },
+            "model": "misty_world:item/gas_analyzer_14"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 15
+            },
+            "model": "misty_world:item/gas_analyzer_15"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 16
+            },
+            "model": "misty_world:item/gas_analyzer_16"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 17
+            },
+            "model": "misty_world:item/gas_analyzer_17"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 18
+            },
+            "model": "misty_world:item/gas_analyzer_18"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 19
+            },
+            "model": "misty_world:item/gas_analyzer_19"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 20
+            },
+            "model": "misty_world:item/gas_analyzer_20"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 21
+            },
+            "model": "misty_world:item/gas_analyzer_21"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 22
+            },
+            "model": "misty_world:item/gas_analyzer_22"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 23
+            },
+            "model": "misty_world:item/gas_analyzer_23"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 24
+            },
+            "model": "misty_world:item/gas_analyzer_24"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 25
+            },
+            "model": "misty_world:item/gas_analyzer_25"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 26
+            },
+            "model": "misty_world:item/gas_analyzer_26"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 27
+            },
+            "model": "misty_world:item/gas_analyzer_27"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 28
+            },
+            "model": "misty_world:item/gas_analyzer_28"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 29
+            },
+            "model": "misty_world:item/gas_analyzer_29"
+        },
+        {
+            "predicate": {
+                "misty_world:value": 30
+            },
+            "model": "misty_world:item/gas_analyzer_30"
+        }
+    ],
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [
+                -30,
+                -30,
+                0
+            ],
+            "translation": [
+                3,
+                1.5,
+                -5
+            ],
+            "scale": [
+                0.68,
+                0.68,
+                0.68
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                -30,
+                -30,
+                0
+            ],
+            "translation": [
+                3,
+                1.5,
+                -5
+            ],
+            "scale": [
+                0.68,
+                0.68,
+                0.68
+            ]
+        }
+    }
+}

@@ -17,7 +17,7 @@ public class ModCreativeModeBlocksTab {
     public static final RegistryObject<CreativeModeTab> MISTY_WORLD_BLOCKS_TAB = CREATIVE_MODE_TABS.register("misty_world_blocks_tab", () -> CreativeModeTab.builder()
 
             .title(Component.translatable("creativetab." + MistyWorld.MOD_ID + ".misty_world_blocks_tab"))
-            .icon(() -> new ItemStack(ModItems.ICON.get()))
+            .icon(() -> new ItemStack(ModBlocks.PORTAL_BLOCK_BOTTOM.get()))
             .displayItems((params, output) -> {
 
                 // --------- / STONES / --------- //

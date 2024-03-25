@@ -6,15 +6,15 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrconqueso.misty_world.MistyWorld;
-import net.mrconqueso.misty_world.init.ModBlocks;
 import net.mrconqueso.misty_world.item.custom.*;
 import net.mrconqueso.misty_world.item.item_classes.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MistyWorld.MOD_ID);
-    public static final RegistryObject<Item> ICON = ITEMS.register("creativemenu_icon",
-            () -> new Item(new Item.Properties()));
+
+    // --------- / ADVANCEMENTS / --------- //
+
 
     // --------- / NATURAL / --------- //
     public static final RegistryObject<Item> BIO_SHALE = ITEMS.register("bio_shale",
@@ -85,6 +85,8 @@ public class ModItems {
     // --------- / TOOLS / --------- //
     public static final RegistryObject<Item> CENTROMETER = ITEMS.register("centrometer",
             () -> new CentrometerItem(new Item.Properties()));
+    public static final RegistryObject<Item> GLASS_FOOD_CONTAINER = ITEMS.register("glass_food_container",
+            () -> new GlassFoodContainerItem(new Item.Properties()));
     public static final RegistryObject<Item> GAS_ANALYZER = ITEMS.register("gas_analyzer",
             () -> new GasAnalyzerItem(new Item.Properties()));
     public static final RegistryObject<Item> FLINT_AND_STONE = ITEMS.register("flint_and_stone",
@@ -115,14 +117,14 @@ public class ModItems {
 
 
     // --------- / ARMOR / --------- //
-    public static final RegistryObject<Item> RESPIRATOR = ITEMS.register("respirator",
-            () -> new LeatherMaskItem(ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> OPEN_RESPIRATOR = ITEMS.register("open_respirator",
-            () -> new LeatherMaskItem(ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> LEATHER_RESPIRATOR = ITEMS.register("leather_respirator",
+            () -> new LeatherMaskItem(90.0F, false, ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> OPEN_LEATHER_RESPIRATOR = ITEMS.register("open_leather_respirator",
+            () -> new LeatherMaskItem(85.0F, true, ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> RUBBER_RESPIRATOR = ITEMS.register("rubber_respirator",
-            () -> new RubberMaskItem(ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new RubberMaskItem(95.0F, false, ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> OPEN_RUBBER_RESPIRATOR = ITEMS.register("open_rubber_respirator",
-            () -> new RubberMaskItem(ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new RubberMaskItem(90.0F, true, ModArmorMaterials.LEATHER_MASK, ArmorItem.Type.HELMET, new Item.Properties()));
 
     // --- / NIOBIUM / --- //
     public static final RegistryObject<Item> NIOBIUM_BOOTS = ITEMS.register("niobium_boots",
@@ -136,13 +138,13 @@ public class ModItems {
 
     // --- / RUBBER / --- //
     public static final RegistryObject<Item> RUBBER_BOOTS = ITEMS.register("rubber_boots",
-            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.BOOTS, new Item.Properties(), 80));
     public static final RegistryObject<Item> RUBBER_LEGGINGS = ITEMS.register("rubber_leggings",
-            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.LEGGINGS, new Item.Properties(), 80));
     public static final RegistryObject<Item> RUBBER_CHESTPLATE = ITEMS.register("rubber_chestplate",
-            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.CHESTPLATE, new Item.Properties(), 80));
     public static final RegistryObject<Item> RUBBER_HELMET = ITEMS.register("rubber_helmet",
-            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new RubberArmorItem(ModArmorMaterials.RUBBER, ArmorItem.Type.HELMET, new Item.Properties(), 80));
 
 
     // --------- / FOOD / --------- //

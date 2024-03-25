@@ -1,0 +1,6 @@
+{
+  "parent": "misty_world:item/gas_analyzer",
+  "textures": {
+    "layer0": "misty_world:item/gas_analyzer_23"
+  }
+}

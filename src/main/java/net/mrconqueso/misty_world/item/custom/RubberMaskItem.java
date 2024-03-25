@@ -1,12 +1,14 @@
 package net.mrconqueso.misty_world.item.custom;
 
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.DyeableArmorItem;
-import net.minecraft.world.item.DyeableLeatherItem;
+import net.mrconqueso.misty_world.item.item_classes.ModDyableRubberArmorItem;
 
-public class RubberMaskItem extends DyeableArmorItem {
-    public RubberMaskItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+public class RubberMaskItem extends ModDyableRubberArmorItem {
+    public final float impermeability;
+    private final boolean canEat;
+    public RubberMaskItem(float impermeability, boolean canEat, ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);
+        this.impermeability = impermeability;
+        this.canEat = canEat;
     }
 }
